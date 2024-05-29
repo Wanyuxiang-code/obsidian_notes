@@ -1,0 +1,12 @@
+{
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-topaz-nord",
+  "blue-topaz-theme@@background-settings-workplace-background-image": false,
+  "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-theme-dark-in-the-sky",
+  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-waves2-light",
+  "blue-topaz-theme@@background-image-settings-switch": false,
+  "blue-topaz-theme@@background-notebook-liked-switch": false,
+  "blue-topaz-theme@@notebook-liked-markdown-page-options": "notebook-liked-markdown-page-grid-notebook-2",
+  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-solarized-light",
+  "Blue-Topaz-Codebox-Highlight@@blur-codebox-frosted-glass": 0,
+  "blue-topaz-theme@@toggle-nonoverlapping-bg": true
+}

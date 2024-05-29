@@ -1,0 +1,19 @@
+{
+  "promptDelete": false,
+  "tabSize": 2,
+  "strictLineBreaks": false,
+  "spellcheck": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "attachmentFolderPath": "PNG",
+  "newFileLocation": "current",
+  "userIgnoreFilters": [
+    "PNG/",
+    "Zotero/mdnotes_template/"
+  ]
+}
