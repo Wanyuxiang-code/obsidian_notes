@@ -5,7 +5,7 @@
 ### String Literals:
 1. data type: `const char *`
    declare a string: `const char * str = "Hello World\n";`
-   ![](1d014064943fe611089ae9607d895bc.png)
+   ![](Attachment/1d014064943fe611089ae9607d895bc.png)
    str is a pointer, pointing to an array of characters, so the elements in the string will be stored in consecutive memory locations.
    print a literal string:`printf ("%s\n", str);`
    ***Notice:
@@ -209,21 +209,21 @@ return 1;
       Sometimes remember to use NULL to examine whether memory allocation has succeeded.
    2. Deleting node:
       We must walk through the whole list to find the target node then change the pointer.
-      ![](90aa92a3b945a9f9083adfe7d094b1a.png)
+      ![](Attachment/90aa92a3b945a9f9083adfe7d094b1a.png)
       **Note: we must be cautious about free order from low levels to high levels**
       `*find = p->next`
       `free (p->name);
       `free (p);`
 ### More operations and complicated structures
 #### Use a Sentinel and a Cycle List to simplify the code
-   ![[c96e4555bebc92432550f23c599b927.png]]
+   ![](Attachment/c96e4555bebc92432550f23c599b927.png)
 1. Operations:
    1. Easy to walk through the whole list both in two directions:
-      ![](dbdd8066948f2ef1dcf7d9c63e025c5.png)
+      ![](Attachment/dbdd8066948f2ef1dcf7d9c63e025c5.png)
    2. Insertion requires four changes:
-      ![](959ce4cd7b9b9f17c7287eac811ceba.png)
+      ![](Attachment/959ce4cd7b9b9f17c7287eac811ceba.png)
   3. Deleting only requires two changes:
-     ![](be5564d1bda762326a404a32b42ec5f.png)
+     ![](Attachment/be5564d1bda762326a404a32b42ec5f.png)
   4. Sentinel links to itself when the list is empty
      **Sentinel is a special node which can serve as a fixed node and can make the head and tail of the list easily be identified. It can simply the list operations**
 2. Pointer usage:

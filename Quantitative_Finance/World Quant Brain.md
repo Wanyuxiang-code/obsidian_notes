@@ -44,30 +44,30 @@
 ### 成果展示
 我最近一共实现发掘了5个alpha因子，其中两个good,3个average,分别从不同的角度去考虑实现了对市场参数的一些指标的预测
 Brain Medal
-![](26da868c93bde49d7203044acbd2365.png)
+![](Attachment/26da868c93bde49d7203044acbd2365.png)
 1.Market Emotion
 >`0.3*snt_buzz + 2*rank(volume)
    
-   ![](0a993377e5837a280a2f875dedbc6b9.png)
+   ![](Attachment/0a993377e5837a280a2f875dedbc6b9.png)
 
 2.Evaluate Liability
 >`-ts_rank(fn_liab_fair_val_l1_a,160)`
 
-![](07c48406719a03e6233c24e301bfa97.png)
+![](Attachment/07c48406719a03e6233c24e301bfa97.png)
 3.Evaluate the earnings by considering currency gain and retained earnings
 >`rank(ts_delta(retained_earnings / sharesout, 65)) + rank(assets) + Sum(fn_oth_income_loss_fx_transaction_and_tax_translation_adj_a,255)`
 
 
-![](fc832ecb081ed6db7437d8c636248a8.png)
+![](Attachment/fc832ecb081ed6db7437d8c636248a8.png)
 4.Liability
 >`0.8*rank(liabilities / assets)+0.2*rank(cash_st / debt_st)`
 
-![](15070a3adfea8b2d0b1a30ca8024df8.png)
+![](Attachment/15070a3adfea8b2d0b1a30ca8024df8.png)
 
 5.Short_selling
 >`-rank(ts_sum((close-low)/(high-close),3)*rank(ts_delta(close,3)))`
 
-![](4764af06fc70e818f7164eecb0b8eac.png)
+![](Attachment/4764af06fc70e818f7164eecb0b8eac.png)
 
 Current Rank:还在持续挖掘中，奖牌邮件还未收到，等待后续补充
-![](a84d6c02a153d64db559a596d9e93f2.png)
+![](Attachment/a84d6c02a153d64db559a596d9e93f2.png)

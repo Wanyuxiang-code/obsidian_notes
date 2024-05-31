@@ -9,7 +9,7 @@
 >Example: linked lists, heaps, dynamically-sized array
 ### Optimization of a list structure
 #### Method 1: Create a list element structure with a data pointer(void*)
-![](2c639505301eb6a748c4a13d2e0d352.png)
+![](Attachment/2c639505301eb6a748c4a13d2e0d352.png)
 Pros: Write the list code once
 Cons: Requires more memory access
 #### Method2: Struct a data structure with first field serves as a pointer
