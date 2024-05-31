@@ -1,3 +1,6 @@
+---
+---
+
 ## Basic ideas:
 1. Statistical strategy -> try to build correlations between different stocks
 2. Example

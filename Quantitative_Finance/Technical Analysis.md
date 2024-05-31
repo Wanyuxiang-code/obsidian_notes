@@ -1,3 +1,6 @@
+---
+---
+
 ## General picture
 技术分析：
 Based on the past market data including prices and volumes to analyze or predict the direction of prices.

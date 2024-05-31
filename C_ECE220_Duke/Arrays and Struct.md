@@ -1,3 +1,6 @@
+---
+---
+
 ## Array
 ### Motivation
 1. Deal with multiple variables with similar properties and structures, it can help us eliminate the tedious work
@@ -15,9 +18,13 @@
    - If you input fewer initial values, the complier will automatically fill with 0s; And if you input more initial values, the complier will just give you a warning instead of crashing down.
    - When you initailze each value, you can omit the size in brackets
 4. Extensions: Apply similar syntax to initialize structs
-   `point  p = {.x = 3, .y = 4};`
+   ```c
+      point``  p = {.x = 3, .y = 4};
+   ```
    And you can combine these two together:
-   `point Mypoints[] = {{.x =3, .y =4}, {.x = 5,.y = 6}};`
+   ```c
+   point Mypoints[] = {{.x =3, .y =4}, {.x = 5,.y = 6}};
+   ```
 
 ### Accessing an Array
 1. Index the Array

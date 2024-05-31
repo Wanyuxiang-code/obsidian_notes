@@ -1,3 +1,6 @@
+---
+---
+
 ## Dynamic Allocation in C++
 [[Dynamic Allocation in C]]
 ### Use `new` to create new instances

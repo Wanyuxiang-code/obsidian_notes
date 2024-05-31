@@ -1,3 +1,6 @@
+---
+---
+
 ## Strings
 ### String Literals:
 1. data type: `const char *`

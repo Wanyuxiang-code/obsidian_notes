@@ -1,3 +1,6 @@
+---
+---
+
 ## Introduction to operating systems
 1. Background
    Since many operations has to be accomplished with the assistance of hardware, but for most programs they can't directly have access to hardware for safety. In this case, they will take operating system(a lower level software responsible for managing all of the resources on the system) as medium to access the hardware indirecly. The operating systems will check whether the call from the programs is legal.

@@ -1,3 +1,6 @@
+---
+---
+
 ## The difference between C and C++
 ### Compile in C but not in C++
 ![[02b8096b1c39fdc4b8c6d7a8f206a39.png]]![[b565e1d098b5650ef136bed0cb460fc.png]]
