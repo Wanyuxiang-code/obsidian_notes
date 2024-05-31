@@ -36,7 +36,7 @@
         ```
    2. Deep copy:
       Deep copy will duplicate the whole objects in different memory locations, which means we can freely change the previous memory location.
-      ![[1c469baaf2ed8b207ba5dd0ce98aa4b.png]]
+      ![](1c469baaf2ed8b207ba5dd0ce98aa4b.png)
   5. Notice: we can't assume the allocated memory locations are all filled with 0s, if we want a zeroed chunk of memory, use `calloc`
 ### Calloc
 1. prototype:
@@ -85,7 +85,7 @@
 1. Usage:
    Compared to fgets which has to sepcify the size of input string, getline can apply dynamic allocation to read a line without specifying the maximum length.
 2. prototype:
-   ![[fee1880d08bb590bb031538515bc882.png]]
+   ![](fee1880d08bb590bb031538515bc882.png)
 3. detail:<[getline | Coursera](https://www.coursera.org/learn/interacting-system-managing-memory/supplement/4Fwiv/getline)>
 
 ### Sbrk

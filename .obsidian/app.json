@@ -10,10 +10,11 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "attachmentFolderPath": "PNG",
+  "attachmentFolderPath": "Attachment",
   "newFileLocation": "current",
   "userIgnoreFilters": [
     "PNG/",
     "Zotero/mdnotes_template/"
-  ]
+  ],
+  "useMarkdownLinks": true
 }

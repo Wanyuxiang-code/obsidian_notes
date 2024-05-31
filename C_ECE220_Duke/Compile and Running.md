@@ -7,7 +7,7 @@
 ### Compilation Process:
    Apply `man` for manual page to see the basic information, and you can apply `man man` to see the details of manual command
    Notice: `man -k` for keyword searching              
-   ![[b1df820b36d19faf408e11cbd2f2014.png]]
+   ![compile](b1df820b36d19faf408e11cbd2f2014.png)
    1. Process:
      Combine the source code with any header files it includes
      **Header file format**:

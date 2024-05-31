@@ -61,7 +61,7 @@
    **mode**: a string that indicates whether the file should be read/written/creadted...
    Returns a new stream on success or NULL on failure
 3. Typical modes:
-![[f18ca24d2e87b15149d1ead41d58d34.png]]
+![](f18ca24d2e87b15149d1ead41d58d34.png)
 ### Reading a file
 1. fgetc:
    prototype: `int fgetc(FILE * stream);`

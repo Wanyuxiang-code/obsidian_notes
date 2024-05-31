@@ -12,7 +12,7 @@ Apply type hierarchy which is a way to organize and structure a hierarchical tre
 > 
 > *Often Used in OOP(Object-oriented programmming)*
 
-![[230feaeb5e2e5cf8c4629d44e5d0d26.png]]
+![](230feaeb5e2e5cf8c4629d44e5d0d26.png)
 #### Property and Advantage
 ##### Advantage
 - **Code Reusability**: Common functionality can be encapsulated in a base class, and derived classes can reuse this code without rewriting it.
