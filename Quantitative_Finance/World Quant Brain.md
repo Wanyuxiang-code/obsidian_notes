@@ -1,4 +1,7 @@
 ---
+title: World Quant Brain
+date created: 星期一, 五月 27日 2024, 11:46:54 中午
+date modified: 星期六, 六月 1日 2024, 2:08:43 下午
 ---
 
 ### World Quant平台学习
@@ -44,30 +47,30 @@
 ### 成果展示
 我最近一共实现发掘了5个alpha因子，其中两个good,3个average,分别从不同的角度去考虑实现了对市场参数的一些指标的预测
 Brain Medal
-![](Attachment/26da868c93bde49d7203044acbd2365.png)
+![](https://s2.loli.net/2024/06/01/I7utCqKHkrPdWc9.png)
 1.Market Emotion
 >`0.3*snt_buzz + 2*rank(volume)
    
-   ![](Attachment/0a993377e5837a280a2f875dedbc6b9.png)
+   ![](https://s2.loli.net/2024/06/01/nYjuy6tHd9RBepx.png)
 
 2.Evaluate Liability
 >`-ts_rank(fn_liab_fair_val_l1_a,160)`
 
-![](Attachment/07c48406719a03e6233c24e301bfa97.png)
+![](https://s2.loli.net/2024/06/01/k6gQOsEMe2YZfLJ.png)
 3.Evaluate the earnings by considering currency gain and retained earnings
 >`rank(ts_delta(retained_earnings / sharesout, 65)) + rank(assets) + Sum(fn_oth_income_loss_fx_transaction_and_tax_translation_adj_a,255)`
 
 
-![](Attachment/fc832ecb081ed6db7437d8c636248a8.png)
+![](https://s2.loli.net/2024/06/01/ilKETjCyhoNbn4u.png)
 4.Liability
 >`0.8*rank(liabilities / assets)+0.2*rank(cash_st / debt_st)`
 
-![](Attachment/15070a3adfea8b2d0b1a30ca8024df8.png)
+![](https://s2.loli.net/2024/06/01/4uRfWA1hnyvDrkc.png)
 
 5.Short_selling
 >`-rank(ts_sum((close-low)/(high-close),3)*rank(ts_delta(close,3)))`
 
-![](Attachment/4764af06fc70e818f7164eecb0b8eac.png)
+![](https://s2.loli.net/2024/06/01/zyQ7tRbxTfdvL5I.png)
 
 Current Rank:还在持续挖掘中，奖牌邮件还未收到，等待后续补充
-![](Attachment/a84d6c02a153d64db559a596d9e93f2.png)
+![](https://s2.loli.net/2024/06/01/hVnLjm2GOwqicRa.png)

@@ -1,4 +1,7 @@
 ---
+title: MIT missing semester
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:35 下午
 ---
 
 
@@ -59,7 +62,7 @@
 - Metadata: every snapshot has metadata including the submission date and the user who submitted it
 
 2.Principle:
-Take a snapshot at a certain time, recording all the informaiton
+Take a snapshot at a certain time, recording all the information
 
 3.Lower level->actual data structure
 Notice: The trees, snapshots and blob are just pointers, and hash values are also pointers
@@ -86,7 +89,7 @@ Notice: The trees, snapshots and blob are just pointers, and hash values are als
 - git status
   check the current status
 - git cat-file -p \<hash value\>
-	look the what contains in the location that thsi hash value points
+	look the what contains in the location that this hash value points
 - git add
   Track the file in the next snapshot, if you don't apply "add", the changes will be untracked
   It can employ the staging area and has more flexibility to add commit history
@@ -115,12 +118,12 @@ Notice: The trees, snapshots and blob are just pointers, and hash values are als
 
 - git merge:
   A powerful command that can help you merge different versions of snapshots together. Usually, it will merge the branch to your main branch.
-   **Notice: If there are versions conflicts between the branches, the programers should solve this issue**
+   **Notice: If there are versions conflicts between the branches, the programmers should solve this issue**
    
 - git remote
   list all the remote repositories that git knows for our local repository
   - git remote add \<name\> \<url\> (If there is only one remote, it is called origin by convention)
-  - git push(help your repository interact woth the remote repository)
+  - git push(help your repository interact worth the remote repository)
 	 git push \<remote\> \<local branch\>:\<remote branch\>
   -  git branch --set-upstream-to=\<remote\>/\<branch\>
     Create a mapping between your local checking branch to the remote set branch

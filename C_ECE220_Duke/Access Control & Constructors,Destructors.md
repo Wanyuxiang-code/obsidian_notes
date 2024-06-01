@@ -1,4 +1,7 @@
 ---
+title: Access Control & Constructors,Destructors
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:35 下午
 ---
 
 ## Access Control
@@ -7,8 +10,8 @@
 > Scope:
 > >Scope means visibility, which considers the ability whether the complier can recognize a variable/structure/function.
 > 
-> Acccess Control
-> >Access control is the ability that whether a code can access(modify) a varibale/structure/...
+> Access Control
+> >Access control is the ability that whether a code can access(modify) a variable/structure/...
 
 #### C: Access Rights == Scope
 C entangles information hiding with file management, offering a few choices for scope: file/global/compound statement.
@@ -25,10 +28,10 @@ Considering the incapability of module design and extensibility in C, C++ decoup
 #### Basics  Understanding
 > [!Note] Ability & Inability of Access control in C++
 > Ability
-> >A class can allow another class to access specific fileds of any instance or to call specific functions.
+> >A class can allow another class to access specific fields of any instance or to call specific functions.
 > 
 > Inability
-> >Access rights to specific instances are not controllable, which means we can't control the concrete acess rights to a specified instance of a certain class
+> >Access rights to specific instances are not controllable, which means we can't control the concrete access rights to a specified instance of a certain class
 > 
 > 即C++中的访问权限均在类的维度上操作，我们可以声明对类中具体的子项的访问权限，但不能更改一个孤立的类的项的访问权限
 
@@ -46,7 +49,7 @@ Usage:
 - **protected**
   protected extends access to **code within any derived class's functions.**
 - **public**
-  public allows any code to use the fileds and functions, which should generally only be used for interface functions.
+  public allows any code to use the fields and functions, which should generally only be used for interface functions.
   
 > [!Info] Friends
 > Classes can have friends, which are functions or classes that are granted access to its private and protected member. This is done by friend keyword.
@@ -80,7 +83,7 @@ void accessPrivate( MyClass& obj ) {
 ```
 
 ## Constructors & Destructors
-Constructor and destrcutors are both member functions with **implicit this pointer**.
+Constructor and destructors are both member functions with **implicit this pointer**.
 ### Constructors
 Constructors are used for initializing a class member, which are often declared as public access right.
 > [!Note] Called time
@@ -97,7 +100,7 @@ Common Features of Constructors:
 - name: **the name of the class**
 - return type: none(**even not void**)
 - **a class can have more than one constructor, overloading is allowed(we can define multiple versions)**. In this case, we can have **default constructor with empty body, parameterized constructor and copy constructor together**.(==注意default constructor相互冲突的情况==)
-- 注意default constructor with no arguments, parameterized constructor and copy consturctor**均为constructor, 用于初始化(也仅有初始化的时候调用）**，它们需要的参数不同，copy constructor利用已有instance的reference.
+- 注意default constructor with no arguments, parameterized constructor and copy constructor**均为constructor, 用于初始化(也仅有初始化的时候调用）**，它们需要的参数不同，copy constructor利用已有instance的reference.
 - access rights一般为public
 #### Two Default Constructors
 Two public constructors are created by default
@@ -105,7 +108,7 @@ Two public constructors are created by default
 The constructor with no arguments created **only if no constructors declared in class definition used for initializing array elements**. ==Array of a class' instances are not allowed if no constructor with no arguments exists==
 operation
   It initializes each field based on its type,对一般的变量填bits,对instance调用相应的constructor
-  - Fileds that are not instances are left as bits(concrete fields left as bits)
+  - Fields that are not instances are left as bits(concrete fields left as bits)
   - Fields that are instances are initialized using the constructors with no arguments for their class, which must exist and be accessible(Initialize an abstract struct)
 ##### Copy Constructor
 **It takes one argument: a reference* to another instance of the same class,注意copy constructor经常接受const reference型的参数防止更改**
@@ -142,7 +145,7 @@ Order of initializer does not affect code, but should match the order of executi
 1. Base class:
    in order of derivation list, if a class does not appear in the list, constructor with no arguments is called
 2. Fields
-   in order listed in class definition. if a field that is an instance does not appear in the list, constrcutor with no arguments is called.
+   in order listed in class definition. if a field that is an instance does not appear in the list, constructor with no arguments is called.
 Because Initializers are executed before constructor's code, thus when we implement the constructor's code, all base classes have been initialized and all fields have been initialized.
 **Use initializers, Not code to initialize Instances to avoid re-initialization**
 ```c++

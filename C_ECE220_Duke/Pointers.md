@@ -1,10 +1,13 @@
 ---
+title: Pointers
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:36 下午
 ---
 
 ## Pointers
 ### Basic Concepts:
 1. Concept:
-   Pointers are way of refering to the memory location of a variable.(A varibale type)
+   Pointers are way of referring to the memory location of a variable.(A variable type)
    - Geometry understanding: Arrow ->(Points to somewhere)
    - Hardware implementation: Pointer memory location stores the location of the variable it points
 2. Basic Operations:
@@ -59,7 +62,7 @@
    - Location: 0x000000000
    - Content: Nothing, it does not point to anything
    - Significance:
-     - Examine the error by checking whether the retrun value is NULL
+     - Examine the error by checking whether the return value is NULL
      - Representing ending
      - Initialize pointer
      - Security: **Segmentation Fault: An error indicates that we attempted to access memory in an invalid way**
@@ -74,7 +77,7 @@
 
 ### Special Pointers
 1. Useful operator:
-   - **.** : member access operator, it can help access the obejct inside a struct
+   - **.** : member access operator, it can help access the object inside a struct
    - $*$: dereference operator
 2. Order difference of pointer to struct:
    `*a.p`: Due to the priority, it equals to `*(a.p)`, it first evaluates a.p and then dereference that arrow
@@ -119,8 +122,8 @@
       Abuse of pointers may result in many conflicts including wrongly matching the data type of pointer and variables.
 
 2. Pointer Arithmetic:
-   1. Meaning: we could do addition for a pointer,which will result in it points to the next data in memory. **But this is confusing and we don't know where it points iff we derefernce the new pointer, the complier will produce errors.**
-   2. Arithmetic: When adding N to a pointer to any type T, the complier will generate the instructions whcih add N$*$ (the number of bytes for values of type T) to the numeric value of the pointer.
+   1. Meaning: we could do addition for a pointer,which will result in it points to the next data in memory. **But this is confusing and we don't know where it points iff we dereference the new pointer, the complier will produce errors.**
+   2. Arithmetic: When adding N to a pointer to any type T, the complier will generate the instructions which add N$*$ (the number of bytes for values of type T) to the numeric value of the pointer.
       **Notice: the offset of pointer arithmetic depends on the specific type of the pointer and addressibility of memory. And x86 is byte-addressable***
       For multidimensional data, notice that the pointer arithmetic depends on size:
       `array[3][5]`:

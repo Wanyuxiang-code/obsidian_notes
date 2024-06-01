@@ -1,7 +1,10 @@
 ---
+title: Hierachies C to C++
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:36 下午
 ---
 
-## Hierachies of structures
+## Hierarchies of structures
 ### Motivation
 #### Basic concept
 We want to organize and structure massive inter-relatd data ->
@@ -10,9 +13,9 @@ Apply type hierarchy which is a way to organize and structure a hierarchical tre
 > Type Hierarchy
 > Each node in the tree represents a class and the edges represent the inheritance relationships between these classes.
 > 
-> *Often Used in OOP(Object-oriented programmming)*
+> *Often Used in OOP(Object-oriented programming)*
 
-![](Attachment/230feaeb5e2e5cf8c4629d44e5d0d26.png)
+![](https://s2.loli.net/2024/06/01/5JpyvB4ghdqPCVS.png)
 #### Property and Advantage
 ##### Advantage
 - **Code Reusability**: Common functionality can be encapsulated in a base class, and derived classes can reuse this code without rewriting it.
@@ -135,7 +138,7 @@ People wanted to automate tasks to enforce best practices and reuce opportunitie
 
 > [!Important] Data structure and Class
 > Data structure
-> >A struct with fileds related with **static data, interface function, internal functions, initialization/teardown functions**
+> >A struct with fields related with **static data, interface function, internal functions, initialization/teardown functions**
 > 
 > Class
 > >Include **Data member(variables defined in a class), Member Functions, Constructors, Destructors, Access modifiers, Inheritance**
@@ -172,7 +175,7 @@ class MyClass : public ParentCLass {
 > [!Tip] 
 > 
 >    Local variables and global variables
-> - Local variables only exist in the block where it is delcared while global variable exist throughout the whole lifetime of the program.
+> - Local variables only exist in the block where it is declared while global variable exist throughout the whole lifetime of the program.
 > - **The complier will give precedence to the local variable when the two have the same name, and if we want to access global variable, we can use `::` (socpe resolution operator) instead**
 >   
 >   Storage class

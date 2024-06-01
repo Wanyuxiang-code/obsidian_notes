@@ -1,4 +1,7 @@
 ---
+title: Pairs trading
+date created: 星期一, 五月 27日 2024, 11:46:54 中午
+date modified: 星期六, 六月 1日 2024, 2:08:43 下午
 ---
 
 ## Basic ideas:
@@ -7,7 +10,7 @@
    When a well established price correlation between A and B broke down, i.e. stock A traded up while B traded down, they would sell A and buy B, betting that the spread would eventually converge.
 3. Advantages: Market Neutrality
    - Market neutral: trading strategies which are independent of market movements are said to be market neutral
-   - Pair trading is mean-reverting strategy, asuming that prices will revert to historical trends and it is largely self-funding.
+   - Pair trading is mean-reverting strategy, assuming that prices will revert to historical trends and it is largely self-funding.
 4. Risks:
    - Transaction cost
    - Involution

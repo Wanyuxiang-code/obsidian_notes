@@ -1,4 +1,7 @@
 ---
+title: Overloading and References
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:36 下午
 ---
 
 ## Dynamic Allocation in C++
@@ -7,7 +10,7 @@
 1. prototype of new
    `new <classname> (args,...)`
    new will return a pointer to a constructed class instance
-   Use () to include arguments passed to constructors, ommitted if there are no arguments
+   Use () to include arguments passed to constructors, omitted if there are no arguments
    On failure new throws an exception, which terminates the program
    注意new一般会与constructor配合initialzie an instance and create a pointer to the instance  
 2. Example:
@@ -111,7 +114,7 @@ complex c3 = c1 + c2;
    - conditional expression `? :`
    - scope identification `::`
 
-5. Some expressions are not euqivalent in C++
+5. Some expressions are not equivalent in C++
    - `array[10] !=  *(array + 10)`
    The previous calls operator`[]` , the latter calls operators `+, *`
    - assign operator != copy constructor
@@ -139,6 +142,6 @@ Notice:
 We can't have **pointers to references, references to references, array of references**.
 ### NRVO: named return value optimization
 1. Concept:
-   Most C++ compliers transform a returned instance into an implicit instance pointer as a new first arguement, returning either void or the instance pointer
+   Most C++ compliers transform a returned instance into an implicit instance pointer as a new first argument, returning either void or the instance pointer
 2. Principles:
    A caller allocates space for an instance then passes a pointer to the instance and the function fills the bits. This can save the work of calling copy constructors.

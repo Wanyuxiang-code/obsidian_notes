@@ -1,4 +1,7 @@
 ---
+title: Fundamental Analysis
+date created: 星期一, 五月 27日 2024, 11:46:54 中午
+date modified: 星期六, 六月 1日 2024, 2:08:43 下午
 ---
 
 ## Definition
@@ -12,7 +15,7 @@
    - Supply and Demand
    - Macroeconomica Factors
 2. Limits(unable to):
-   - Meaure timing of investment
+   - Measure timing of investment
    - Making the selling decision
    - Quantifying the rish & reward
 
@@ -49,14 +52,14 @@
 ### Macroeconomics Analysis
 1. Global Economy Analysis:
    - affects exports, price competition and profits
-   - exchange(汇率): puchasing power and earnings
+   - exchange(汇率): purchasing power and earnings
 2. Domestic Economy:
    - Gross Domestic Product(GDP): measures the economy's total outputs of goods and services
    - Employment rate: measures the extent that the economy is operating at full capacity
    - Inflation: measures the general level of prices increase Phillip's curve
    - Interest Rate: high interest rate reduces liquidity of cash
    - Budget Deficit(预算赤字):large deficit means more borrowing, which implies higher interest rate
-   - Sentiment: comsumers and producers confidence
+   - Sentiment: consumers and producers confidence
    - Business cycle terms:
      peak: the end of expansion and start of recession
      trough: the bottom of the recession
@@ -98,7 +101,7 @@
       - **PVGO**: present value of growth opportunities
         1.Idea: evaluate the captical gain g 
            $r = \frac{D_i}{P_0} + g$  , $g = plowback rate * ROE$
-        2. Explaination:
+        2. Explanation:
            - ROE:
              $$\text{Return on Equity} = \frac{\text{Earnings per share}}{\text{Equity Per Share}}$$ 
            - Plowback rate = 1 - Payoutrate

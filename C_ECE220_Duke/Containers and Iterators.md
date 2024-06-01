@@ -1,15 +1,18 @@
 ---
+title: Containers and Iterators
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:35 下午
 ---
 
 
 ## Containers
 ### Concept
->Contianer is a **data structure contianing other data structures** with **speicific access capabilities.**
+>Container is a **data structure containing other data structures** with **specific access capabilities.**
 >
 >Example: linked lists, heaps, dynamically-sized array
 ### Optimization of a list structure
 #### Method 1: Create a list element structure with a data pointer(void*)
-![](Attachment/2c639505301eb6a748c4a13d2e0d352.png)
+![](https://s2.loli.net/2024/06/01/9xVWUMPSvKpZJfy.png)
 Pros: Write the list code once
 Cons: Requires more memory access
 #### Method2: Struct a data structure with first field serves as a pointer
@@ -46,7 +49,7 @@ void* dl_first (double_list_t* head){
 ```
 > [!Warning]
 > double_list_t must be First in structure Thing
-> Or &my_thing.dl will not pointing to the beginning of the data structure, **we can't convert double_list_t* to struct thing_t*(need to substract unknow amount from the pointer)**.
+> Or &my_thing.dl will not pointing to the beginning of the data structure, **we can't convert double_list_t* to struct thing_t*(need to subtract unknow amount from the pointer)**.
 
 ## Iterators
 ### Aim

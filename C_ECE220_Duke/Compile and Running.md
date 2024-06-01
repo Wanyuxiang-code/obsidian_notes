@@ -1,4 +1,7 @@
 ---
+title: Compile and Running
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:35 下午
 ---
 
 ****## Compile
@@ -7,7 +10,7 @@
 ### Compilation Process:
    Apply `man` for manual page to see the basic information, and you can apply `man man` to see the details of manual command
    Notice: `man -k` for keyword searching              
-   ![compile](Attachment/b1df820b36d19faf408e11cbd2f2014.png)
+   ![compile](https://s2.loli.net/2024/06/01/l63dyF8eaQ4MocG.png)
    1. Process:
      Combine the source code with any header files it includes
      **Header file format**:
@@ -20,7 +23,7 @@
        `#define pi 3.14` `#define Success 0`
        Macro definition will tell the processor to change the label you have defined to the set value. 
        It boasts the advantages of better readability, better portability and convenience for constants.
-       **Notice : macro can also take arguments, nut it is different with function calls. Bacause the storage of function call will be in stack, but the macro just operates by replacing the texts before the program runs**
+       **Notice : macro can also take arguments, nut it is different with function calls. Because the storage of function call will be in stack, but the macro just operates by replacing the texts before the program runs**
        `#define SQUARE(x) x*x`
    2. Actual Compiler:
       Transform the preprocess code into the assembly code.
@@ -33,7 +36,7 @@
       `gcc -c` can stop after it assemble the source code(It can help to produce several individual files) 
       `gcc -o` can change the default .o file name.
    4. Linking:
-      Linking the program takes one or more object files and combines them with various libralies and produce the actual executable files.
+      Linking the program takes one or more object files and combines them with various libraries and produce the actual executable files.
       Linker errors: 
       First make sure you did not try to name two different functions with the same name. Next, make sure you did not include any files twice on the compilation command line. Finally, make sure you do not `#include` a _.c_ file—only header files—and that you only include function _prototypes_ in the header file, not the function’s definition
       Apply `-l` to link the outer library
@@ -42,7 +45,7 @@
    1. compile with some flags:
      `gcc -Wall -Werror -pedantic -std=gnu99`
    2. Make: tool for build large programs
-      1. Reason: It takes lots of time to recompile large real program -> To reduce the repetitive workload we just need to recompile the changed file and link them together -> tedious mannual work -> apply make to manage automatically
+      1. Reason: It takes lots of time to recompile large real program -> To reduce the repetitive workload we just need to recompile the changed file and link them together -> tedious manual work -> apply make to manage automatically
       2. Make interface:
          - Input: makefile
          - Components of makefile: Targets, Dependencies, Rules to make the target
@@ -105,7 +108,7 @@
    Since the current path is not included in the PATH, we have to add ./ to indicate the location of our program
 2. Complier options:
    - .o : specify the output file name
-     Example: `gcc -o myprogram myprogram.c` will produce an executable file named myprogram instaed of myprogram.out
+     Example: `gcc -o myprogram myprogram.c` will produce an executable file named myprogram instead of myprogram.out
    - -std=gnu99:
      specify the complier should use C99 with GNU extensions
    - -Wall:

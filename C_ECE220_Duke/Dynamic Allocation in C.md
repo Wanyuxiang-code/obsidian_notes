@@ -1,9 +1,12 @@
 ---
+title: Dynamic Allocation in C
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:35 下午
 ---
 
 ## Motivation
 
-1. Since the stack frame will be tear down after a function call, we can apply **dynmic allocation** to allocate memory to store some data created during a function call. Or sometimes we need to dynamic reszing our data memory location to fit the need need.
+1. Since the stack frame will be tear down after a function call, we can apply **dynamic allocation** to allocate memory to store some data created during a function call. Or sometimes we need to dynamic reszing our data memory location to fit the need need.
 2. ==Storage location: heap==
 3. The standard C library including dynamic allocation functions:
    `#include <stdlib.h>`
@@ -27,7 +30,7 @@
    We can combine memory allocation with struct to create more complicated data structures and store them in heap.
 4. Shallow copy and Deep copy:
    1. Shallow copy:
-      Shallow copy just copy a pointer to the same location. The two objects share the same memory location, which means once we have changed or freed the coresponding memory locations both two objects will change.
+      Shallow copy just copy a pointer to the same location. The two objects share the same memory location, which means once we have changed or freed the corresponding memory locations both two objects will change.
       Example:
       `polygon_t * p2 = p1;`or
       ```c
@@ -36,7 +39,7 @@
         ```
    2. Deep copy:
       Deep copy will duplicate the whole objects in different memory locations, which means we can freely change the previous memory location.
-      ![](Attachment/1c469baaf2ed8b207ba5dd0ce98aa4b.png)
+      ![](https://s2.loli.net/2024/06/01/ZSCkERU74wrj95M.png)
   5. Notice: we can't assume the allocated memory locations are all filled with 0s, if we want a zeroed chunk of memory, use `calloc`
 ### Calloc
 1. prototype:
@@ -46,7 +49,7 @@
 2. Usage:
    Set the allocated memory all to zero.
 ### Free
-1. Usage: free the memory location allocated by the user.(The data will remain on the heap until the user explicitly free the acoording memory locations)
+1. Usage: free the memory location allocated by the user.(The data will remain on the heap until the user explicitly free the according memory locations)
 2. prototype:
    `void free(void *ptr);`
    `void *ptr`: starting address of the memory that needs to be freed, which should match with the return value malloc.
@@ -83,9 +86,9 @@
    
 ### Getline
 1. Usage:
-   Compared to fgets which has to sepcify the size of input string, getline can apply dynamic allocation to read a line without specifying the maximum length.
+   Compared to fgets which has to specify the size of input string, getline can apply dynamic allocation to read a line without specifying the maximum length.
 2. prototype:
-   ![](Attachment/fee1880d08bb590bb031538515bc882.png)
+   ![](https://s2.loli.net/2024/06/01/3DhyreFvWap6Tz8.png)
 3. detail:<[getline | Coursera](https://www.coursera.org/learn/interacting-system-managing-memory/supplement/4Fwiv/getline)>
 
 ### Sbrk

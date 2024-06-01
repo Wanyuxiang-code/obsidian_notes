@@ -1,7 +1,10 @@
 ---
+title: Analysis of the smaple
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:46 下午
 ---
 
-# Analysis of the smaple
+# Analysis of the sample
 
 ## Judgement
 ### Deontic, Non-normative, Evaluative
@@ -40,14 +43,14 @@
    Problem:
    Application: What and how to apply a general principle
    Specification: Difficult to apply general principle without considering concrete conditions
-   Reliablity: Different theories conflict with each other, or conflict with moral intuition and social norms
+   Reliability: Different theories conflict with each other, or conflict with moral intuition and social norms
    Circularity: Moral theoris receive confirmation from intuitions about specific situations 
    
 2. Bottom-Up approach
    According to the Bottom-Up approach, we start with considering intuitive judgments, social agreements… about particular situations. We then compare to relevantly similar cases (comparative case analysis). Finally, we generalize to standards that cover all sufficiently similar situations. (在就具体事件形成了一定观点后，横向寻找比较示例，形成统一理论)
    Problem: 
    Insufficiency: Particular cases can not determine the general theories
-   Conflicting intuitions: There are cases that we can't reach an agreement in socail moral intuitions
+   Conflicting intuitions: There are cases that we can't reach an agreement in social moral intuitions
    Risk of biases: can't avoid biases in moral intuitions
 
 3.  Reflective Equilibrium (John Rawls)反思平衡理论
@@ -85,7 +88,7 @@
 1. Core problem:
    Do animals have a moral standing?
 2. Different views:
-   1. being a human being is necessay and sufficient for being something with moral standing
+   1. being a human being is necessary and sufficient for being something with moral standing
    2. A living thing
    3. rational being
    4. sentiment being
@@ -95,7 +98,7 @@
 1. Domain: concerns rights related to the distribution of goods
 2. Moral theories to apply
    1. Utilitarianism
-      1. A distribution of goods D is just if and only if D would beacuse as high a utility as any alternative distributions(关注是否能把utility最大化)
+      1. A distribution of goods D is just if and only if D would because as high a utility as any alternative distributions(关注是否能把utility最大化)
       2. Problem:
          Utilitarianism seems to justify the inequitable justice models
          Against: The diminishing marginal utility of goods
@@ -136,7 +139,7 @@
    Social and environmental responsibilities
    Appropriate use and development of technologies
 3. Methodology: casuistic(诡辩的) method
-   begin with particualr cases -- find typical examples -- compare the differences and similaries -- set provisional principles(临时的)
+   begin with particular cases -- find typical examples -- compare the differences and similaries -- set provisional principles(临时的)
    Why: Multiple factors, Engineers need virtues more than rules
 4. Four considerations:
    Safety, Environmental protection, Consumer usefulness, Economic benefits
@@ -190,7 +193,7 @@
       An action A is obligatory iff A would produce a higher leverl of utility.
  
    3. Branch: Classic Hedonistic Act Utilitarianism
-      Welfare = level of hapiness, whcih constituted by experiences of pleasure and absence of the 
+      Welfare = level of hapiness, which constituted by experiences of pleasure and absence of the 
 	
 
 3. Problem:

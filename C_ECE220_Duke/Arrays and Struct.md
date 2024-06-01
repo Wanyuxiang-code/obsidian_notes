@@ -1,11 +1,14 @@
 ---
+title: Arrays and Struct
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:35 下午
 ---
 
 ## Array
 ### Motivation
 1. Deal with multiple variables with similar properties and structures, it can help us eliminate the tedious work
 2. Definition: An array is a sequence of items of the same type
-### Array Declaration and Intialization
+### Array Declaration and Initialization
 `int myArray[4]`
 `int myArray = {1,2,3,4}`
 1. Declaration:
@@ -16,7 +19,7 @@
    Include the initial values in the curly braces
    Notice:
    - If you input fewer initial values, the complier will automatically fill with 0s; And if you input more initial values, the complier will just give you a warning instead of crashing down.
-   - When you initailze each value, you can omit the size in brackets
+   - When you initialize each value, you can omit the size in brackets
 4. Extensions: Apply similar syntax to initialize structs
    ```c
       point``  p = {.x = 3, .y = 4};

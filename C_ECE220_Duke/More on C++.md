@@ -1,9 +1,12 @@
 ---
+title: More on C++
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:36 下午
 ---
 
 ## The difference between C and C++
 ### Compile in C but not in C++
-![](Attachment/02b8096b1c39fdc4b8c6d7a8f206a39.png)![](Attachment/b565e1d098b5650ef136bed0cb460fc.png)
+![](https://s2.loli.net/2024/06/01/1QDXPHmSCuOvZpg.png)
 ## References and Pointers
 [[Overloading and References#Reference]]
 
@@ -36,7 +39,7 @@ Be aware the difference between redirection and insertion:
 #### `cin`: standard input from keyboard -> `stdin` in C
 1. using `>>` to take multiple inputs:
    `cin >> name >> age;`
-   intput can be:
+   input can be:
    `ABC`
    `13`
 2. apply member function in the string buffer
@@ -51,7 +54,7 @@ Be aware the difference between redirection and insertion:
 ## Statement
 ### Jump statements in C++
 1. continue:
-   It is used to execute the next iteration of the smae loop while skipping the remaining part of the current condition.
+   It is used to execute the next iteration of the same loop while skipping the remaining part of the current condition.
 2. break:
    It is used to terminate the whole loop if the condition is met.
 3. return:

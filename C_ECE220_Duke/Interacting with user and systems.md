@@ -1,4 +1,7 @@
 ---
+title: Interacting with user and systems
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:35 下午
 ---
 
 ## Introduction to operating systems
@@ -53,7 +56,7 @@
    Buffering means waiting ultil a certain amount or type of data is available before sending anything or reading extra data in anticipation of future requests for data.(提前读入数据或等待数据积攒到一定量时再传输)
 ### Opening a file
 1. Stream file:
-   Openning a file results in a stream file associated with the file.
+   Opening a file results in a stream file associated with the file.
    A stream(noted as FILE * ) is a sequence of data, which can be read and/or written, which can indicate the permission level and path.
 2. fopen function:
    `FILE * fopen(const char * filename, const char * mode);`
@@ -61,7 +64,7 @@
    **mode**: a string that indicates whether the file should be read/written/creadted...
    Returns a new stream on success or NULL on failure
 3. Typical modes:
-![](Attachment/f18ca24d2e87b15149d1ead41d58d34.png)
+![](https://s2.loli.net/2024/06/01/chtPFJoyNUfIv7r.png)
 ### Reading a file
 1. fgetc:
    prototype: `int fgetc(FILE * stream);`
@@ -83,7 +86,7 @@
    prototype: `char * fgets(char * str, int size, FILE * stream);`
    The fgets function is useful when we want to read one line with a maximum length at a time.
    `char * str`: a pointer to an array in which to store the characters read from the file.
-   `int size`: how much space is avaiable for it to write data into
+   `int size`: how much space is available for it to write data into
    `FILE * stream`: input file
    The function will return str if it succeeds. It will return NULL either fails or encounters the end of the file.
    It stops at **the end of the line, or at the end of the input, or exceed the maximum array length**.
@@ -92,7 +95,7 @@
 4. fread: read **binary** data input from a stream
    prototype: `size_t fread (void * ptr, size_t size, size_t nitems, FILE *stream);`
    It is used when we want to read the non-textual data from a file.
-   `void * ptr`: a pointer to data to write. Beacuse it is a void type, it can write any kind of data.
+   `void * ptr`: a pointer to data to write. Because it is a void type, it can write any kind of data.
    `size_t size`: the size of each item
    `size_t nitems`: how many such items should be read from the stream
 5. getchar:
@@ -118,7 +121,7 @@
 4. fwrite:
    It can be used to write **binary output** data.
    `size_t fwrite(const void * ptr, size_t size, size_t nitems, FILE * stream);`
-   Some errors may be detected later beacuse the C library function will buffer the data to improve the writing and system call efficiency.
+   Some errors may be detected later because the C library function will buffer the data to improve the writing and system call efficiency.
 5. putchar:
    `int putchar (int c)`
    write one character to stdout.
@@ -144,7 +147,7 @@
 ### Closing Files
    fclose:
    prototype: `int fclose(FILE * stream);`
-   - This function can specify whcih stream to close. Closing the stream sends any buffered write data to the OS and then asks the OS to close the associated file descripter.
+   - This function can specify which stream to close. Closing the stream sends any buffered write data to the OS and then asks the OS to close the associated file descriptor.
    - The function will return 0 if success or EOF if failure.
    Failure reason: there are various reasons that the user can't write data like the disk is full. 
 ### Pipe, Redirect:

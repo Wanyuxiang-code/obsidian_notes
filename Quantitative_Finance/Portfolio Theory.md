@@ -1,4 +1,7 @@
 ---
+title: Portfolio Theory
+date created: 星期一, 五月 27日 2024, 11:46:54 中午
+date modified: 星期六, 六月 1日 2024, 2:08:43 下午
 ---
 
 ## Types of risks
@@ -7,7 +10,7 @@
 ## Diversification and Portofolio theory
 1. Argument:
    The theroy assumes that the risk-return profile of a portfoliocan be optimized, where an  optimal portfolio displays the lowest possible level of risk for its level of return.
-   - Varience calculation:
+   - Variance calculation:
      $$\sigma^2 = (\sum_{i=1}^n{w_i\sigma_i})^2$$
      $$ \sum_{i=1}^n{w_i} = 1$$
 2. Strategy:
@@ -23,7 +26,7 @@
         - online problemL continually produces new input and requires answers in response 
 	 2. Effectiveness analysis:
 	    Comparison object: offers a worst measure of the quality of the behavior of an algorithm which predicts the fufure
-	 3. Competitive Ratio: Determine the linear cofficient
+	 3. Competitive Ratio: Determine the linear coefficient
 	    ALF(I)    $\leq$     c$*$OPT (I) + $\alpha$
      4. Examples:
         - Price searching:

@@ -1,4 +1,7 @@
 ---
+title: Recursion
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:36 下午
 ---
 
 ## An alternative to iteration
@@ -21,7 +24,7 @@
 2. Tail recursion:
    A recursive function is tail-recursive if and only if the recursive call is a tail call. That is after recursion, the function immediately returns the return value of that recursive function.
 3. Advantage:
-   The compiler can identify tail recursion and reuse the stackframe created during recursion. Becasue the as soon as the recursive function executes, it will return, which means the values created during call will never be used again. So the compiler can overwrite on those memory locations
+   The compiler can identify tail recursion and reuse the stackframe created during recursion. Because the as soon as the recursive function executes, it will return, which means the values created during call will never be used again. So the compiler can overwrite on those memory locations
 4. Equivalence of tail recursion and iteration:
    **Any tail recursion code is equivalent to iteration mode**, and we can switch between these two modes. This is especially useful when programming in functional language, where you can't modify a value once you create it. As such, there are no loops.
 

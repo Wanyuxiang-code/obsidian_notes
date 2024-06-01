@@ -1,4 +1,7 @@
 ---
+title: Testing and Debugging
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:36 下午
 ---
 
 ## Test
@@ -24,10 +27,10 @@
       Span all possible valid paths through the control flow graph
 
 ### Generating test case:
-   1. Based on the alogorithms to generate large amonut of test cases randomly
+   1. Based on the algorithms to generate large amount of test cases randomly
    2. Verify: You can improve the confidence by testing the property of your program instead of directly proving your programs.
 ### Assert:
-   There are some invariants during execution. So we can use some assert statement to check whether they can pertain their property or boolean true value. If they dieobey thier property, the program will crash down and print the error message.
+   There are some invariants during execution. So we can use some assert statement to check whether they can pertain their property or boolean true value. If they dieobey their property, the program will crash down and print the error message.
 
 
 ## Debugging
@@ -76,7 +79,7 @@
          - finish: causes execution until the current function returns
      12. watch:
          set watch points that can have gdb stop when the value of a particular expression changes 
-         **Particular useful when examing coping pointer-related problems, if you worry the pointer is a local variable, you can watch the internel variables in gdb**
+         **Particular useful when examining coping pointer-related problems, if you worry the pointer is a local variable, you can watch the internal variables in gdb**
 3. Signals:
    1. SIGSEGV:
       Indicates a segmentation fault and gdb will stop on the line that this fault happens

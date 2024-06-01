@@ -1,11 +1,14 @@
 ---
+title: Use of Pointers
+date created: 星期一, 五月 27日 2024, 11:46:53 中午
+date modified: 星期六, 六月 1日 2024, 2:08:36 下午
 ---
 
 ## Strings
 ### String Literals:
 1. data type: `const char *`
    declare a string: `const char * str = "Hello World\n";`
-   ![](Attachment/1d014064943fe611089ae9607d895bc.png)
+   ![](https://s2.loli.net/2024/06/01/Tny61gIpfXhoG2s.png)
    str is a pointer, pointing to an array of characters, so the elements in the string will be stored in consecutive memory locations.
    print a literal string:`printf ("%s\n", str);`
    ***Notice:
@@ -14,20 +17,20 @@
 2. Result of modifying a string literal:
    The program will carsh with segmentation fault -> indicating that access to invalid memory locations
 3. Reason:
-   A string literal is stored into a read-only portion of the static data, and attemping to write to a read-only portion of memory will cause the hardware to trap in the operating systems. The hardware will move execution arrow outside of the program and  put it in a particular funcion in OS and results in segmentation fault.
+   A string literal is stored into a read-only portion of the static data, and attempting to write to a read-only portion of memory will cause the hardware to trap in the operating systems. The hardware will move execution arrow outside of the program and  put it in a particular function in OS and results in segmentation fault.
 4. Load process:
    The literal string is loaded into the memory by loader. Loader is a portion of OS that can read the executable files from the disk and initialize the memory appropriately. After the complier writes information to executable files and loader initialize the memory location, the loader will mark the read-only portion of the static data as non-writeable.
 
 ### Mutable strings
 1. Method:
    **Array of characters**
-   To create mutable strings, we have to create a varibale that is stored in writable memory, such as the frame of a function call or dynamically allocated memory.
+   To create mutable strings, we have to create a variable that is stored in writable memory, such as the frame of a function call or dynamically allocated memory.
 2. Example:
    `char str[] = "Hello world\n";`
    It is equal to:
    `char str[] = {'H', 'e', ..., '\n', '\0'};`
 3. Difference between string declared as pointer to a literal and as an array:
-   ![](e3de307a1253a713ee8d18830ba0e92.png)
+   ![](https://s2.loli.net/2024/06/01/Wl1FAZfdkiQDYC5.png)
 4. **Notice**
    The ==null terminator is counted in the array length==, which can be explicitly presented in the second declaration above.
    If we forget the null terminator, the program will carsh if we use the array for anything that expects an actual string.
@@ -37,16 +40,16 @@
 ### String Equality and Copying:
 1. direct comparison and copy:
    If we simply use == to judge whether the literal strings pointed by different pointers are equal, we are just judging whether these two pointers points to the same memory locations.
-   As for copying, we can simply change the arrow of a stirng pointer to point to the string we want.
+   As for copying, we can simply change the arrow of a string pointer to point to the string we want.
 2. "bitwise" compare and copy:
    compare every character in the strings based(**remember to judge null poerator**) 
-   For actual copy the same characters in the speciied location, we can apply "***strncpy( which we can specify the string size)***" to achieve this. Notice the specified location may not have enough avaiable memory addresses, so be careful.
+   For actual copy the same characters in the specified location, we can apply "***strncpy( which we can specify the string size)***" to achieve this. Notice the specified location may not have enough available memory addresses, so be careful.
    **strcpy prototype**
    `char* strcpy (char* dest, const char* src);`
-   It copys the string from src into the array at dest.
+   It copies the string from src into the array at dest.
 
 ## Multidimensional Arrays
-### Declaration, Indexing and Initilization
+### Declaration, Indexing and Initialization
 1. Example:
    `double myMatrix[4][3];`
 2. Declare:
@@ -93,10 +96,10 @@
 	   `char str[3][4] = {"Abd","def",“ghi”}；`
 	   `char chrs[3][3] = {"Abc","def","ghi"}`
 	   Notice the difference between the two:
-	   ![[618efebf884e9c1306277d6c3a8e211.png]]
+	   ![618efebf884e9c1306277d6c3a8e211](https://s2.loli.net/2024/06/01/CmSBxUpHIAiGrys.png)
 2. Analysis:
       The first statement can form a valid string with null terminator.
-      The second statement is correct iff we intend to use chrs only as multidimensional array of chracters and not use its elements for anything which expects a null teminated string.
+      The second statement is correct iff we intend to use chrs only as multidimensional array of characters and not use its elements for anything which expects a null terminated string.
 3. Limitation:
    If we declare a multidimensional array of chars to hold strings of different lengths, then the size must be declared based on the longest one-> which will result in massive memory waste
 #### Declare strings use array of pointers
@@ -108,7 +111,7 @@
 
 ## Function Pointer
 1. Idea:
-   Every instruction stored in the porgram are just numbers, and a function can indicate to a sequence of intsructions that perform a task. In this sense, we can regard the name of function as a pointer pointing to the address of the first code in that function. In sum, **a function address can be seen as a function pointer**.However, when we refer to a ***function pointer***, we typically mean ***a variable or parameter that points at a function***, but we can still absorb the idea above.
+   Every instruction stored in the program are just numbers, and a function can indicate to a sequence of intsructions that perform a task. In this sense, we can regard the name of function as a pointer pointing to the address of the first code in that function. In sum, **a function address can be seen as a function pointer**.However, when we refer to a ***function pointer***, we typically mean ***a variable or parameter that points at a function***, but we can still absorb the idea above.
 2. Application:
    Create a function pointer as a parameter to a function we are writing. We can apply this to eliminate the similar functions by creating a function table. We can also apply function pointer to call back functions.
    Example:
@@ -199,7 +202,7 @@ return 1;
    waste space
 ### LIsts Basic:
 1. Motivation:
-   Sometimes we just need to resize some elements in the whole data structure, but previous dynamic resizing wastes much space and produces copy cost. So we come up with a more flexible data structure which eliminates the hassle of dynamically inserting and deleting node for changable data and acheives some abstract data structure.
+   Sometimes we just need to resize some elements in the whole data structure, but previous dynamic resizing wastes much space and produces copy cost. So we come up with a more flexible data structure which eliminates the hassle of dynamically inserting and deleting node for changeable data and achieves some abstract data structure.
 2. Structure:
    Every element of lists is stored in a **node**, each node consists of a data element and a pointer to the next node. Based on the different arrow structure, we can categorize lists into several kinds...
 3. Basic operations:
@@ -209,21 +212,21 @@ return 1;
       Sometimes remember to use NULL to examine whether memory allocation has succeeded.
    2. Deleting node:
       We must walk through the whole list to find the target node then change the pointer.
-      ![](Attachment/90aa92a3b945a9f9083adfe7d094b1a.png)
+      ![](https://s2.loli.net/2024/06/01/hZrWuoOYH2JmwD7.png)
       **Note: we must be cautious about free order from low levels to high levels**
       `*find = p->next`
       `free (p->name);
       `free (p);`
 ### More operations and complicated structures
 #### Use a Sentinel and a Cycle List to simplify the code
-   ![](Attachment/c96e4555bebc92432550f23c599b927.png)
+   ![](https://s2.loli.net/2024/06/01/QbyfhvAFHoMPY62.png)
 1. Operations:
    1. Easy to walk through the whole list both in two directions:
-      ![](Attachment/dbdd8066948f2ef1dcf7d9c63e025c5.png)
+      ![](https://s2.loli.net/2024/06/01/buJD4UzePtYwgAX.png)
    2. Insertion requires four changes:
-      ![](Attachment/959ce4cd7b9b9f17c7287eac811ceba.png)
+      ![](https://s2.loli.net/2024/06/01/24EUy9hkrpcTDdz.png)
   3. Deleting only requires two changes:
-     ![](Attachment/be5564d1bda762326a404a32b42ec5f.png)
+     ![](https://s2.loli.net/2024/06/01/tZ7ds9k6KCzAXqm.png)
   4. Sentinel links to itself when the list is empty
      **Sentinel is a special node which can serve as a fixed node and can make the head and tail of the list easily be identified. It can simply the list operations**
 2. Pointer usage:
@@ -233,3 +236,4 @@ return 1;
    2. Relationship: Represented as pointers to other nodes
       Operands: relation to operators
       Operations:relations to statements
+
