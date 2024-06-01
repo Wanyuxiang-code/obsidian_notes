@@ -1,11 +1,12 @@
 ---
 title: Fundamental Analysis
 date created: 星期一, 五月 27日 2024, 11:46:54 中午
-date modified: 星期六, 六月 1日 2024, 2:08:43 下午
+date modified: 星期六, 六月 1日 2024, 11:08:06 晚上
 ---
 
 ## Definition
-1. Definition:
+
+1. Definition:  
    Study companies from:
    - Quality of management
    - Labor relations
@@ -20,10 +21,11 @@ date modified: 星期六, 六月 1日 2024, 2:08:43 下午
    - Quantifying the rish & reward
 
 ## Availability of information
+
 1. Company reported Financial statements:
-   - The balcance sheet(负债表):
+   - The balcance sheet(负债表):  
      assets: anything of value that can be converted into cash or used to generate cash
-     1. components:
+     1. components:  
         $$ Assets = -Liabilities + Shareholderequity$$
         - Liability(债务): Debt the company has including Bonds(债券), Equity and Taxes
         - Shareholder Equity: How much the Shareholder have
@@ -43,13 +45,15 @@ date modified: 星期六, 六月 1日 2024, 2:08:43 下午
      - Payables: Amount a company is required to pay, but no tyet fulfilled
      - Depreciation(折旧费用): allocate the cost of a tangible asset over its useful life(衡量有使用年限的资产的价值)
      - Amortization: similar to depreciation but applied to intangible assets, spread the cost of the intangible asset over its expected useful life.
-     - Common ratios:
+     - Common ratios:  
        $$\text{current liabilities coverage} = \frac{\text{operating cash flow}}{\text{current liabilities}}$$
      
 2. Macroeconomic data
 
 ## Fundamental analysis
+
 ### Macroeconomics Analysis
+
 1. Global Economy Analysis:
    - affects exports, price competition and profits
    - exchange(汇率): purchasing power and earnings
@@ -60,53 +64,58 @@ date modified: 星期六, 六月 1日 2024, 2:08:43 下午
    - Interest Rate: high interest rate reduces liquidity of cash
    - Budget Deficit(预算赤字):large deficit means more borrowing, which implies higher interest rate
    - Sentiment: consumers and producers confidence
-   - Business cycle terms:
-     peak: the end of expansion and start of recession
-     trough: the bottom of the recession
+   - Business cycle terms:  
+     peak: the end of expansion and start of recession  
+     trough: the bottom of the recession  
      defensive industries: little sensitive to business cycles 
+
 ### Industry Analysis
+
 1. Two factors that determine the sensitivity of a firm's earning to business conditions: business risks and financial risks
 2. Business risks:
-   - Sales sensitivity to business condition
+   - Sales sensitivity to business condition  
      The degree to which the sales of a product or service are affected by changes in a particular factor(产品或服务是否易受外界条件影响)
-   - Operating leverage: the division between the fixed and variable cost
+   - Operating leverage: the division between the fixed and variable cost  
      The firms with greater amounts of variables cost are subject less to business fluctuations, thus more stable
  3. Financial risks:
     - the degree in using financial leverage
     - leverage firm is more sensitive to business cycles(easily to be influenced by financial market)
 4. Industry cycles:
    1. General stages: start-up, consolidation, maturity, decline
+
 ### Equity Valuation Model
-  Equity Valuation Model(股权估值模型):
-      - Dividend Discount Model(DDM，股权折现模型):
-        1. idea: the stock is worth the sum of all its future dividend payments
-        2. Equation:
-           $$ V = \sum{\frac{D_t}{(1+r)^t}}$$
-           r: the discount rate(回报率)
-           $D_t$:第t年每股分红(dividend)
-      - constant growth model:
-        1. idea: 认为dividend成指数增长
-        2. Equation:
-           $$V = \sum{\frac{D_0 * (1+g)^t}{(1+r)^t}}$$
-      - derivation of expected return: **r**
-        1. Expected return = dividend yield(股息收益率) + capital gain(资本收益)
-        2. Equation:
-           $$ r = \frac{D_1}{P_0}+\frac{P_1-P_0}{P_0}$$
-           rearrange->
-           $$ P_0 = \frac{D_1}{1+r}+\frac{P_1}{1+r}$$
-           同理，我们有
-           $$ P_1 = \frac{D_2 + P_2}{1+r}\ \  \text{and}  \ \ P_2 = \frac{D_3 + P_3}{1+r}$$
-           则可推出
-           $$P_0 = \sum{\frac{D_i}{(1+r)^i}}$$
-      - **PVGO**: present value of growth opportunities
-        1.Idea: evaluate the captical gain g 
-           $r = \frac{D_i}{P_0} + g$  , $g = plowback rate * ROE$
-        2. Explanation:
-           - ROE:
-             $$\text{Return on Equity} = \frac{\text{Earnings per share}}{\text{Equity Per Share}}$$ 
+
+  Equity Valuation Model(股权估值模型):  
+      - Dividend Discount Model(DDM，股权折现模型):  
+        1. idea: the stock is worth the sum of all its future dividend payments  
+        2. Equation:  
+           $$ V = \sum{\frac{D_t}{(1+r)^t}}$$  
+           r: the discount rate(回报率)  
+           $D_t$:第t年每股分红(dividend)  
+      - constant growth model:  
+        1. idea: 认为dividend成指数增长  
+        2. Equation:  
+           $$V = \sum{\frac{D_0 * (1+g)^t}{(1+r)^t}}$$  
+      - derivation of expected return: **r**  
+        1. Expected return = dividend yield(股息收益率) + capital gain(资本收益)  
+        2. Equation:  
+           $$ r = \frac{D_1}{P_0}+\frac{P_1-P_0}{P_0}$$  
+           rearrange->  
+           $$ P_0 = \frac{D_1}{1+r}+\frac{P_1}{1+r}$$  
+           同理，我们有  
+           $$ P_1 = \frac{D_2 + P_2}{1+r}\ \  \text{and}  \ \ P_2 = \frac{D_3 + P_3}{1+r}$$  
+           则可推出  
+           $$P_0 = \sum{\frac{D_i}{(1+r)^i}}$$  
+      - **PVGO**: present value of growth opportunities  
+        1.Idea: evaluate the captical gain g  
+           $r = \frac{D_i}{P_0} + g$  , $g = plowback rate * ROE$  
+        2. Explanation:  
+           - ROE:  
+             $$\text{Return on Equity} = \frac{\text{Earnings per share}}{\text{Equity Per Share}}$$  
            - Plowback rate = 1 - Payoutrate
 
 ### Financial Statement Analysis
+
 1. Use/source of Fund Statement:
    - sources of fund: where is the money come from
    - use of fund: how is the money being spent

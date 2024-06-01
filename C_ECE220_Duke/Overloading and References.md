@@ -1,25 +1,30 @@
 ---
 title: Overloading and References
 date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期六, 六月 1日 2024, 2:08:36 下午
+date modified: 星期六, 六月 1日 2024, 11:07:27 晚上
 ---
 
 ## Dynamic Allocation in C++
+
 [[Dynamic Allocation in C]]
+
 ### Use `new` to create new instances
-1. prototype of new
-   `new <classname> (args,...)`
-   new will return a pointer to a constructed class instance
-   Use () to include arguments passed to constructors, omitted if there are no arguments
-   On failure new throws an exception, which terminates the program
+
+1. prototype of new  
+   `new <classname> (args,...)`  
+   new will return a pointer to a constructed class instance  
+   Use () to include arguments passed to constructors, omitted if there are no arguments  
+   On failure new throws an exception, which terminates the program  
    注意new一般会与constructor配合initialzie an instance and create a pointer to the instance  
-2. Example:
-   `MyClass* m = new MyClass (arg1, arg2, ...);`
-   It can also used to dynamically allocate an array.
+2. Example:  
+   `MyClass* m = new MyClass (arg1, arg2, ...);`  
+   It can also used to dynamically allocate an array.  
    `MyClass*m = new MyClass[42];`
+
    ```c++
    int (*a)[3] = new int[n][3];
    for (i = 0; i< n; i++) for (j = 0; j < 3; j++) {a[n][j] = 0;}
+
 ```
    
 > [!warning]
@@ -100,13 +105,11 @@ complex c3 = c1 + c2;
 
 ```
 
-
 >**Notice**:
 >1. Operators often return an instance on the stack.
 >- Chaining: Returning an instance allows chaining of operations, which can easily evaluate some expressions
 >- Avoiding side effects: It can avoid some side effects on the original objects
 >2. Operators' Arguments should be constant references.
-
 
 4. Some operators can't be overloaded:
    - member access `.`
@@ -115,17 +118,21 @@ complex c3 = c1 + c2;
    - scope identification `::`
 
 5. Some expressions are not equivalent in C++
-   - `array[10] !=  *(array + 10)`
+   - `array[10] !=  *(array + 10)`  
    The previous calls operator`[]` , the latter calls operators `+, *`
    - assign operator != copy constructor
 
 ## Reference
+
 ### Basic Concepts
-> [!Important] Concept
+
+> [!Important] Concept  
 > A reference is implemented identically to a pointer, but is syntactically equivalent to the base type(the type to which the pointer points)
+>
 > > References can't be modified, ther are single-assignment(Just as const pointer).
 
 ### Difference between pointers
+
 > [!Note] Difference between pointer and reference
 > - **Initialization**: References must be initialized when declared, whereas pointers can be initialized later or set to `nullptr`.
 > - **Reassignment**: References **cannot be changed once initialized**; pointers can be reassigned to point to different objects.
@@ -133,15 +140,18 @@ complex c3 = c1 + c2;
 > - **Nullability**: Pointers can be null, indicating that they do not point to a valid object. References cannot be null.
 
 Usage:
-- Pointer:
+
+- Pointer:  
   Use pointer for modifiable arguments
-- Reference:
+- Reference:  
   Use `const` with reference arguments; References can also be adopted to functions
 
-Notice:
+Notice:  
 We can't have **pointers to references, references to references, array of references**.
+
 ### NRVO: named return value optimization
-1. Concept:
+
+1. Concept:  
    Most C++ compliers transform a returned instance into an implicit instance pointer as a new first argument, returning either void or the instance pointer
-2. Principles:
+2. Principles:  
    A caller allocates space for an instance then passes a pointer to the instance and the function fills the bits. This can save the work of calling copy constructors.

@@ -1,23 +1,30 @@
 ---
 title: Containers and Iterators
 date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期六, 六月 1日 2024, 2:08:35 下午
+date modified: 星期六, 六月 1日 2024, 11:07:27 晚上
 ---
 
-
 ## Containers
+
 ### Concept
+
 >Container is a **data structure containing other data structures** with **specific access capabilities.**
 >
 >Example: linked lists, heaps, dynamically-sized array
+
 ### Optimization of a list structure
+
 #### Method 1: Create a list element structure with a data pointer(void*)
-![](https://s2.loli.net/2024/06/01/9xVWUMPSvKpZJfy.png)
-Pros: Write the list code once
+
+![](https://s2.loli.net/2024/06/01/9xVWUMPSvKpZJfy.png)  
+Pros: Write the list code once  
 Cons: Requires more memory access
+
 #### Method2: Struct a data structure with first field serves as a pointer
-This method better represents the idea of a container, which considers pack up a pointer structure into the main data structure and link them together.
+
+This method better represents the idea of a container, which considers pack up a pointer structure into the main data structure and link them together.  
 Example: create a cyclic doubly-linked list with a sentinel
+
 ```c
 //Create a double list structure
 typedef struct double_list_t{
@@ -47,20 +54,27 @@ void* dl_first (double_list_t* head){
 	return (head == head->next ? NULL : head->next);
 }
 ```
-> [!Warning]
-> double_list_t must be First in structure Thing
+
+> [!Warning]  
+> double_list_t must be First in structure Thing  
 > Or &my_thing.dl will not pointing to the beginning of the data structure, **we can't convert double_list_t* to struct thing_t*(need to subtract unknow amount from the pointer)**.
 
 ## Iterators
+
 ### Aim
+
 We want to develop an iterator to tranverse a list of things and implement some operations including **find specific things, remove a set of things, free a set of things".**
+
 ### Callback Function
-> [!Callback Function]
+
+> [!Callback Function]  
 > A function is passed as an argument to another function, allowing the called function to call the passed function under certain conditions
 
-Callback function adapts the concept of function pointer, which is usually used to achieve modular and flexible code.It is a higher level of abstraction which can expose less information about details.
+Callback function adapts the concept of function pointer, which is usually used to achieve modular and flexible code.It is a higher level of abstraction which can expose less information about details.  
 More about function pointer: [[Use of Pointers#Function Pointer]]
+
 ### Method: Adopt a Callback function
+
 ```c
 //Design the return value of callback, which should inform what to do next
 //Apply enumeration to impart numbers with significant meanings
@@ -101,6 +115,3 @@ void* dl_excute_on_all (double_list_t* head, dl_execute_func_t func, void* arg){
 	return NULL; //if loop ends, return NULL	
 }
 ```
-
-
-

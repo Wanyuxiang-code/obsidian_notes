@@ -1,44 +1,47 @@
 ---
 title: Portfolio Theory
 date created: 星期一, 五月 27日 2024, 11:46:54 中午
-date modified: 星期六, 六月 1日 2024, 2:08:43 下午
+date modified: 星期六, 六月 1日 2024, 11:08:06 晚上
 ---
 
 ## Types of risks
+
 - Specific risks: associated with a specific asset
 - Systematic risks: common to all securities
+
 ## Diversification and Portofolio theory
-1. Argument:
+
+1. Argument:  
    The theroy assumes that the risk-return profile of a portfoliocan be optimized, where an  optimal portfolio displays the lowest possible level of risk for its level of return.
-   - Variance calculation:
-     $$\sigma^2 = (\sum_{i=1}^n{w_i\sigma_i})^2$$
+   - Variance calculation:  
+     $$\sigma^2 = (\sum_{i=1}^n{w_i\sigma_i})^2$$  
      $$ \sum_{i=1}^n{w_i} = 1$$
 2. Strategy:
-   - Uncorrelated returns:
+   - Uncorrelated returns:  
      Select securities whose performance is uncorrelated or negatively correlated
-   - Portfolio with short sales:
+   - Portfolio with short sales:  
      Allow short sales: sell short sells of the lower return asset and use the proceeds to nuy the higher return one(Applying leverage)
-   - The Portfolio Frontier(visualization):
+   - The Portfolio Frontier(visualization):  
      Represents whether the current portfolio can be optimized to reach the frontier
    - **Competitive Analysis**:
      1. Motivation:
         - typical statistical method: only access to all the relevant information
         - online problemL continually produces new input and requires answers in response 
-	 2. Effectiveness analysis:
+	 2. Effectiveness analysis:  
 	    Comparison object: offers a worst measure of the quality of the behavior of an algorithm which predicts the fufure
-	 3. Competitive Ratio: Determine the linear coefficient
+	 3. Competitive Ratio: Determine the linear coefficient  
 	    ALF(I)    $\leq$     c$*$OPT (I) + $\alpha$
      4. Examples:
-        - Price searching:
-          Sell when the price reach the case either the it goes to max or min are OK
-          RPP(reservation price policy) :
-          global fluctuation ratio: $\phi = \frac{M}{m}$
+        - Price searching:  
+          Sell when the price reach the case either the it goes to max or min are OK  
+          RPP(reservation price policy) :  
+          global fluctuation ratio: $\phi = \frac{M}{m}$  
           competitive ratio: $c = \frac{\sqrt{Mm}}{m} = \sqrt{\phi}$
-        - Randomized Algorithms:
+        - Randomized Algorithms:  
           Make it difficult for an adversary to design a future that is bad for you
-        - One-way trading
+        - One-way trading  
           Liquidate my position in a stock -> more flexibility, less market impact, less risks
-	    - Threat-based strategy:
+	    - Threat-based strategy:  
 	      The threat-based strategy sells only when the price hits a new maximum. It sells just enough to ensure that we achieve a competitive ratio of c if the price drops to m for the rest of the game
 	    - **Randomized Strategies**:
 	    - Rebalancing Algorithms(adjust the weights of different stocks):

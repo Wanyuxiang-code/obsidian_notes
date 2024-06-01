@@ -1,7 +1,7 @@
 ---
 title: 伦理学
 date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期六, 六月 1日 2024, 2:08:46 下午
+date modified: 星期六, 六月 1日 2024, 11:08:16 晚上
 ---
 
 # 伦理学
@@ -130,7 +130,7 @@ date modified: 星期六, 六月 1日 2024, 2:08:46 下午
 
 	- Build a set of principles that reflects such judgments.
 
-	- Search an equilibrium between general principles and particular judgments:
+	- Search an equilibrium between general principles and particular judgments:  
 test and revise principles and try to keep coherent
 
 	- Problems
@@ -170,6 +170,7 @@ test and revise principles and try to keep coherent
 
 				- Imagine that we are reasonable people and know all the relevant facts about a society.
  
+
 Except that we ignore one thing: our own place in the society (whether we are poor or rich, male or female, young or old…). 
 
 The rules of justice are those we would agree under these conditions.(Ignoring your social position)
@@ -203,9 +204,11 @@ The rules of justice are those we would agree under these conditions.(Ignoring y
 				- Intrinsic values and rights of nature
 
 				- INDIVIDUALISM:
+
 Our duties depend on the rights of individual beings
 
 				- HOLISM:
+
 Our duties depend on the values and rights of entire species and whole ecosystems
 
 ### *Metaethics*
@@ -270,7 +273,7 @@ Our duties depend on the values and rights of entire species and whole ecosystem
 
 			- Non-cognitivism
 
-				- Moral judgement express non-cognitive mental states (情感，欲望，感受）
+				- Moral judgement express non-cognitive mental states (情感，欲望，感受）  
 Not supposed to represent things as they are not evaluated depending on whether it is true or false
 
 					- Moral judgement is not factual
@@ -335,7 +338,7 @@ Not supposed to represent things as they are not evaluated depending on whether 
 
 				- Moral properties are partially or completely constituted by a subject
 
-				- actual observer: subjectivism, constructivism
+				- actual observer: subjectivism, constructivism  
 'Best opinions' : ideal obverser
 
 			- Argument
@@ -356,7 +359,7 @@ Not supposed to represent things as they are not evaluated depending on whether 
 
 				- Metaphysical
 
-					- On the one hand, we don't need to postulate all moral facts totally independent of minds
+					- On the one hand, we don't need to postulate all moral facts totally independent of minds  
 On the other hand, we will not slide into entire relativism, which break down the common ground of normal beings
 
 				- Epistemological
@@ -397,7 +400,7 @@ On the other hand, we will not slide into entire relativism, which break down th
 
 			- Objection
 
-				- Moore's open question argument
+				- Moore's open question argument  
 We can not use natural properties(non-normative forms) to define normative notions
 
 					- Natural property is always non-trivial,open and meaningful question
@@ -465,25 +468,28 @@ We can not use natural properties(non-normative forms) to define normative notio
 
 ### *Denotic*
 
-terminology   obligatory,right,wrong,optional,unjust,duty,what one ought to do, permissible, forbidden
-may be held responsible and blameworthy for complying or not with a norm
-be committed to constraints bearing on the abilities
+terminology   obligatory,right,wrong,optional,unjust,duty,what one ought to do, permissible, forbidden  
+may be held responsible and blameworthy for complying or not with a norm  
+be committed to constraints bearing on the abilities  
 词汇的强制性，划定行为的可执行性，允许，强制等<br>
+
 ### *Evaluative*
 
-Emotional, Gradable, Large domain、
+Emotional, Gradable, Large domain、  
 常带有情感倾向与价值判断<br>
+
 ### *Aretaic*
 
 About the evaluation of moral characters and persons<br>
+
 ## 定义 definition
 
 ### *Domain of the philosophy with moral normativity*
 
-- Normativity: assessment or evaluations of sb. or sth.Expressions:
-good , bad , better , worse than , should , ought , may , permitted , forbidden , prohibited
-Assessments:
-positive negative neutral
+- Normativity: assessment or evaluations of sb. or sth.Expressions:  
+good , bad , better , worse than , should , ought , may , permitted , forbidden , prohibited  
+Assessments:  
+positive negative neutral  
 Gap between : what is and what ought to be
 
 - Roles of normativity
@@ -496,15 +502,15 @@ Gap between : what is and what ought to be
 
 - Kinds of normativity
 
-	- DescriptiveEmpirical :经验主义
-Abstract
+	- DescriptiveEmpirical :经验主义  
+Abstract  
 Modal: 模式的，情态的
 
-	- Normativelegal
-aesthetic 美学的
-prudential 审慎的
-epistemic 认知论的
-moral
+	- Normativelegal  
+aesthetic 美学的  
+prudential 审慎的  
+epistemic 认知论的  
+moral  
 technical
 
 - How to judge moral normativity
