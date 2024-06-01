@@ -21,13 +21,7 @@ date modified: 星期六, 六月 1日 2024, 2:08:35 下午
    - If you input fewer initial values, the complier will automatically fill with 0s; And if you input more initial values, the complier will just give you a warning instead of crashing down.
    - When you initialize each value, you can omit the size in brackets
 4. Extensions: Apply similar syntax to initialize structs
-   ```c
-      point``  p = {.x = 3, .y = 4};
-   ```
-   And you can combine these two together:
-   ```c
-   point Mypoints[] = {{.x =3, .y =4}, {.x = 5,.y = 6}};
-   ```
+
 
 ### Accessing an Array
 1. Index the Array
