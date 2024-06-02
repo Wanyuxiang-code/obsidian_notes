@@ -115,7 +115,7 @@ Derived result:
 >
 > > Solution: Apply **dynamic type information** and use switch to implement
 
-Similar ideas to operate based on different types in [[Containers and Iterators#Method Adopt a Callback function]] and mp11, and the it can also adopt the idea of function pointer to add extensibility [[Use of Pointers#Function Pointer]].
+Similar ideas to operate based on different types in [[Containers and Iterator]] and mp11, and the it can also adopt the idea of function pointer to add extensibility [[Use of Pointers]].
 
 ```c
 struct reference_t {
@@ -225,7 +225,7 @@ class MyClass : public ParentCLass {
 ### Access control
 
 Access control define the different access rights for different fields of a class, for more details:  
-[[Access Control & Constructors,Destructors#Access Control]]  
+[[Access Control & Constructors,Destructors]]  
 Once we have access rights to a class, we can use `.` to access the class member of an instance.
 
 ### Inheritance Relationship

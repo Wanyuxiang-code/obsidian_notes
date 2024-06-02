@@ -36,7 +36,7 @@ date modified: 星期六, 六月 1日 2024, 11:07:27 晚上
 2. Extraction operator `>>`  
    The extraction operator extracts data form the object cin to the place you have specified.  
 Be aware the difference between redirection and insertion:  
-[[Interacting with user and systems#Pipe, Redirect]]
+[[Interacting with user and systems]]
 
 > [!tip] Difference between `std::endl` and `\n`  
 > `std::endl`:
