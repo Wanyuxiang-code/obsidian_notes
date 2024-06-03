@@ -3,5 +3,6 @@
   "dataview",
   "obsidian-style-settings",
   "obsidian-git",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obsidian-image-auto-upload-plugin"
 ]

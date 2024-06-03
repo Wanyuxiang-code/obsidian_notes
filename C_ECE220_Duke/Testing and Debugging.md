@@ -1,7 +1,8 @@
 ---
+categories: C_ECE220_Duke
 title: Testing and Debugging
 date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期六, 六月 1日 2024, 11:07:27 晚上
+date modified: 星期一, 六月 3日 2024, 10:57:21 晚上
 ---
 
 ## Test

@@ -1,7 +1,8 @@
 ---
 title: Overloading and References
 date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期六, 六月 1日 2024, 11:07:27 晚上
+date modified: 星期一, 六月 3日 2024, 10:57:09 晚上
+categories: C_ECE220_Duke
 ---
 
 ## Dynamic Allocation in C++
@@ -24,6 +25,7 @@ date modified: 星期六, 六月 1日 2024, 11:07:27 晚上
    ```c++
    int (*a)[3] = new int[n][3];
    for (i = 0; i< n; i++) for (j = 0; j < 3; j++) {a[n][j] = 0;}
+
 
 ```
    
