@@ -1,5 +1,5 @@
 ---
-title: Pairs trading
+title: 2024-05-27-Pairs trading
 date: 2024-05-27
 date modified: 2024-06-06
 categories: Quantitative_Finance

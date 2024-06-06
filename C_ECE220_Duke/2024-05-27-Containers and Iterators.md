@@ -1,5 +1,5 @@
 ---
-title: Containers and Iterators
+title: 2024-05-27-Containers and Iterators
 date: 2024-05-27
 date modified: 2024-06-06
 categories: C_ECE220_Duke
@@ -72,7 +72,7 @@ We want to develop an iterator to tranverse a list of things and implement some 
 > A function is passed as an argument to another function, allowing the called function to call the passed function under certain conditions
 
 Callback function adapts the concept of function pointer, which is usually used to achieve modular and flexible code.It is a higher level of abstraction which can expose less information about details.  
-More about function pointer: [[Use of Pointers]]
+More about function pointer: [[2024-05-27-Use of Pointers]]
 
 ### Method: Adopt a Callback function
 

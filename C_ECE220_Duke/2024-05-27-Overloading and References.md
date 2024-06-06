@@ -1,5 +1,5 @@
 ---
-title: Overloading and References
+title: 2024-05-27-Overloading and References
 date: 2024-05-27
 date modified: 2024-06-06
 categories: C_ECE220_Duke
@@ -7,7 +7,7 @@ categories: C_ECE220_Duke
 
 ## Dynamic Allocation in C++
 
-[[Dynamic Allocation in C]]
+[[2024-05-27-Dynamic Allocation in C]]
 
 ### Use `new` to create new instances
 

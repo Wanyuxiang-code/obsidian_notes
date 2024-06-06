@@ -1,5 +1,5 @@
 ---
-title: Technical Analysis
+title: 2024-05-27-Technical Analysis
 date: 2024-05-27
 date modified: 2024-06-06
 categories: Quantitative_Finance

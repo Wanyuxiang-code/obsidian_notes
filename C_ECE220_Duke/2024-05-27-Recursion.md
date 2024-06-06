@@ -1,5 +1,5 @@
 ---
-title: Recursion
+title: 2024-05-27-Recursion
 date: 2024-05-27
 date modified: 2024-06-06
 categories: C_ECE220_Duke

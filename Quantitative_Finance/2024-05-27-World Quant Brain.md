@@ -1,5 +1,5 @@
 ---
-title: World Quant Brain
+title: 2024-05-27-World Quant Brain
 date: 2024-05-27
 date modified: 2024-06-06
 categories: Quantitative_Finance
