@@ -3,7 +3,6 @@ title: 2024-05-27-Dynamic Allocation in C
 date: 2024-05-27
 date modified: 2024-06-06
 categories: C_ECE220_Duke
-date created: 星期一, 五月 27日 2024, 11:46:53 中午
 ---
 
 ## Motivation
