@@ -1,7 +1,7 @@
 ---
 title: Use of Pointers
-date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期一, 六月 3日 2024, 10:57:33 晚上
+date: 2024-05-27
+date modified: 2024-06-06
 categories: C_ECE220_Duke
 ---
 
@@ -142,6 +142,11 @@ categories: C_ECE220_Duke
 	   }
 	  }
 	  ```
+
+
+
+
+
 
 
 3. Declare:  

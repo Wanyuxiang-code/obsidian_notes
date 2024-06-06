@@ -1,7 +1,7 @@
 ---
 title: 伦理学
-date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期一, 六月 3日 2024, 10:58:30 晚上
+date: 2024-05-27
+date modified: 2024-06-06
 categories: Ethics_Class
 ---
 

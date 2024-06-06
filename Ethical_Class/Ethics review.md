@@ -1,7 +1,7 @@
 ---
 title: Analysis of the sample
-date created: 星期一, 五月 27日 2024, 11:46:53 中午
-date modified: 星期六, 六月 1日 2024, 11:08:16 晚上
+date: 2024-05-27
+date modified: 2024-06-06
 categories: Ethics_Class
 ---
 
