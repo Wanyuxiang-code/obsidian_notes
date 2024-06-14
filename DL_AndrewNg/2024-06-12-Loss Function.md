@@ -1,5 +1,5 @@
 ---
-title: 2024-06-12 Loss Function
+title: 2024-06-12-Loss Function
 date: 2024-06-12
 date modified: 2024-06-12
 categories: DeepLearning
