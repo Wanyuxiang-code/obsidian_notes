@@ -1,7 +1,7 @@
 ---
 title: 2024-06-15-Optimizing Algorithms
 date: 2024-06-15
-date modified: 2024-06-15
+date modified: 2024-06-22
 categories: DeepLearning
 ---
 
@@ -15,6 +15,7 @@ categories: DeepLearning
 
 1. 分割  
 将初始样本集分割为若干个大小一定的mini-batch,mini batch的数量为t
+
 $$
 \begin{align}
 & X = \begin{bmatrix}
@@ -38,6 +39,7 @@ $$
 & Y \in \mathbb{R}^{1\times m} & y^{\{t\}} \in \mathbb{R}^{1\times m/t}
 \end{align}
 $$
+
 2. 原理  
 相比与每次执行梯度下降遍历整个大的训练集，采用mini-batch的方法，我们每次计算一个mini-batch时即可实现一次梯度下降，这个过程也被称为一次epoch.
 

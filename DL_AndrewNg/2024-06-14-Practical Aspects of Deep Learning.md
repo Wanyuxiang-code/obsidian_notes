@@ -1,7 +1,7 @@
 ---
 title: 2024-06-14-Practical Aspects of Deep Learning
 date: 2024-06-14
-date modified: 2024-06-19
+date modified: 2024-06-22
 categories: DeepLearning
 ---
 
@@ -65,6 +65,7 @@ categories: DeepLearning
 #### 添加正则化参数 $\lambda$
 
 - L2正则化：引入权重矩阵的欧几里得范数平方
+
 $$
 J(W,b) = \frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y},y) + \frac{\lambda}{2m}\sum_{l=1}^{L}||W_{l}||_{2}^{2}
 $$
@@ -72,11 +73,14 @@ $$
 其中 $||W||^{2}_{2}$即为矩阵中所有元素的平方和（该范数也被称为Frobenius norm),$\lambda$则需要根据实际训练情况不断进行调整优化
 
 - L1正则化： 引入权重矩阵的欧几里得1阶范数
+
 $$
 J(W,b) = \frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y},y) + \frac{\lambda}{m}\sum_{l=1}^{L}||W_{l}||_{1}
 $$
+
 **原理**  
 关注添加正则化参数后对梯度下降更新参数的影响：
+
 $$
 W = W - \alpha dW' = W - \alpha\left( dW + \frac{\lambda}{m}W \right) = \left( 1-\frac{\alpha\lambda}{m} \right)W - \alpha dW
 $$
@@ -140,6 +144,7 @@ $$
 $$
 \sigma ^{2} = \frac{1}{m}\sum_{i=1}^{m}(x^{i})^{2}
 $$
+
 $$
 x^{i} = \frac{x^{i}}{\sigma}
 $$

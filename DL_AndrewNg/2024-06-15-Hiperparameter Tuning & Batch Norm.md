@@ -1,7 +1,7 @@
 ---
 title: 2024-06-15-Hiperparameter Tuning & Batch Norm
 date: 2024-06-15
-date modified: 2024-06-19
+date modified: 2024-06-22
 categories: DeepLearning
 ---
 
@@ -63,6 +63,7 @@ $$
 & A^{l} = g^{l}(\tilde{Z^{l}})
 \end{align}
 $$
+
 **Notice:由于我们对于整体训练对象进行了了正则化，所以 $b^{l}$ 作为偏置参数最终不会对结果有任何影响，所以我们可以直接将其删去或者默认设为0**
 
 利用梯度下降更新 $d\beta$ 与 $d\gamma$ (也可采用momentum或Adam或RMSprop)
@@ -95,6 +96,7 @@ $$
 
 **Softmax得名原因：相比于hardmax之间输出hot-encoding向量（直接将最大输出概率可能设为1，其余均为0）**  
 在最后一层中，通过用指数函数对其中向量进行加权：
+
 $$
 a^{l} = \frac{e^{z^{l}}}{ \sum_{i=1}^{t}e^{z_{i}}}
 $$

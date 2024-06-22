@@ -1,7 +1,7 @@
 ---
 title: 2024-06-19-Convolutional Neural Network
 date: 2024-06-19
-date modified: 2024-06-20
+date modified: 2024-06-22
 categories: DeepLearning
 ---
 
@@ -20,6 +20,7 @@ categories: DeepLearning
 - 平移不变性： 图形的特征并不因平移而改变
 - 局部性：神经网络前几层仅探索局部性质  
 我们将 $[H]_{ij}$ 记为隐藏层的输出， 其对应的输入为 $[X]_{ij}$(图像在位置(i,j)所对应的像素)
+
 $$
 [H]_{ij} = [U]_{ij} + \sum_{k}\sum_{j}[W]_{i,j,k,l}[X]_{k,l} = [U]_{ij} + \sum_{a}\sum_{b}[V]_{i,j,a,b}[X]_{i+a,j+b}
 $$

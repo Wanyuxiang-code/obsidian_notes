@@ -1,7 +1,7 @@
 ---
 title: 2024-06-14-Intro to Neural Networks
 date: 2024-06-14
-date modified: 2024-06-17
+date modified: 2024-06-22
 categories: DeepLearning
 ---
 
@@ -30,6 +30,7 @@ Input layer -> Hidden Layer -> Output Layer
 - $n^{l}$ 表示神经网络当前层的节点个数
 - $a^{l}$ 表示当前层节点的激活值输出
 - $w^{l}$ 表示当前层的权重矩阵,等价于
+
   $$
 
 w^{T} = \begin{bmatrix}  
@@ -108,6 +109,7 @@ J(W^{1},\dots,W^{L},b^{1},\dots,b^{L}) = \frac{1}{m}*\sum_{i=1}^{m}\mathcal{L}(\
 $$
 计算框架：从J往前一直求所对应的W,b对应的偏导，在通过梯度下降完成一次迭代优化
 **Input $dA^{l}$, Output $dZ^{l-1},dA^{l-1}$，同时得出的 $dW^{l},db^{l}$**
+
 $$
 
 \begin{align}  
