@@ -1,7 +1,7 @@
 ---
 title: 2024-06-19-Computations in DeepLearning
 date: 2024-06-19
-date modified: 2024-06-19
+date modified: 2024-06-22
 categories: DeepLearning
 ---
 
@@ -17,11 +17,11 @@ categories: DeepLearning
 > 块的基本功能
 > 1. 将输入数据作为前向传播的参数
 > 2. 通过前向传播计算输出，同时关注输入到输出维度的变化
-> 3. 计算输出关于输入的梯度(Automatic Differentiation)
+> 3. 计算输出关于输入的梯度 (Automatic Differentiation)
 > 4. 存储和访问前向传播计算所需的参数
 > 5. 初始化模型参数
 
-使用Python的类设计块
+使用 Python 的类设计块
 
 ```python
 import torch
@@ -41,7 +41,7 @@ net(X)
 
 #### 顺序块
 
-利用`nn.Sequential`  
+利用 `nn.Sequential`  
 手动实现:
 
 ```python
@@ -89,22 +89,22 @@ class FixedHiddenMLP(nn.Module):
 
 ### 参数访问
 
-当利用通用`Sequential`类定义模型时，我们可以通过索引来访问模型的任意层，此时模型的每一层都可用有序字典查看  
+当利用通用 `Sequential` 类定义模型时，我们可以通过索引来访问模型的任意层，此时模型的每一层都可用有序字典查看  
 `print(net[2].state_dict())`  
 输出  
 `OrderedDict([('weight', tensor([[-0.0427, -0.2939, -0.1894,  0.0220, -0.1709, -0.1522, -0.0334, -0.2263]])), ('bias', tensor([0.0887]))])`
 
-**可以通过向自定义层定义的参数中加入`nn.Parameters`来将自己定义的参数加入参数管理，进而可以通过module定义的method访问**
+**可以通过向自定义层定义的参数中加入 `nn.Parameters` 来将自己定义的参数加入参数管理，进而可以通过 module 定义的 method 访问**
 
 #### 目标参数
 
-Pytorch中每个参数都表示为参数类的一个实例，其时一个复合的对象，包括值、梯度和额外信息等。有时我们需要显式地访问参数的值，有时我们呢则需要访问参数类的实例  
+Pytorch 中每个参数都表示为参数类的一个实例，其时一个复合的对象，包括值、梯度和额外信息等。有时我们需要显式地访问参数的值，有时我们呢则需要访问参数类的实例  
 `print(net[2].bias) #访问参数类的实例`  
 `print(net[2].bias.data) #访问参数的值`
 
 #### 一次性访问所有参数
 
-利用Pytorch中的`parameters`或`named_parameters`方法访问所有参数
+利用 Pytorch 中的 `parameters` 或 `named_parameters` 方法访问所有参数
 
 ```python
 for name, param in net[0].named_parameters
@@ -141,15 +141,15 @@ net = nn.Sequential(nn.Linear(4,8), nn.ReLU(), shared, nn.ReLU(), share, nn.ReLU
 
 好处：
 
-- 对于图像识别中的CNN，共享参数使网络能够在图像中的任何地方而不是仅在某个区域中查找给定的功能。
-- 对于RNN，它在序列的各个时间步之间共享参数，因此可以很好地推广到不同序列长度的示例。
+- 对于图像识别中的 CNN，共享参数使网络能够在图像中的任何地方而不是仅在某个区域中查找给定的功能。
+- 对于 RNN，它在序列的各个时间步之间共享参数，因此可以很好地推广到不同序列长度的示例。
 - 对于自动编码器，编码器和解码器共享参数。 在具有线性激活的单层自动编码器中，共享权重会在权重矩阵的不同隐藏层之间强制正交。
 
 ## 读写文件
 
 ### 加载和保存张量
 
-对于单个张量，我们可以用load和save函数分别读写它们，同时为我们需要读写的张量提供名称
+对于单个张量，我们可以用 load 和 save 函数分别读写它们，同时为我们需要读写的张量提供名称
 
 ```python
 import torch

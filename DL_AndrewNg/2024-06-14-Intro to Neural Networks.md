@@ -26,7 +26,7 @@ Input layer -> Hidden Layer -> Output Layer
 
 #### Notation
 
-- L:表示神经网络的层数
+- L: 表示神经网络的层数
 - $n^{l}$ 表示神经网络当前层的节点个数
 - $a^{l}$ 表示当前层节点的激活值输出
 - $w^{l}$ 表示当前层的权重矩阵,等价于

@@ -1,7 +1,7 @@
 ---
 title: 2024-06-15-Structuring Machine Leanring Projects
 date: 2024-06-15
-date modified: 2024-06-19
+date modified: 2024-06-22
 categories: DeepLearning
 ---
 
@@ -9,7 +9,7 @@ categories: DeepLearning
 
 当我们尝试优化我们的深度学习模型时，我们常常有多种思路或想法可以选择,在众多选择的情况下，我们需要更为系统的策略来指导我们以尽可能快的速度优化我们的模型，这就需要系统化的优化策略。
 
-## 正交化(Orthogonalization)
+## 正交化 (Orthogonalization)
 
 ### 核心思想
 
@@ -18,7 +18,7 @@ categories: DeepLearning
 ### 单一数字评估指标
 
 当我们优化我们的模型时，相比采用多个参数来量化我们模型的性能，更直接的解决策略是设法设立一个单一的量化指标，能够给我们直接的优化思路与比较策略。  
-例如利用 $F_{1}$ 分数将precision与recall参数结合
+例如利用 $F_{1}$ 分数将 precision 与 recall 参数结合
 
 $$
 \begin{align}
@@ -30,7 +30,7 @@ $$
 
 ### 满足与优化指标
 
-当我们在优化模型性能时，我们的优化指标常常根据我们的需求可分为两类，一方面时优化指标(optimizing metrics),我们希望不断提升；另一方面是满足指标(satisficing metrics)，我们只需要满足其下限
+当我们在优化模型性能时，我们的优化指标常常根据我们的需求可分为两类，一方面时优化指标 (optimizing metrics),我们希望不断提升；另一方面是满足指标 (satisficing metrics)，我们只需要满足其下限
 
 ## 训练/开发/测试集划分
 

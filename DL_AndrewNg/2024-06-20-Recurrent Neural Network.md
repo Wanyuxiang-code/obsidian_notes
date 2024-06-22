@@ -22,7 +22,8 @@ $$
 
 #### 隐变量自回归模型
 
-**保留对过去观测的总结h,并且同时更新下一步的观测值并总结h**  
+**保留对过去观测的总结 h,并且同时更新下一步的观测值并总结 h**  
+
 ![eb602a83e7b65d3f96a83685f486c6b.png](https://s2.loli.net/2024/06/20/zyIbKtJ1Mj75UlE.png)
 
 ### Notation
@@ -58,7 +59,7 @@ def read_time_machine():  #@save
 lines = read_time_machine()
 ```
 
- 然后，我们将**以行形式出现的文本拆分为一个个Token（词元），Token可以为一个词或者字符**
+ 然后，我们将**以行形式出现的文本拆分为一个个 Token（词元），Token 可以为一个词或者字符**
 
  ```python
  def tokenize(lines, token='word'):
@@ -69,7 +70,7 @@ lines = read_time_machine()
  tokens = tokenize(lines)
 ```
 
- 将其初始输入的数据划分后，我们希望建立一个从输入的字符串到索引的词表(Dictionary), 为达到这个目的，首先我们需要统计输入Token的词频并按词频排序，根据它们的词频分配唯一的数字索引
+ 将其初始输入的数据划分后，我们希望建立一个从输入的字符串到索引的词表 (Dictionary), 为达到这个目的，首先我们需要统计输入 Token 的词频并按词频排序，根据它们的词频分配唯一的数字索引
 
  ```python
  class Vocab:  #@save
@@ -124,7 +125,7 @@ def count_corpus(tokens):  #@save
     return collections.Counter(tokens)
 ```
 
-将每个Token表示为数字索引后，现在Token的数据形式依然不利于机器学习算法进行训练，我们考虑将其转换为One-hot encoding形式形成特征向量。
+将每个 Token 表示为数字索引后，现在 Token 的数据形式依然不利于机器学习算法进行训练，我们考虑将其转换为 One-hot encoding 形式形成特征向量。
 
 ```python
 torch.nn.functional.one_hot(input_tensor, len(vocab))
@@ -132,7 +133,7 @@ torch.nn.functional.one_hot(input_tensor, len(vocab))
 
 ### 读取长序列数据
 
-由于文本序列是任意长的，我们希望将其划分为具有相同时间步数的子序列，每一个时间步Token的对应一个字符
+由于文本序列是任意长的，我们希望将其划分为具有相同时间步数的子序列，每一个时间步 Token 的对应一个字符
 
 #### 随机采样
 
@@ -185,6 +186,7 @@ def seq_data_iter_sequential(corpus, batch_size, num_steps):  #@save
 ### 基本架构
 
 我们先看最直观的输入序列长度等于输出序列长度的情况  
+
 ![aee834097ac96135eff8e753f599cc8.png](https://s2.loli.net/2024/06/20/S2IW6vYPde3kRw5.png)  
 为了保持循环神经网络能够捕获序列前后问的特征，我们选择隐变量自回归模型，将前面多层累积的输入作为参数传递给下一层，同时下一层的循环模块也接受来自本层的输入
 
@@ -207,7 +209,7 @@ $$
 > - 对于循环神经网络，由输入序列以及前一隐藏层对应的线性权重参数以及偏置均为共享参数
 > - 且由隐藏层到输出的参数也是共享参数
 
-### 通过时间的反向传播(Backpropagation through time)
+### 通过时间的反向传播 (Backpropagation through time)
 
 我们先定义损失函数:
 
@@ -219,18 +221,19 @@ $$
 $$
 
 [8.7. 通过时间反向传播 — 动手学深度学习 2.0.0 documentation (d2l.ai)](https://zh-v2.d2l.ai/chapter_recurrent-neural-networks/bptt.html#sec-bptt)  
-由于对于循环神经网络，参数与输入的更新依赖于递归的公式进行，导致在反向传播的过程中梯度的计算非常复杂，且初始输入的微扰也可能给最终输出带来较大改变，因此我们考虑采取随机截断或在给定time step内截断的方法对梯度进行计算与更新。
+由于对于循环神经网络，参数与输入的更新依赖于递归的公式进行，导致在反向传播的过程中梯度的计算非常复杂，且初始输入的微扰也可能给最终输出带来较大改变，因此我们考虑采取随机截断或在给定 time step 内截断的方法对梯度进行计算与更新。
 
 ### 不同类型的循环神经网络
 
 我们之前所处理的循环神经网络是针对输入序列长度与输出序列长度一一对应的情况，但在实际需求中，我们所处理的经常是输入与输出不对等的情况，所以需要适当微调原有架构  
+
 ![5d1f85a2c7c3c7264b3855224204c2b.png](https://s2.loli.net/2024/06/20/gU6GSma8nROT9YL.png)
 
 ### 梯度消失与爆炸
 
 - 当循环神经网络层数加深后，我们会发现相对较前的权重很难通过网络架构将影响世家到后面，同时反向传播过程中针对误差所更新的参数也很难针对损失函数更新，这导致容易发生梯度消失
 - 为了防止梯度不断增大发生爆炸，我们采用梯度裁剪的方式，每当梯度高于某个阈值就将其进行裁剪  
-梯度裁剪通常考虑将梯度g投影回给定半径的球来裁剪梯度，这样能够保持梯度范数永远不超过给定半径，同时保持原方向不变
+梯度裁剪通常考虑将梯度 g 投影回给定半径的球来裁剪梯度，这样能够保持梯度范数永远不超过给定半径，同时保持原方向不变
 
 $$
 g =  min\left( 1, \frac{\theta}{||g||} \right)g
@@ -240,7 +243,7 @@ $$
 
 ### GRU: Gated Recurrent Unit
 
-为了提升RNN的长期记忆能力，我们引入一个新的记忆单元Memory Cell（候选的隐藏单元）与门阈值，来决定是否根据前后文语境情况更新
+为了提升 RNN 的长期记忆能力，我们引入一个新的记忆单元 Memory Cell（候选的隐藏单元）与门阈值，来决定是否根据前后文语境情况更新
 
 $$
 \begin{align}
@@ -252,13 +255,14 @@ $$
 \end{align}
 $$
 
-GRU memory cell的更新依赖于两方面：一者来自基于前一层的输入，另外一层则来自由较长上下文训练出来的结果，两者的权值通过 $\\Gamma$ 作为Gate调节（通过Sigmoid函数更新至范围在0到1内)  
+GRU memory cell 的更新依赖于两方面：一者来自基于前一层的输入，另外一层则来自由较长上下文训练出来的结果，两者的权值通过 $\\Gamma$ 作为 Gate 调节（通过 Sigmoid 函数更新至范围在 0 到 1 内)  
 计算候选的 $c^{<T>}$ 时我们利用 $\Gamma_{r}$ 重置门降低过往参数的影响  
+
 ![7ed845d0aa39a45943411a1ae0b7569.png](https://s2.loli.net/2024/06/21/MvNAxVZTqGSRshP.png)
 
 ### LSTM(long short term memory)
 
-LSTM相比GRU更加复杂，通过引入更新门(the update gate)与相关门(the relevance gate)以及输出门(output gate)来加强在长上下文中的记忆能力
+LSTM 相比 GRU 更加复杂，通过引入更新门 (the update gate) 与相关门 (the relevance gate) 以及输出门 (output gate) 来加强在长上下文中的记忆能力
 
 $$
 \begin{align}
@@ -275,7 +279,7 @@ $$
 
 ## 变体
 
-### 双向循环神经网络(Bidirectional RNN)
+### 双向循环神经网络 (Bidirectional RNN)
 
 很多时候序列的输出不仅取决于序列输入的前文，也取决于序列输入的后文，这就需要我们改变神经网络的架构使得当下的输出考虑前后文的语境。  
  在双向循环神经网络中，我们不仅有前向的循环单元，还有反向的循环单元将序列最后的输入反向向前循环**与反向传播不同**
