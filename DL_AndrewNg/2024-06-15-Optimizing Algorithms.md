@@ -2,7 +2,7 @@
 title: 2024-06-15-Optimizing Algorithms
 date: 2024-06-15
 date modified: 2024-06-15
-categories: unlabeled
+categories: DeepLearning
 ---
 
 ## Mini-batch Gradient descent

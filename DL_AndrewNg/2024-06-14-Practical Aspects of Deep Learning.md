@@ -1,7 +1,7 @@
 ---
-title: Practical Aspects of Deep Learning
+title: 2024-06-14-Practical Aspects of Deep Learning
 date: 2024-06-14
-date modified: 2024-06-14
+date modified: 2024-06-19
 categories: DeepLearning
 ---
 
@@ -92,11 +92,20 @@ $$
 dl = np.random.rand(al.shape[0],al.shape[1])
 al = np.multiply(al,dl)
 al /= keep-prob
+# Another way
+def dropout(x, dropout):
+	assert 0 <= dropout <=1
+	if dropout == 1:
+		return torch.zeros_like(X)
+	if dropout = 0:
+		return X
+	mask = (torch.rand(x.shape) > dropout).float()
+	return mask*x/(1.0 - dropout)
 ```
 
 通过keep-prob参数来控制保持不失活的概率，同时注意让部分失活后的向量除以保持概率以维持均值期望不变  
 反向传播时从后往前依次执行dropout  
-**注意：每一层的keep-prob参数课相互独立，可根据具体需求针对性调整，比如对于较复杂的层适当减小keep-prob**
+**注意：每一层的keep-prob参数可相互独立，可根据具体需求针对性调整，比如对于较复杂的层适当减小keep-prob**
 
 **缺点：Cost Function J 现在是不良定义，我们通过直接观察J的数值变化来确定我们迭代的有效性** -> 再开始用drop out之前先保证J随迭代次数的增加单调递减
 
@@ -138,11 +147,27 @@ $$
 ### 权重初始化
 
 如果权重的初始值在一开始被设置的偏大或者偏小将会导致我们的最终结果随网络深度的增加呈指数级的增大或减小,这就需要我们在初始化权重时选择合适地范围.  
-**核心思路: 根据该层网络节点的数量来调整权重的初始的大小**
+**防止梯度爆炸或者梯度消失**  
+**核心思路: 根据该层网络节点的数量来调整权重的初始的大小**  
+假设权重与输入彼此独立，进行线性变化后，我们会有输出的均值为：
 
-```python
-wl = np.random.randn(shape)*np.sqrt(1/n_(l-1))
-```
+$$
+\begin{align}
+E_{[o_{i}]} & = \sum_{j=1}^{n_{in}}E[w_{ij}x_{j}]  \\
+& =\sum_{j=1}^{n_{in}}E[w_{ij}]E[x_{j}]  \\
+& = 0  \\
+Var[o_{i}] &=  E[o_{i}^{2}] - (E[o_{i]}])^{2}  \\
+& = \sum_{j=1}^{n_{in}}E[w_{ij}^{2}x_{j}^{2}]  \\
+& = \sum_{j=1}^{n_{in}}E[w_{ij}]^{2}E[x_{j}]^{2}  \\
+& = n_{in}\sigma ^{2}\gamma ^{2}
+\end{align}
+$$
+
+ `Xavier初始化`: 将权重根据输入层与输出层的维数初始化，尽量保持中间值的方差稳定性，防止出现梯度消失与爆炸
+
+$$
+\sigma = \sqrt{ \frac{2}{n_{in} + n_{out}} }
+$$
 
 > [!important] 根据激活函数调整缩放比例
 

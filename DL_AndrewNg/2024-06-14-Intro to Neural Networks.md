@@ -1,7 +1,7 @@
 ---
 title: 2024-06-14-Intro to Neural Networks
 date: 2024-06-14
-date modified: 2024-06-14
+date modified: 2024-06-17
 categories: DeepLearning
 ---
 
@@ -90,7 +90,13 @@ $$
 g(z) = max(0,z)
 
 $$
+- ReLU函数的变体: PReLU（Parameterized ReLU)
+通过增加线性项当参数为负时保留部分信息
+$$
 
+pReLU(x) = max(0,x) + \alpha min(0.x) 
+
+$$
 ### 反向传播
 完成正向传播的计算框架后，我们需要对随机初始化得到的参数进行进一步优化，而这一步则依赖于梯度下降实现，[[2024-06-12-Logistic Regression]]
 为了实现梯度下降，最核心的步骤即为计算复合函数的导数，然后通过梯度下降实现对cost function的优化
