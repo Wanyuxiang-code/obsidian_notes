@@ -1,7 +1,7 @@
 ---
 title: 2024-06-14-Practical Aspects of Deep Learning
 date: 2024-06-14
-date modified: 2024-06-22
+date modified: 2024-06-23
 categories: DeepLearning
 ---
 
@@ -87,6 +87,9 @@ $$
 
 我们发现通过引入正则化参数，权重不断衰减，而权重的不断衰减则简化了原本复杂的神经网络，随着 $\lambda$ 的增大，神经网络逐渐向线性网络转化，降低过拟合
 
+高级 API:  
+再优化算法中添加 weight_decay 即可
+
 #### Drop out 正则化（随即失活）
 
 利用 drop out 防止过拟合的核心即为通过引入随即失活概率，让每一层的节点以一定概率随机变为 0，简化原有神经网络的复杂结构，避免过拟合  
@@ -107,6 +110,8 @@ def dropout(x, dropout):
 	return mask*x/(1.0 - dropout)
 ```
 
+高级 API：  
+`nn.Dropout(dropout_rate)`  
 通过 keep-prob 参数来控制保持不失活的概率，同时注意让部分失活后的向量除以保持概率以维持均值期望不变  
 反向传播时从后往前依次执行 dropout  
 **注意：每一层的 keep-prob 参数可相互独立，可根据具体需求针对性调整，比如对于较复杂的层适当减小 keep-prob**

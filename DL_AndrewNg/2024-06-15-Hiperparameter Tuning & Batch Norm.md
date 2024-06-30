@@ -1,7 +1,7 @@
 ---
 title: 2024-06-15-Hiperparameter Tuning & Batch Norm
 date: 2024-06-15
-date modified: 2024-06-22
+date modified: 2024-06-23
 categories: DeepLearning
 ---
 
@@ -85,6 +85,10 @@ $$
 & v_{\sigma ^{2}} = \beta v_{\sigma ^{2}} + (1-\beta)\theta_{\sigma ^{2}}
 \end{align}
 $$
+
+#### 调用高级 API 实现
+
+`nn.BatchNorm2d(num_features)`
 
 ## Softmax 回归
 
