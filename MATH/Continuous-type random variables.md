@@ -2,8 +2,9 @@
 title: Continuous-type random variables
 date: 2024-10-22
 date modified: 2024-11-09
-categories: unlabeled
-tags: [ECE313]
+categories: ECE313
+tags:
+  - ECE313
 ---
 #ECE313 
 

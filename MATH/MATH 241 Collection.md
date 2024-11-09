@@ -2,8 +2,8 @@
 title: MATH 241 Collection
 date: 2024-11-09
 date modified: 2024-11-09
-categories: unlabeled
-tags: []
+categories: MATH汇总
+tags:
 ---
 
 

@@ -2,8 +2,9 @@
 title: Foundation of Probability
 date: 2024-09-13
 date modified: 2024-11-09
-categories: unlabeled
-tags: [ECE313]
+categories: ECE313
+tags:
+  - ECE313
 ---
 #ECE313
 

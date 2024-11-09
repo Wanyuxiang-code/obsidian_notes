@@ -2,8 +2,9 @@
 title: Number Theory
 date: 2024-10-16
 date modified: 2024-11-09
-categories: unlabeled
-tags: [Math213]
+categories: Math213
+tags:
+  - Math213
 ---
 #Math213 
 

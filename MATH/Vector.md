@@ -2,8 +2,9 @@
 title: Vector
 date: 2024-09-14
 date modified: 2024-11-09
-categories: unlabeled
-tags: [Math241]
+categories: Math241
+tags:
+  - Math241
 ---
 
 #Math241 

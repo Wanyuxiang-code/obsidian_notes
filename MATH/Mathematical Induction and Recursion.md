@@ -2,8 +2,9 @@
 title: Mathematical Induction and Recursion
 date: 2024-11-01
 date modified: 2024-11-09
-categories: unlabeled
-tags: [Math213]
+categories: Math213
+tags:
+  - Math213
 ---
 #Math213 
 

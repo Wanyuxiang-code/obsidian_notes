@@ -2,8 +2,9 @@
 title: ECE 313 Collection
 date: 2024-11-09
 date modified: 2024-11-09
-categories: unlabeled
+categories: MATH汇总
 ---
+
 
 ## 表格汇总
 
@@ -14,5 +15,6 @@ sort date
 ```
 
 ## 参考资料
-- UIUC官方讲义
+
+- UIUC 官方讲义  
 [Probability Note.pdf](https://courses.grainger.illinois.edu/ece313/fa2020/probabilityAug21.pdf)
