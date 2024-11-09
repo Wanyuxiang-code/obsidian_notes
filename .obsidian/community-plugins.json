@@ -4,5 +4,7 @@
   "obsidian-style-settings",
   "obsidian-git",
   "obsidian-linter",
-  "obsidian-image-auto-upload-plugin"
+  "obsidian-image-auto-upload-plugin",
+  "obsidian-latex-suite",
+  "obsidian-day-planner"
 ]

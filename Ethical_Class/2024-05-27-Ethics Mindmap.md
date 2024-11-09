@@ -1,7 +1,7 @@
 ---
 title: 伦理学
 date: 2024-05-27
-date modified: 2024-06-06
+date modified: 2024-06-27
 categories: Ethics_Class
 ---
 
@@ -19,7 +19,7 @@ categories: Ethics_Class
 
 	- Two main goals:                                1.理论目标：发掘评价事物的道德指标 2.实践目标：提供现实生活中决策的参考
 
-	- Structure of the principles:               An action A is ... because A has property P                                         指导原则：1.是否产生更好结果 2.符合特殊的一系列标准 3.理性人原则
+	- Structure of the principles:               An action A is ... because A has property P 指导原则：1.是否产生更好结果 2.符合特殊的一系列标准 3.理性人原则
 
 	- branches
 
@@ -29,23 +29,23 @@ categories: Ethics_Class
 
 			- 一般流程：列出所有结果；分析比较
 
-			- 不同结果主义论的区别：                   1.判断价值的种类及多元性                2.价值取向的不同：个体与普遍，优先与普适（是否加权）                      3.结果的预期性与实际性                  4.行动与结果的联系是直接还是间接
+			- 不同结果主义论的区别：                   1.判断价值的种类及多元性 2.价值取向的不同：个体与普遍，优先与普适（是否加权）                      3.结果的预期性与实际性 4.行动与结果的联系是直接还是间接
 
 			- 主要分支
 
-				- Classic Hedonistic Act Utilitarianism古典行为效应主义（享乐）
+				- Classic Hedonistic Act Utilitarianism 古典行为效应主义（享乐）
 
-					- 主要特征：                                                            1.最大化价值，最小化不利（简单求和)(utility)         2.Monism and Welfarism: 以welfare（个人与群体）为判断的唯一指标 (关注个人的愉悦与痛苦，包括未来与当下）                                             3.Non-prioritarianism(人人平等对待）
+					- 主要特征：                                                            1.最大化价值，最小化不利（简单求和)(utility)         2.Monism and Welfarism: 以 welfare（个人与群体）为判断的唯一指标 (关注个人的愉悦与痛苦，包括未来与当下）                                             3.Non-prioritarianism(人人平等对待）
 
-					- Notice:评判的材料有时并不单一，只需按utility和pleasure,pain评价
+					- Notice: 评判的材料有时并不单一，只需按 utility 和 pleasure,pain 评价
 
-					- 存在的问题：1.行为结果的不确定性 2.难以处理复杂的现实问题3.忽略了个体的情感取向，以圣人标准要求 4.有时仅因微弱优势选择违背常理 5.为不合理的分配方式辩护 6.忽略内在的价值，仅关注表面的愉快
+					- 存在的问题：1.行为结果的不确定性 2.难以处理复杂的现实问题 3.忽略了个体的情感取向，以圣人标准要求 4.有时仅因微弱优势选择违背常理 5.为不合理的分配方式辩护 6.忽略内在的价值，仅关注表面的愉快
 
 					- branches
 
-						- actucal utility:只对事实的结果进行评判，客观评价结果
+						- actucal utility: 只对事实的结果进行评判，客观评价结果
 
-						- Expected utility:关注行为的出发点，未实施前是否有更高的utility(数学期望），指导主观决策
+						- Expected utility: 关注行为的出发点，未实施前是否有更高的 utility(数学期望），指导主观决策
 
 		- Deontologism 义务论
 
@@ -85,7 +85,7 @@ categories: Ethics_Class
 
 - Remarks
 
-	- 分类问题：有时Applied ethics 被视为 Moral theory的子领域
+	- 分类问题：有时 Applied ethics 被视为 Moral theory 的子领域
 
 	- 领域非常细分聚焦
 
@@ -93,7 +93,7 @@ categories: Ethics_Class
 
 -  Top-down Approach 自上而下的方法（从理论出发，寻找应用实例）
 
-	- 从宽泛的Moral theory 出发
+	- 从宽泛的 Moral theory 出发
 
 	- 应用
 
@@ -216,7 +216,7 @@ Our duties depend on the values and rights of entire species and whole ecosystem
 
 - Subject:                             1.Answer non-moral questions about morality    2.形而上学，探讨认知论与语义学问题，不聚焦于具体问题该分支从形而上学思考伦理问题，不聚焦于具体的问题，而是从从伦理学之外角度来思考道德实践（抽象的语义学，认知论问题）
 
-	- main branches主要学派
+	- main branches 主要学派
 
 		- *Cultural relativism*
 
@@ -497,13 +497,13 @@ Gap between : what is and what ought to be
 
 	- Evaluative role（ 起道德评判的准则标准）
 
-	- Guiding-Motivational role （引导主体向善-自我驱动）
+	- Guiding-Motivational role （引导主体向善 - 自我驱动）
 
 	- Explanatory-Justificatory role （解释、辩解作用）
 
 - Kinds of normativity
 
-	- DescriptiveEmpirical :经验主义  
+	- DescriptiveEmpirical : 经验主义  
 Abstract  
 Modal: 模式的，情态的
 

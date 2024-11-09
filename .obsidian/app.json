@@ -16,5 +16,7 @@
     "PNG/",
     "Zotero/mdnotes_template/"
   ],
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
 }

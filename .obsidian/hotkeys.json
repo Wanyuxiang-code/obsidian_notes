@@ -14,5 +14,13 @@
       ],
       "key": "M"
     }
+  ],
+  "app:open-settings": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": ","
+    }
   ]
 }

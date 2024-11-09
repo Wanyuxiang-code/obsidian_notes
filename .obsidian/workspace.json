@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8b923bffdc9fc6a9",
+        "id": "d79f6558b284da31",
         "type": "tabs",
         "children": [
           {
-            "id": "4042220a490a870a",
+            "id": "e1083bb381d170c4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ethical_Class/Ethics review.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -39,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -49,12 +49,14 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "byCreatedTimeReverse"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -62,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -85,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ethical_Class/Ethics review.md",
+                "file": "Course Schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +97,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Course Schedule 的反向链接列表"
             }
           },
           {
@@ -102,10 +108,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ethical_Class/Ethics review.md",
+                "file": "Course Schedule.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Course Schedule 的出链列表"
             }
           },
           {
@@ -116,7 +124,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -124,9 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ethical_Class/Ethics review.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "大纲"
             }
           },
           {
@@ -134,7 +144,19 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "09e1b301d29f71ff",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
             }
           }
         ],
@@ -142,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5,
-    "collapsed": true
+    "width": 457.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -152,41 +173,50 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-day-planner:Timeline": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4042220a490a870a",
+  "active": "3edb14d0c3a9ee23",
   "lastOpenFiles": [
-    "Ethical_Class/Ethics Mindmap.md",
-    "Quantitative_Finance/World Quant Brain.md",
-    "Quantitative_Finance/Technical Analysis.md",
-    "Quantitative_Finance/Portfolio Theory.md",
-    "Quantitative_Finance/Portfolio Optimization.md",
-    "Quantitative_Finance/Pairs trading.md",
-    "Quantitative_Finance/Fundamental Analysis.md",
-    "C_ECE220_Duke/Use of Pointers.md",
-    "C_ECE220_Duke/Testing and Debugging.md",
-    "C_ECE220_Duke/Recursion.md",
-    "C_ECE220_Duke/Overloading and References.md",
-    "C_ECE220_Duke/Pointers.md",
-    "C_ECE220_Duke/More on C++.md",
-    "C_ECE220_Duke/MIT missing semester.md",
-    "C_ECE220_Duke/Interacting with user and systems.md",
-    "C_ECE220_Duke/Hierachies C to C++.md",
-    "C_ECE220_Duke/Dynamic Allocation in C.md",
-    "C_ECE220_Duke/Containers and Iterators.md",
-    "C_ECE220_Duke/Compile and Running.md",
-    "C_ECE220_Duke/Arrays and Struct.md",
-    "C_ECE220_Duke/Access Control & Constructors,Destructors.md",
-    "MLfromScratch.md",
-    "暑期学习安排.md",
-    "README.md",
-    "AboutTheGarden.md",
-    "notepage需求分析.md",
-    "Attachment/清北托福慕课_写作讲义 2024-25.pdf",
-    "Attachment/清北托福慕课_阅读讲义 2024-25.pdf",
-    "Attachment/清北托福慕课_听力讲义 2024-25.pdf",
-    "Attachment/清北托福慕课_口语讲义 2024-25.pdf",
+    "MATH/ECE 313 Collection.md",
+    "MATH/Logic.md",
+    "MATH/MATH 241 Collection.md",
+    "MATH/MATH 213 Collection.md",
+    "MATH/Foundation in Algebra.md",
+    "MATH/Applications to Physics.md",
+    "MATH/257TA Recommendation.md",
+    "整理汇总",
+    "MATH/Vector.md",
+    "MATH/Vector Function.md",
+    "MATH/Partial Derivatives 2.md",
+    "MATH/Functions of Several Variables.md",
+    "MATH/Coordinate System.md",
+    "MATH/Partial Derivatives 1.md",
+    "MATH/Complexity of Algorithms.md",
+    "MATH/Discrete-type Random Variables 1.md",
+    "MATH/Continuous-type random variables.md",
+    "MATH/Mathematical Induction and Recursion.md",
+    "MATH/Number Theory.md",
+    "MATH/Sets and Functions.md",
+    "MATH/Nested Quanrifier & Mathmatical Proofs.md",
+    "Class/2024秋选课.md",
+    "Class/评奖评优.md",
+    "Class/班团事务注意事项.md",
+    "Class/2024FALL班会.md",
+    "Resources/Paper and Code Collection.md",
+    "MATH/Discrete-type Random Variables 2.md",
+    "交换",
+    "Attachment/Curriculum Computer Engineering class of 2027.pdf",
+    "Attachment/关于公布浙江大学本科生竞赛认定项目名单（2021版）的通知.pdf",
+    "Latex/latex_parentheses.png",
+    "MATH",
+    "TOEFL",
+    "GNN",
+    "Day planer",
+    "Resources",
+    "Academic Planning",
     "Attachment/b565e1d098b5650ef136bed0cb460fc.png",
     "Attachment/02b8096b1c39fdc4b8c6d7a8f206a39.png",
     "未命名.canvas",
@@ -196,13 +226,6 @@
     "Attachment/230feaeb5e2e5cf8c4629d44e5d0d26.png",
     "Attachment/271f7ca38a64df40e781263e1aa221a.png",
     "Attachment/2c639505301eb6a748c4a13d2e0d352.png",
-    "Attachment/26da868c93bde49d7203044acbd2365.png",
-    "Attachment/a84d6c02a153d64db559a596d9e93f2.png",
-    "Attachment/mp9match.c",
-    "Quantitative Finance",
-    "Latex/Obsidian_notes",
-    "Attachment",
-    "Latex",
-    "C_ECE220_Duke"
+    "Attachment/26da868c93bde49d7203044acbd2365.png"
   ]
 }

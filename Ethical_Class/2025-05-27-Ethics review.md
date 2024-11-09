@@ -1,7 +1,7 @@
 ---
 title: Analysis of the sample
 date: 2024-05-27
-date modified: 2024-06-06
+date modified: 2024-06-27
 categories: Ethics_Class
 ---
 
@@ -12,7 +12,7 @@ categories: Ethics_Class
 ### Deontic, Non-normative, Evaluative
 
 1. deontic  
-   obligatory义务性的，强制的（常用should, must, ought），做直接的判断（right, wrong），duty, unjust，祈使句  
+   obligatory 义务性的，强制的（常用 should, must, ought），做直接的判断（right, wrong），duty, unjust，祈使句  
    eg. People have the right to watch the movies they want
 2. evaluative(评价性)  
    做道德判断与评价（good, neutral, bad），better than, worse than, 通常判断的程度是可分级的  
@@ -57,7 +57,7 @@ categories: Ethics_Class
    Conflicting intuitions: There are cases that we can't reach an agreement in social moral intuitions  
    Risk of biases: can't avoid biases in moral intuitions
 
-3.  Reflective Equilibrium (John Rawls)反思平衡理论
+3.  Reflective Equilibrium (John Rawls) 反思平衡理论
    1) start with the broadest possible set of moral judgements about a subject
    2) build a set of principles that reflect such judgements
    3) Search an equilibrium between general principles and particular judgements  
@@ -109,7 +109,7 @@ categories: Ethics_Class
 1. Domain: concerns rights related to the distribution of goods
 2. Moral theories to apply
    1. Utilitarianism
-      1. A distribution of goods D is just if and only if D would because as high a utility as any alternative distributions(关注是否能把utility最大化)
+      1. A distribution of goods D is just if and only if D would because as high a utility as any alternative distributions(关注是否能把 utility 最大化)
       2. Problem:  
          Utilitarianism seems to justify the inequitable justice models  
          Against: The diminishing marginal utility of goods  
@@ -119,7 +119,7 @@ categories: Ethics_Class
    2. Rawls' theory of justice(egalitarian liberalism 平等的自由主义)
       1. Equal liberty principle: Society ought safeguard the greatest liberty for each person compatible with an equal liberty for all others(捍卫每个人最大的自由)
 	  2. Difference principle: Spciety ought to promote an equal distribution of wealth, except for inequalities that serve as incentives to benefit everyone and are open to everyone on an equal basis(初始财富的公平分配，再分配鼓励为全人类做出贡献) 
-  3. Nozick's theory of justice(libertarianism自由主义)  
+  3. Nozick's theory of justice(libertarianism 自由主义)  
      Just distribution means the distribution that reflects what people have legally earned.
 
 3. What distributive justice is really about  
@@ -235,7 +235,7 @@ categories: Ethics_Class
    1. Kantian Deontologism:  
       There is only one, exceptionless norm(Categorical Imperative). It is always wrong to disobey wrong to disobery such norm, no matter what.
       1. Concept:  
-         Moral norms are norms of reason. These norms are valid universally for all rational agents.(将norm推至所有理性人范畴)
+         Moral norms are norms of reason. These norms are valid universally for all rational agents.(将 norm 推至所有理性人范畴)
       2. Categorical imperative:  
          Unconditionally valid and absolute. One must comply with them.
       3. Well-known formulations of CI:  
