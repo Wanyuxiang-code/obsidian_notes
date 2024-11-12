@@ -131,7 +131,7 @@ Example:
 ### Erlang Distribution(埃尔朗分布)
 
 ![bf02d7c2af628ffb2954708942a0601.png](https://s2.loli.net/2024/10/29/kxLN1lVjT4i9DIM.png)  
-rth count 所经过的时间服从 Erlang Distribution
+rth count 所经过的时间服从 Erlang Distribution，理解为r个独立随机过程的加和
 
 $$
 \begin{align}
@@ -235,6 +235,8 @@ $$
 
  参数 $\theta$ 基于观测结果 $u$ 的最大似然估计记为 $\hat{\theta_{ML}(u)}$, 该参数能最大化 $f_{\theta}(u)$
 
+
+
 ## Functions of a random variable
 
 ### The distribution of a function of a random variable
@@ -243,6 +245,7 @@ $$
 
 **一般思路**
 - 确定 X 与 Y 的支持集,可以先画 Y 关于 X 的函数图像，精准确定 Y 的定义域及其与对应 X 的值的对应关系，确定 Y 为离散型随机变量还是连续性随机变量
+- **可以通过画图确定，当Y对应小于某个值时对应x的精确取值范围区间，防止出错**
 1. 对于连续性随机变量：  
 首先寻找 Y 的 CDF:(注意关注需要考虑 c 可取哪些值)
 
@@ -273,3 +276,23 @@ Example
 ![534ab8765a349bb594989d6391288e8.png](https://s2.loli.net/2024/11/08/T86hKMIDRE14e5o.png)
 
 ![e39fa26c4e45d364bd5acac2cca26c2.png](https://s2.loli.net/2024/11/08/Ay1l74Z6fPwWQNC.png)
+**当映射的函数为单调递增函数时，我们可以直接利用逆函数找到良好的对应关系**
+核心：
+$$
+F_{Y}(c) = F_{X}(g^{-1}(c))
+$$
+
+![988ce2af27cd79d2ac402fce2a2414a.png](https://s2.loli.net/2024/11/11/qkU49LlObhY36aS.png)
+
+将随机变量的CDF添加到本身->实现一个均匀分布
+
+### Generating a random variable with a specified distribution
+**问题情境**
+记 $F$ 为满足条件的CDF函数， $U$ 为在区间 $[0,1]$ 上均匀分布的随机变量，目的是找到一个函数 $g$ 使得 $F$ 为 $g(U)$ 的CDF
+
+**解决**
+- 确定 $F$ 的逆函数
+$$
+F^{-1}(u) = min\{c:F(c)\geq u\}
+$$
+- 将 $F^{-1}$ 作为 $g$ 生成对应的分布

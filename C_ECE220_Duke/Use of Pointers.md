@@ -80,7 +80,7 @@ categories: C_ECE220_Duke
    6. ***Notice: the first size in the multidimensional array can be elided, but the others can't***
    7. ***Pointer arithmetic***:  
       The multidimensional array pointer's arithmetic based on the size of the array, which will take the highest dimension.  
-      [[2024-05-27-Pointers#Aliasing and Arithmetic]]
+      [[Pointers#Aliasing and Arithmetic]]
 
 ### Array of Pointers:
 

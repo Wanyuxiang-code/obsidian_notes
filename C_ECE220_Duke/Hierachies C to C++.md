@@ -116,7 +116,7 @@ Derived result:
 >
 > > Solution: Apply **dynamic type information** and use switch to implement
 
-Similar ideas to operate based on different types in [[Containers and Iterator]] and mp11, and the it can also adopt the idea of function pointer to add extensibility [[2024-05-27-Use of Pointers]].
+Similar ideas to operate based on different types in [[Containers and Iterator]] and mp11, and the it can also adopt the idea of function pointer to add extensibility [[Use of Pointers]].
 
 ```c
 struct reference_t {
@@ -226,12 +226,12 @@ class MyClass : public ParentCLass {
 ### Access control
 
 Access control define the different access rights for different fields of a class, for more details:  
-[[2024-05-27-Access Control & Constructors,Destructors]]  
+[[Access Control & Constructors,Destructors]]  
 Once we have access rights to a class, we can use `.` to access the class member of an instance.
 
 ### Inheritance Relationship
 
-[[2024-05-27-Hierachies C to C++#Data and Function Inheritance]]
+[[Hierachies C to C++#Data and Function Inheritance]]
 
 ### Data Members
 
@@ -263,7 +263,7 @@ int MyClass::staticDataMember = 0;
 
 Constructor and destructor属于member function.  
 特别地，当我们涉及到声明并初始化或者清楚创建的实例时，编译器会调用在class中定义的constructors与destructor.  
-[[2024-05-27-Access Control & Constructors,Destructors#Constructors & Destructors]]
+[[Access Control & Constructors,Destructors#Constructors & Destructors]]
 
 #### Non-static member functions
 
@@ -282,4 +282,4 @@ Defined and implemented similarly to member functions but **can only access stat
 
 #### Friend function
 
-[[2024-05-27-Access Control & Constructors,Destructors#^72a29f]]
+[[Access Control & Constructors,Destructors#^72a29f]]

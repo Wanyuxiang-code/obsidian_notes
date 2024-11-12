@@ -13,11 +13,11 @@ categories: C_ECE220_Duke
 
 ## References and Pointers
 
-[[2024-05-27-Overloading and References#Reference]]
+[[Overloading and References#Reference]]
 
 ## Dynamic allocation
 
-[[2024-05-27-Overloading and References#Dynamic Allocation in C++]]
+[[Overloading and References#Dynamic Allocation in C++]]
 
 ## Basic I/O in C++
 
@@ -37,7 +37,7 @@ categories: C_ECE220_Duke
 2. Extraction operator `>>`  
    The extraction operator extracts data form the object cin to the place you have specified.  
 Be aware the difference between redirection and insertion:  
-[[2024-05-27-Interacting with user and systems]]
+[[Interacting with user and systems]]
 
 > [!tip] Difference between `std::endl` and `\n`  
 > `std::endl`:

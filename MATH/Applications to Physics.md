@@ -61,7 +61,7 @@ $$
 ![e223cdd16b41098b2ed10c486fb04e4.png](https://s2.loli.net/2024/10/09/PMFlAcwyRh96ndu.png)
 - Projectile Motion 抛体运动 (**考虑物理方法即可**)
 
-#### Example
+
 
 ### Tangential and Normal Components of Acceleration
 

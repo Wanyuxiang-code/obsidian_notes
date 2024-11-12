@@ -7,7 +7,7 @@ categories: C_ECE220_Duke
 
 ## Dynamic Allocation in C++
 
-[[2024-05-27-Dynamic Allocation in C]]
+[[Dynamic Allocation in C]]
 
 ### Use `new` to create new instances
 

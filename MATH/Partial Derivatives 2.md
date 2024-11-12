@@ -114,8 +114,84 @@ $$
 **考虑高维的微分时，将对于每一个变量求偏导视作一个映射或算子，输入为函数，输出也为函数**  
 ![8a03e459e8fa59c7f22d4d54f155673.png](https://s2.loli.net/2024/11/07/zDTwvKt7UpVJgiA.png)
 
+**注意记号**：
+$$
+D_{j} = \frac{\partial}{\partial x_{j}}
+$$
+从函数到函数的映射
+
 ### Clairaut's Theorem
 
 ![8120188a619bbee70ab2ab66d71233d.png](https://s2.loli.net/2024/11/07/yeo9aOHWrGXvxbp.png)
 
+关注简单的应用，记为
 **对于高阶偏导，可以置换具体求偏导的过程变量，仍不改变最终结果**
+
+**证明**：
+**构建一个二阶差分，然后利用Mean Value Theorem进行化简，从两个顺序分别看求偏导的结果**
+
+![2ee8ca604aa6f0c87e4fabc8ff16048.png](https://s2.loli.net/2024/11/11/EcHDvmj6WuqfUl2.png)
+
+
+### Partial Differential Equations(PDE)
+#### Laplace's Equation
+![aeeabd11cd072d0b480f2cd05fc57e3.png](https://s2.loli.net/2024/11/11/1PJq3FrgiwbKvu7.png)
+
+$\Delta$ 为Laplace算子
+
+- **二维Laplace方程的解**：可以对特解采取线性组合
+![985ad1d35f18aaa35e0f1b8ff3e7d3a.png](https://s2.loli.net/2024/11/11/hdAWtwbLxoym87V.png)
+
+注意Harmonic Function的定义
+
+- **具体的求解过程**
+
+![e1d101b5be33a249f74d5553c891bec.png](https://s2.loli.net/2024/11/11/AT2CuoHPawZtzfY.png)
+对于特殊情况，想考虑将最终映射可以分解为两个独立于 $x$ ,$y$ 函数的映射，然后独立求解
+
+- **建立与复指数的联系**
+![9b672c4938a305c4068685579ab16ed.png](https://s2.loli.net/2024/11/11/2ZwIWm6ec5phX1D.png)
+
+**Complex Differentiable<->Holomorphic**
+
+
+Example:利用复数确定什么样的多项式函数为Harmonic
+![6598d4e4aeefab9067a67af0933a993.png](https://s2.loli.net/2024/11/12/MdYTqIiuF3mwBvC.png)
+
+#### Wave Equation
+![d0908c1a19437bfb39704374677f98b.png](https://s2.loli.net/2024/11/12/kbyxSMp7nCiAraK.png)
+
+
+## Optimization
+### Overview
+**Types of Problems**
+![aa12d207b1ed7a5c2ff2eeed4e5df63.png](https://s2.loli.net/2024/11/12/naZvfVE9bLw5S8j.png)
+
+**Terminology**
+- Optimization Problem:对于给定的实值函数，在定义域的确定子集 $S$ 上寻找其最值
+- Feasible Solution: 对于任意属于可行域 $S$ 的元素 $x$, $S$ 为可行域(feasible region), $x$ 为 feasible solution
+- Optimal Solution: 取最值时对应的元素
+- Extremum: 最大值或最小值
+- Local Extremum: 在可行域与其邻域交集中能够取最值的元素x
+- Objective Function: 目标函数，待最优化的对象
+- Constraints: 确定可行域的限制条件
+- Constrained optimization: $S \subseteq D$  Unconstrained OptimizationL $S = D$
+- Greedy Method:贪心算法，每一步都选取局部最优解->对于优化问题每一步都考虑梯度方向
+
+### The Unconstrained Case
+
+![a6cb18f2e28ec5ddb52c04de56b4e8a.png](https://s2.loli.net/2024/11/12/FWByNDMolXnqbje.png)
+- 对于局部极值，如果函数在该点存在偏导，则其梯度为0
+- **注意：critical point的梯度为0，但并不意味着cirtical point即对应局部极值，注意经过此点对contour进行parametrization非正交**
+
+#### Quadratic Approxiamtion for Multivariable Functions
+![9c9084b825d17977b78ff97c96068bc.png](https://s2.loli.net/2024/11/12/usipl1YDeAwbjSH.png)
+- 利用一阶微分，及其对应的Jacobi Matrix或者Gradient对函数进行线性近似
+- 利用二阶微分，考虑对函数进行二次近似（类比Talyor)
+
+![0f3382581e3c49a9ce6b8535249b9ff.png](https://s2.loli.net/2024/11/12/4iIt1KTxsbOVzyG.png)
+
+
+**推论：利用正定情况与否确定critical point是否能对应局部极值**
+
+![a74dd6470f9c8cfb133429230c064cc.png](https://s2.loli.net/2024/11/12/DAZ9Vr54S32UBHM.png)

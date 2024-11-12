@@ -23,6 +23,8 @@ vector-valued function, or vector function, is simply a function whose
 
 **Parametric Cruve**  
 ![a21991924ed973b180494d747e5fdfc.png](https://s2.loli.net/2024/09/24/hOulmC6p98YtdzE.png)  
+参数化曲线：将曲线的每一维都表示为关于某个参数 $t$ 的函数
+
 将非参数的曲线转化为参数化的曲线  
 Example:  
 ![31cabc0dabf1bd697468563a56c928e.png](https://s2.loli.net/2024/09/24/PWSpVjk2oylnLJw.png)
@@ -35,15 +37,17 @@ Example:
 
 ### Basic Term
 
-**Notation**  
+#### Notation  
+- $B_{r}(a)$ 表示以a为球心，r为半径的球，不包括边界
+- $S_{r}(a)$ 表示以a为球心，r为半径的球壳
 ![43f23adb861fcb226012ab53f810c19.png](https://s2.loli.net/2024/09/24/muI2RibO19wntXd.png)  
 ![0b1a8dd80bf70db6e0689c388c14198.png](https://s2.loli.net/2024/09/26/JlFc8y3e7OjC6PB.png)
 
-
+#### Topology
 
 ![b5f07ec4816f6ca2d23698b866ef989.png](https://s2.loli.net/2024/09/26/7cLCIJaWOFrjG2Q.png)
-- **interior point**：内点，即考虑以 a 为中心的小球包含在一个三维子域中,D 记为其邻域
-- **boundary point**: 边界点，即以 a 的为中心的球一定包括三维域内与域外的点
+- **interior point**：内点，即考虑以 a 为中心的小球仍包含在一个子域D中， 记D为a的邻域
+- **boundary point**: 边界点，即以 a 的为中心的任意球一定包括子域D内与域外的点
 - **limit point**: 三维域内存在序列极限趋于 a(注意 D 内的点一定是极限点，同时包含其边界)
 - **accumulation point**: 即 a 点周围稠密（任意取一个小球都能包含 D 中其他一个点）
 
@@ -64,6 +68,7 @@ Example:
 
 - **曲线的极限与连续性 Limits and Continuity for Curves**  
 ![593aa2310b72095080bfb312ab93ebc.png](https://s2.loli.net/2024/09/26/kOosStJhWjLRZnf.png)
+**极限存在：即为可以通过控制自变量与特定点的距离，进而控制映射出的n维向量在对应极限的任意小的n维球内**
 
 极限：外层向量函数的极限等于各内层维数上函数分别趋近
 
@@ -81,6 +86,9 @@ $$
 ![7dc5c84372126b28f72f510e2c10a57.png](https://s2.loli.net/2024/09/26/vX3c4pb7RszOkhw.png)
 
 *证明直接考虑用矩阵表示线性变换，然后即可将原空间中的基转化为标准基，然后直接将对应的极限加和即可*
+
+
+
 
 ## Differentiation and Integration
 
@@ -127,7 +135,7 @@ $$
 
 计算曲线长度的公式  
 ![16b94d7b6d60a656977701f40121faa.png](https://s2.loli.net/2024/10/08/vPmEc32lbpxH8L4.png)  
-只要曲线为 $C^{1}-curve$（在闭集上连续可导） ,即可直接从导数的模长积分得到最终的曲线长度
+只要曲线为 $C^{1}-curve$（在闭集上可导且连续） ,即可直接从导数的模长积分得到最终的曲线长度
 
 **Piece-wise $C^{1}-Curves$**: 即将每一段可以直接用的 $C^{1}-Curve$ 直接积起来即可 
 
