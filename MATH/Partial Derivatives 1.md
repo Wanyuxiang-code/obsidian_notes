@@ -169,6 +169,7 @@ $$
 
 **通过引入参数化曲面定义 Tangent Space**  
 ![a0fc1441560245c15db2efc506f0425.png](https://s2.loli.net/2024/10/31/GUCWvEnQihLas17.png)  
+
 **Smooth 定义: 当参数曲面对应的映射可微，且雅可比矩阵列满秩时，参数曲面光滑**
 
 进一步地，我们定义 Tangent Space  

@@ -1,11 +1,11 @@
 ---
 title: Discrete-type Random Variables 1
 date: 2024-09-21
-date modified: 2024-11-09
+date modified: 2024-11-20
 categories: ECE313
-tags:
-  - ECE313
+tags: [ECE313]
 ---
+
 #ECE313 
 
 ## Random variables and probability mass functions

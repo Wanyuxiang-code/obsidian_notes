@@ -1,11 +1,11 @@
 ---
 title: Continuous-type random variables
 date: 2024-10-22
-date modified: 2024-11-09
+date modified: 2024-11-19
 categories: ECE313
-tags:
-  - ECE313
+tags: [ECE313]
 ---
+
 #ECE313 
 
 ## Cumulative distribution functions
@@ -131,7 +131,7 @@ Example:
 ### Erlang Distribution(埃尔朗分布)
 
 ![bf02d7c2af628ffb2954708942a0601.png](https://s2.loli.net/2024/10/29/kxLN1lVjT4i9DIM.png)  
-rth count 所经过的时间服从 Erlang Distribution，理解为r个独立随机过程的加和
+rth count 所经过的时间服从 Erlang Distribution，理解为 r 个独立随机过程的加和
 
 $$
 \begin{align}
@@ -235,8 +235,6 @@ $$
 
  参数 $\theta$ 基于观测结果 $u$ 的最大似然估计记为 $\hat{\theta_{ML}(u)}$, 该参数能最大化 $f_{\theta}(u)$
 
-
-
 ## Functions of a random variable
 
 ### The distribution of a function of a random variable
@@ -245,7 +243,7 @@ $$
 
 **一般思路**
 - 确定 X 与 Y 的支持集,可以先画 Y 关于 X 的函数图像，精准确定 Y 的定义域及其与对应 X 的值的对应关系，确定 Y 为离散型随机变量还是连续性随机变量
-- **可以通过画图确定，当Y对应小于某个值时对应x的精确取值范围区间，防止出错**
+- **可以通过画图确定，当 Y 对应小于某个值时对应 x 的精确取值范围区间，防止出错**
 1. 对于连续性随机变量：  
 首先寻找 Y 的 CDF:(注意关注需要考虑 c 可取哪些值)
 
@@ -275,24 +273,75 @@ Example
 
 ![534ab8765a349bb594989d6391288e8.png](https://s2.loli.net/2024/11/08/T86hKMIDRE14e5o.png)
 
-![e39fa26c4e45d364bd5acac2cca26c2.png](https://s2.loli.net/2024/11/08/Ay1l74Z6fPwWQNC.png)
-**当映射的函数为单调递增函数时，我们可以直接利用逆函数找到良好的对应关系**
+![e39fa26c4e45d364bd5acac2cca26c2.png](https://s2.loli.net/2024/11/08/Ay1l74Z6fPwWQNC.png)  
+**当映射的函数为单调递增函数时，我们可以直接利用逆函数找到良好的对应关系**  
 核心：
+
 $$
 F_{Y}(c) = F_{X}(g^{-1}(c))
 $$
 
 ![988ce2af27cd79d2ac402fce2a2414a.png](https://s2.loli.net/2024/11/11/qkU49LlObhY36aS.png)
 
-将随机变量的CDF添加到本身->实现一个均匀分布
+将随机变量的 CDF 添加到本身 ->实现一个均匀分布
 
 ### Generating a random variable with a specified distribution
-**问题情境**
-记 $F$ 为满足条件的CDF函数， $U$ 为在区间 $[0,1]$ 上均匀分布的随机变量，目的是找到一个函数 $g$ 使得 $F$ 为 $g(U)$ 的CDF
+
+**问题情境**  
+记 $F$ 为满足条件的 CDF 函数， $U$ 为在区间 $[0,1]$ 上均匀分布的随机变量，目的是找到一个函数 $g$ 使得 $F$ 为 $g(U)$ 的 CDF
 
 **解决**
 - 确定 $F$ 的逆函数
+
 $$
 F^{-1}(u) = min\{c:F(c)\geq u\}
 $$
+
 - 将 $F^{-1}$ 作为 $g$ 生成对应的分布
+
+### The area rule for expectation based on the CDF
+
+![3b6eae34566b181832f2a29adfcfe41.png](https://s2.loli.net/2024/11/18/WTKvwHJEhXb2kMN.png)  
+**由 CDF 图像结合面积简单地计算分布的均值**: 即为上图右侧的阴影面积减左侧的阴影面积
+
+$$
+E[X] = \int_{0}^{\infty}(1-F_{X}(c))\, dc - \int_{-\infty}^{0} F_{X}(c) \, dc 
+$$
+
+ 考虑从 u 轴上积分，我们有:
+
+ $$
+E[X] = \int_{0}^{1}F_{X}^{-1}(u)du
+$$
+
+**证明**：  
+![c13d85ac8b1cb7f41b1164ebbfe8b13.png](https://s2.loli.net/2024/11/18/EhmRIgOtv8Dlxir.png)
+
+## Binary Hypothesis testing with continuous-type observation
+
+**问题背景**:
+- 考察连续性随机变量的分布
+- 两种假设 $H_{1},H_{2}$ 假设正确时对应不同的 pdf $p_{1},p_{2}$
+- 基于实际观测情况确定假设
+
+**Term**:
+- Likelihood Ratio:
+
+ $$
+\Lambda(u) = \frac{f_{1}(u)}{f_{2}(u)}
+$$
+
+- Likelihood Ratio Test:
+
+$$
+\begin{align}
+& \Lambda > \tau, \text{declare H1 is true} \\
+& \Lambda < \tau, \text{delcare H2 is true}
+\end{align}
+$$
+
+ML Likelihood: 对应的 $\tau=1$  
+MAP Likelihood: 对应的 $\tau=\frac{\pi_{0}}{\pi_{1}}$
+- P  
+求概率时即在对应的 X 的区间范围内考虑 pdf 的积分或者计算面积  
+![2ff7224f979a1e06888ce712a2417ab.png](https://s2.loli.net/2024/11/18/gkoDEnyXdzT5VRj.png)

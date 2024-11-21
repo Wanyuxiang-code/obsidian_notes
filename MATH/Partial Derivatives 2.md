@@ -1,11 +1,11 @@
 ---
 title: Partial Derivatives 2
 date: 2024-11-05
-date modified: 2024-11-09
+date modified: 2024-11-19
 categories: Math241
-tags:
-  - Math241
+tags: [Math241]
 ---
+
 #Math241 
 
 ## Mean Value Theorem and its friends
@@ -115,83 +115,152 @@ $$
 ![8a03e459e8fa59c7f22d4d54f155673.png](https://s2.loli.net/2024/11/07/zDTwvKt7UpVJgiA.png)
 
 **注意记号**：
+
 $$
 D_{j} = \frac{\partial}{\partial x_{j}}
 $$
+
 从函数到函数的映射
 
 ### Clairaut's Theorem
 
 ![8120188a619bbee70ab2ab66d71233d.png](https://s2.loli.net/2024/11/07/yeo9aOHWrGXvxbp.png)
 
-关注简单的应用，记为
+关注简单的应用，记为  
 **对于高阶偏导，可以置换具体求偏导的过程变量，仍不改变最终结果**
 
-**证明**：
-**构建一个二阶差分，然后利用Mean Value Theorem进行化简，从两个顺序分别看求偏导的结果**
+**证明**：  
+**构建一个二阶差分，然后利用 Mean Value Theorem 进行化简，从两个顺序分别看求偏导的结果**
 
 ![2ee8ca604aa6f0c87e4fabc8ff16048.png](https://s2.loli.net/2024/11/11/EcHDvmj6WuqfUl2.png)
 
-
 ### Partial Differential Equations(PDE)
+
 #### Laplace's Equation
+
 ![aeeabd11cd072d0b480f2cd05fc57e3.png](https://s2.loli.net/2024/11/11/1PJq3FrgiwbKvu7.png)
 
-$\Delta$ 为Laplace算子
+$\Delta$ 为 Laplace 算子
 
-- **二维Laplace方程的解**：可以对特解采取线性组合
+- **二维 Laplace 方程的解**：可以对特解采取线性组合  
 ![985ad1d35f18aaa35e0f1b8ff3e7d3a.png](https://s2.loli.net/2024/11/11/hdAWtwbLxoym87V.png)
 
-注意Harmonic Function的定义
+**注意 Harmonic Function 的定义:Laplace 算子恒为 0**
+
 
 - **具体的求解过程**
 
-![e1d101b5be33a249f74d5553c891bec.png](https://s2.loli.net/2024/11/11/AT2CuoHPawZtzfY.png)
+![e1d101b5be33a249f74d5553c891bec.png](https://s2.loli.net/2024/11/11/AT2CuoHPawZtzfY.png)  
 对于特殊情况，想考虑将最终映射可以分解为两个独立于 $x$ ,$y$ 函数的映射，然后独立求解
 
-- **建立与复指数的联系**
+- **建立与复指数的联系**  
 ![9b672c4938a305c4068685579ab16ed.png](https://s2.loli.net/2024/11/11/2ZwIWm6ec5phX1D.png)
 
 **Complex Differentiable<->Holomorphic**
 
 
-Example:利用复数确定什么样的多项式函数为Harmonic
+Example: 利用复数确定什么样的多项式函数为 Harmonic  
 ![6598d4e4aeefab9067a67af0933a993.png](https://s2.loli.net/2024/11/12/MdYTqIiuF3mwBvC.png)
 
 #### Wave Equation
+
 ![d0908c1a19437bfb39704374677f98b.png](https://s2.loli.net/2024/11/12/kbyxSMp7nCiAraK.png)
 
-
 ## Optimization
+
 ### Overview
-**Types of Problems**
+
+**Types of Problems**  
 ![aa12d207b1ed7a5c2ff2eeed4e5df63.png](https://s2.loli.net/2024/11/12/naZvfVE9bLw5S8j.png)
 
 **Terminology**
-- Optimization Problem:对于给定的实值函数，在定义域的确定子集 $S$ 上寻找其最值
-- Feasible Solution: 对于任意属于可行域 $S$ 的元素 $x$, $S$ 为可行域(feasible region), $x$ 为 feasible solution
+- Optimization Problem: 对于给定的实值函数，在定义域的确定子集 $S$ 上寻找其最值
+- Feasible Solution: 对于任意属于可行域 $S$ 的元素 $x$, $S$ 为可行域 (feasible region), $x$ 为 feasible solution
 - Optimal Solution: 取最值时对应的元素
 - Extremum: 最大值或最小值
-- Local Extremum: 在可行域与其邻域交集中能够取最值的元素x
+- Local Extremum: 在可行域与其邻域交集中能够取最值的元素 x
 - Objective Function: 目标函数，待最优化的对象
 - Constraints: 确定可行域的限制条件
 - Constrained optimization: $S \subseteq D$  Unconstrained OptimizationL $S = D$
-- Greedy Method:贪心算法，每一步都选取局部最优解->对于优化问题每一步都考虑梯度方向
+- Greedy Method: 贪心算法，每一步都选取局部最优解 ->对于优化问题每一步都考虑梯度方向
 
 ### The Unconstrained Case
 
 ![a6cb18f2e28ec5ddb52c04de56b4e8a.png](https://s2.loli.net/2024/11/12/FWByNDMolXnqbje.png)
-- 对于局部极值，如果函数在该点存在偏导，则其梯度为0
-- **注意：critical point的梯度为0，但并不意味着cirtical point即对应局部极值，注意经过此点对contour进行parametrization非正交**
+- 对于局部极值，如果函数在该点存在偏导，则其梯度为 0
+- **注意：critical point 的梯度为 0，但并不意味着 cirtical point 即对应局部极值，注意经过此点对 contour 进行 parametrization 非 smooth**
 
-#### Quadratic Approxiamtion for Multivariable Functions
+#### Quadratic Approximation for Multivariable Functions
+
 ![9c9084b825d17977b78ff97c96068bc.png](https://s2.loli.net/2024/11/12/usipl1YDeAwbjSH.png)
-- 利用一阶微分，及其对应的Jacobi Matrix或者Gradient对函数进行线性近似
-- 利用二阶微分，考虑对函数进行二次近似（类比Talyor)
+- 利用一阶微分，及其对应的 Jacobi Matrix 或者 Gradient 对函数进行线性近似
+- 利用二阶微分，考虑对函数进行二次近似（类比 Talyor)
 
 ![0f3382581e3c49a9ce6b8535249b9ff.png](https://s2.loli.net/2024/11/12/4iIt1KTxsbOVzyG.png)
 
 
-**推论：利用正定情况与否确定critical point是否能对应局部极值**
+**推论：利用正定情况与否确定 critical point 是否能对应局部极值**
 
 ![a74dd6470f9c8cfb133429230c064cc.png](https://s2.loli.net/2024/11/12/DAZ9Vr54S32UBHM.png)
+
+**注意选取的点需为 interior point,不能是 boundary point**
+
+**n=2 的情况**  
+![76276169a882e42cee5712400da9fa0.png](https://s2.loli.net/2024/11/14/mdeYFB5UORxLMuo.png)
+
+**核心依然为判断二阶的海塞矩阵是否正定,直接利用行列式判断，恒大于 0 既可以确定极值**  
+**区分 Local Maximum 与 Local Minimum->利用 A 的符号判断，即为利用二阶微分判断一阶的情况进而确定 Local Maximum 还是 Local Minimum**
+- $A > 0$ Local Maximum
+- $A < 0$ Local Minimum
+
+![d7e6f20bcb87cbb928f08fc896cc960.png](https://s2.loli.net/2024/11/14/IYJwKfFb4ov3u7S.png)  
+对于海塞矩阵半正定的情况，我们无法直接判断 f 是否存在局部极值
+
+**Saddle Point: 鞍点 ->一阶微分为 0（critical point)，海塞矩阵负定 ->无局部极值**  
+![f0c5d4262b3e0cdd5f079b306066b68.png](https://s2.loli.net/2024/11/14/BLCJ2XDlzfrMsqA.png)
+
+#### Example
+
+- **对于 interior point,直接利用以上理论 (critical point,海塞矩阵正定等) 进行相关判断**
+- **对于 boundary point,考虑分别固定对应变量，考虑唯一变量的变化（即确定函数值在边界上的变化**
+
+**理论支撑**：  
+- **对于任意非空闭集有界集 $S \subseteq \mathbb{R}^{n}$ , 如果映射 $f\to R$ 连续，则 $f$ 一定能在集合 S 上取到最大值与最小值**  
+![30a836695d7b87945d79c07dee51ad0.png](https://s2.loli.net/2024/11/18/PEeIK6VT1sZkXFo.png)  
+从 $S$ 有界利用连续性与 Bolzano-Weierstrass 定理推及 $f(S)$ 的上下界
+
+- **Bolzano-Weierstrass 定理**  
+![04f17a9d660e74de5bb975a364b166b.png](https://s2.loli.net/2024/11/18/8xzghBnkHrm5ZXO.png)
+
+- **实数完备性定理**  
+![7dd920f33a7b988f31f8c1f5b771c1b.png](https://s2.loli.net/2024/11/18/UlgFk7Son2DLfJH.png)
+
+
+
+![6081aa70245ceee455c4533b4842f4f.png](https://s2.loli.net/2024/11/14/t26ZXTmzkuPl9qK.png)
+
+![078c2c0c138f4da5b314497fde00b18.png](https://s2.loli.net/2024/11/14/SNH7QLUuVFbfOqP.png)
+
+**如何验证我们之前研究出的 Local Extrema 以及 boundary point 上的极值是否为 global extrema?->Theorem listed as below**
+
+### Optimization with Equality Constraints
+
+**问题描述**：即在一系列限制条件下实现最优化  
+![a90db17faac4b535abe036d8bc4bc6e.png](https://s2.loli.net/2024/11/19/Xs9eLrf8C3gDUEh.png)
+
+**Theorem: Lagrange Multipliers 拉格朗日乘数法**  
+![3f9779ec9840ad0e116a5315f79f6aa.png](https://s2.loli.net/2024/11/19/byqVYMAjaxrnFWk.png)  
+**条件**
+- $f$ , $g$ 一阶可微
+- ==满足的 m 个限制条件构成的函数其 Jacobi Matrix 行满秩，考试时注意检验==
+- f 在定义域内有局部极值 ->该点 gradient 可用 $g$ 的行线性表示
+
+**注意**
+- 对于 $m=1$ 的特殊情况， 由 $f$ 与 $g$ 的 gradient 相互平行 -> $f$ 与 $g$ 在对应点共享一个切空间（在 smooth 的情况下，即 gradient 不为 0）
+- 在限制条件所对应的 Jacobi Matrix 不行满秩的情况下，不满足拉格朗日乘数法的条件，但是仍有可能存在局部极值
+- 拉格朗日乘数法需要 D 为开集，对于 $S\cap \partial D$ 上的点需要每个单独检验，不能利用拉格朗日乘数法
+
+![deeb9b5f95a655e1c6e0123478a9940.png](https://s2.loli.net/2024/11/19/Z3sv2AdY9DcT4GU.png)  
+**Proof**: 整体思路为引入引理说明各曲线在 0 处对应点的 Tagent Vector 可构成限制于 Jacobi Matirx 的零空间，然后利用零空间的包含关系说明
+
+

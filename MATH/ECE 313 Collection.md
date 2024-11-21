@@ -1,10 +1,9 @@
 ---
 title: ECE 313 Collection
 date: 2024-11-09
-date modified: 2024-11-09
+date modified: 2024-11-20
 categories: MATH汇总
 ---
-
 
 ## 表格汇总
 

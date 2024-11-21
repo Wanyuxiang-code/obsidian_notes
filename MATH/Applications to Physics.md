@@ -105,6 +105,7 @@ $$
 r 与 a 的叉乘为 0 -> 角加速度为 0  ->角动量为定值  
 这样我们即可得到该运动轨迹所对应确定平面的角动量  
 ![b2c1abcd104aad4fef3e972ea34a6af.png](https://s2.loli.net/2024/10/15/Mb7T4HWNJXus3rz.png)  
+
 ![94be178adef7a6bb5054cd6451dae72.png](https://s2.loli.net/2024/10/15/9advEzU2m5NFYMt.png)
 
 ![59dc1518bccec9f2108ce5e02051f30.png](https://s2.loli.net/2024/10/15/IlUBvOsnFVmfb1W.png)
