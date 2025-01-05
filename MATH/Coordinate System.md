@@ -1,11 +1,11 @@
 ---
 title: Coordinate System
 date: 2024-09-12
-date modified: 2024-11-09
+date modified: 2025-01-03
 categories: Math241
-tags:
-  - Math241
+tags: [Math241]
 ---
+
 #Math241
 
 ## 建立平面坐标系
@@ -163,7 +163,7 @@ ax+by+cz+d = 0
 $$
 
 - Distance  
-**点到平面的距离**
+**点到平面的距离**  
 ![36b16d64c880fd8354baa3269e7175e.png](https://s2.loli.net/2024/09/14/QgdrMkq1NSJezTZ.png)
 
 
@@ -179,7 +179,7 @@ $$
 A cylinder is a surface that consists of all lines (called rulings) that are **parallel to a  
 given line and pass through a given plane curve**.
 
-### Quadric Surfaces(二次型)
+### Quadric Surfaces(二次曲面)
 
 **Definition**:  
 A quadric surface is the graph of a second-degree equation in three variables x, y, and  
@@ -203,9 +203,9 @@ y
 \end{bmatrix}
 $$
 
-判断该二次型是否中心对称，如果非中心对称，则可利用上述方程解出的唯一解将该二次曲线移回原点
+判断该二次型是否中心对称，如果为中心对称，则可利用上述方程解出的唯一解将该二次曲线移回原点（非中心对称有多解）
 
-- 第二步考虑对一个非退化的二次曲线，利用一个旋转矩阵将交叉项消去，旋转矩阵系数由如下得到（具体的话考虑如何选取合适的参数使得交叉项系数为0）
+- 第二步考虑对一个非退化的二次曲线，利用一个旋转矩阵将交叉项消去，旋转矩阵系数由如下得到（具体的话考虑如何选取合适的参数使得交叉项系数为 0）
 
 $$
 \begin{bmatrix}

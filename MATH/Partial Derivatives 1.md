@@ -1,11 +1,11 @@
 ---
 title: Partial Derivatives 1
 date: 2024-10-24
-date modified: 2024-11-09
+date modified: 2025-01-03
 categories: Math241
-tags:
-  - Math241
+tags: [Math241]
 ---
+
 #Math241 
 
 ## Differentiable Maps
@@ -72,7 +72,8 @@ $$
 
 **注意**
 - 偏导函数的定义域 ->相对应的点对应的微分极限存在
-- Differentiability -> Partial Differentiability  
+- Differentiability -> Partial Differentiability
+
 ![3b0340ead8f92b1dfeea8fa160025fe.png](https://s2.loli.net/2024/10/28/d3TVQokZswfRmnv.png)
 
 ### Theorem
@@ -117,7 +118,8 @@ $$
 $$
 D_{u}f= \nabla f \cdot u
 $$
-==利用单位方向向量与梯度的点乘确定Graph在某个方向上的斜率==
+
+==利用单位方向向量与梯度的点乘确定 Graph 在某个方向上的斜率==
 
 ==当方向向量与 Gradient Vector 同向时，其微分有最值（利用点乘关注两向量的夹角）==
 
@@ -144,27 +146,29 @@ $$
 **核心即为利用微分实现对于函数的局部线性近似**  
 ![f4a52087ec9a76b0b1509d8680c40db.png](https://s2.loli.net/2024/10/31/X7xeojrabFY9tvS.png)
 
-**Tangent Space 即为多元函数对应的自变量及其线性近似函数值向量拼接成的结果构成的线性空间**
-**或者理解为对函数f的Graph $G_{f}$ 在给定点 $(x_{0},y_{0})$ 附近的线性近似空间或者切空间，表示为函数A的Graph**
+**Tangent Space 即为多元函数对应的自变量及其线性近似函数值向量拼接成的结果构成的线性空间**  
+**或者理解为对函数 f 的 Graph $G_{f}$ 在给定点 $(x_{0},y_{0})$ 附近的线性近似空间或者切空间，表示为函数 A 的 Graph**
 
-函数A即为对应的线性近似函数：
+函数 A 即为对应的线性近似函数：
+
 $$
 A: \mathbb{R}^{n} \to \mathbb{R}^{m}. x\to f(x_{0})+L(x-x_{0})
 $$
-
 
 - **可以用参数形式表示，写为对应点 + 线性近似的向量**
 - **可以直接用方程形式表示（及类似与切线，仅需要将之前的斜率换成微分对应线性映射 A**
 - **关注 m=1 的特殊情况**  
 ![2679eafad432e5711504b7380651e40.png](https://s2.loli.net/2024/10/31/xkIZelmUOrHTa9V.png)
 
-**在三维空间中的直观定义**：  
+**在三维空间中的直观定义**： 
+
 ![19482dc0224aff841f7ddcafb0daaa2.png](https://s2.loli.net/2024/11/03/VqBm8S1klipGxdh.png)  
 ![9bb5c71c8d213749b31ab2d8b18af69.png](https://s2.loli.net/2024/11/03/Ms3k7nPRibgrw1C.png)
 
 
 ![ba82f450fe5cea2bc918ea467c58acb.png](https://s2.loli.net/2024/11/03/O1KXCiENZaJg2fq.png)
 
+==重点关注三维空间中的公式==
 
 
 **通过引入参数化曲面定义 Tangent Space**  

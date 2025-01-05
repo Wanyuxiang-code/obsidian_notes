@@ -1,7 +1,7 @@
 ---
-title: 2024-06-20-Recurrent Neural Network
+title: Recurrent Neural Network
 date: 2024-06-20
-date modified: 2024-06-22
+date modified: 2024-12-10
 categories: DeepLearning
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Foundation of Probability
 date: 2024-09-13
-date modified: 2024-11-09
+date modified: 2024-12-23
 categories: ECE313
-tags:
-  - ECE313
+tags: [ECE313]
 ---
+
 #ECE313
 
 ## Axioms of Probability(概率公理)

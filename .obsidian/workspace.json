@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d79f6558b284da31",
+        "id": "6283927623759ab0",
         "type": "tabs",
         "children": [
           {
-            "id": "e1083bb381d170c4",
+            "id": "ac7f98ae9bad329c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -48,12 +48,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": true,
+                "query": "simply connected",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byCreatedTimeReverse"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
               "title": "搜索"
@@ -69,11 +69,13 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "68ef6a7eab41298e",
@@ -89,8 +91,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Course Schedule.md",
-                "collapseAll": false,
+                "file": "MATH/Lebesgue Integral.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -99,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Course Schedule 的反向链接列表"
+              "title": "Lebesgue Integral 的反向链接列表"
             }
           },
           {
@@ -108,12 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Course Schedule.md",
+                "file": "MATH/Vector Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Course Schedule 的出链列表"
+              "title": "Vector Function 的出链列表"
             }
           },
           {
@@ -134,9 +136,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "MATH/MATH 241 Collection.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "MATH 241 Collection 的大纲"
             }
           },
           {
@@ -164,7 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 457.5
+    "width": 418.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,35 +184,35 @@
   },
   "active": "3edb14d0c3a9ee23",
   "lastOpenFiles": [
-    "MATH/ECE 313 Collection.md",
-    "MATH/Logic.md",
-    "MATH/MATH 241 Collection.md",
-    "MATH/MATH 213 Collection.md",
-    "MATH/Foundation in Algebra.md",
-    "MATH/Applications to Physics.md",
-    "MATH/257TA Recommendation.md",
-    "整理汇总",
-    "MATH/Vector.md",
-    "MATH/Vector Function.md",
     "MATH/Partial Derivatives 2.md",
+    "MATH/MATH 241 Collection.md",
     "MATH/Functions of Several Variables.md",
+    "MATH/Vector Function.md",
     "MATH/Coordinate System.md",
     "MATH/Partial Derivatives 1.md",
-    "MATH/Complexity of Algorithms.md",
-    "MATH/Discrete-type Random Variables 1.md",
-    "MATH/Continuous-type random variables.md",
-    "MATH/Mathematical Induction and Recursion.md",
+    "MATH/Quadratic Forms and Quatrics.md",
+    "MATH/Surface Integral.md",
+    "MATH/Multi-variables Integral.md",
+    "MATH/Lebesgue Integral.md",
+    "MATH/Vector Analysis.md",
+    "MATH/Relations & Graphs.md",
+    "MATH/MATH 213 Collection.md",
     "MATH/Number Theory.md",
+    "MATH/Counting.md",
+    "MATH/Mathematical Induction and Recursion.md",
+    "MATH/Complexity of Algorithms.md",
     "MATH/Sets and Functions.md",
     "MATH/Nested Quanrifier & Mathmatical Proofs.md",
-    "Class/2024秋选课.md",
-    "Class/评奖评优.md",
-    "Class/班团事务注意事项.md",
-    "Class/2024FALL班会.md",
-    "Resources/Paper and Code Collection.md",
-    "MATH/Discrete-type Random Variables 2.md",
-    "交换",
+    "MATH/Logic.md",
+    "MATH/ECE 313 Collection.md",
+    "C_ECE220_Duke/Access Control & Constructors,Destructors.md",
+    "C_ECE220_Duke/Arrays and Struct.md",
+    "C_ECE220_Duke/Interacting with user and systems.md",
+    "C_ECE220_Duke/Testing and Debugging.md",
+    "C_ECE220_Duke/Recursion.md",
     "Attachment/Curriculum Computer Engineering class of 2027.pdf",
+    "整理汇总",
+    "交换",
     "Attachment/关于公布浙江大学本科生竞赛认定项目名单（2021版）的通知.pdf",
     "Latex/latex_parentheses.png",
     "MATH",

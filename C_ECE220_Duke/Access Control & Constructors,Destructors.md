@@ -1,7 +1,7 @@
 ---
-title: 2024-05-27-Access Control & Constructors,Destructors
+title: Access Control & Constructors,Destructors
 date: 2024-05-27
-date modified: 2024-06-06
+date modified: 2024-11-18
 categories: C_ECE220_Duke
 ---
 
@@ -45,7 +45,7 @@ Considering the incapability of module design and extensibility in C, C++ decoup
 >
 > >Access rights to specific instances are not controllable, which means we can't control the concrete access rights to a specified instance of a certain class
 >
-> 即C++中的访问权限均在类的维度上操作，我们可以声明对类中具体的子项的访问权限，但不能更改一个孤立的类的项的访问权限
+> 即 C++ 中的访问权限均在类的维度上操作，我们可以声明对类中具体的子项的访问权限，但不能更改一个孤立的类的项的访问权限
 
 In C++ code, since access rights can be managed explicitly, all class definitions are globally visible -> Better extensibility when implementing module design
 
@@ -111,15 +111,15 @@ Constructors are used for initializing a class member, which are often declared 
 > - Dynamic variables(at point of allocation)  
 >**Notice**
 >
->> Constructors are **always** called for initialization, 任意的class instance declare 过程一定会调用construtor,注意与赋值时可能会重载的赋值运算符区分！！
+>> Constructors are **always** called for initialization, 任意的 class instance declare 过程一定会调用 construtor,注意与赋值时可能会重载的赋值运算符区分！！
 
 Common Features of Constructors:
 
 - name: **the name of the class**
 - return type: none(**even not void**)
-- **a class can have more than one constructor, overloading is allowed(we can define multiple versions)**. In this case, we can have **default constructor with empty body, parameterized constructor and copy constructor together**.(==注意default constructor相互冲突的情况==)
-- 注意default constructor with no arguments, parameterized constructor and copy constructor**均为constructor, 用于初始化(也仅有初始化的时候调用）**，它们需要的参数不同，copy constructor利用已有instance的reference.
-- access rights一般为public
+- **a class can have more than one constructor, overloading is allowed(we can define multiple versions)**. In this case, we can have **default constructor with empty body, parameterized constructor and copy constructor together**.(==注意 default constructor 相互冲突的情况==)
+- 注意 default constructor with no arguments, parameterized constructor and copy constructor**均为 constructor, 用于初始化 (也仅有初始化的时候调用）**，它们需要的参数不同，copy constructor 利用已有 instance 的 reference.
+- access rights 一般为 public
 
 #### Two Default Constructors
 
@@ -129,14 +129,14 @@ Two public constructors are created by default
 
 The constructor with no arguments created **only if no constructors declared in class definition used for initializing array elements**. ==Array of a class' instances are not allowed if no constructor with no arguments exists==  
 operation  
-  It initializes each field based on its type,对一般的变量填bits,对instance调用相应的constructor
+  It initializes each field based on its type,对一般的变量填 bits,对 instance 调用相应的 constructor
 
   - Fields that are not instances are left as bits(concrete fields left as bits)
   - Fields that are instances are initialized using the constructors with no arguments for their class, which must exist and be accessible(Initialize an abstract struct)
 
 ##### Copy Constructor
 
-**It takes one argument: a reference* to another instance of the same class,注意copy constructor经常接受const reference型的参数防止更改**
+**It takes one argument: a reference* to another instance of the same class,注意 copy constructor 经常接受 const reference 型的参数防止更改**
 
 ```c++
 #include <iostream>
@@ -242,12 +242,12 @@ How objects look at functions and data members of a class
 
 1. Each object gets its **own copy of the data member**.
 2. All-access the same function definition as present in the code segment.  
-The complier supplies an **implicit pointer** along with the names of the function as **this**. “this""pointer指向当前non-static member function调用的obejct
+The complier supplies an **implicit pointer** along with the names of the function as **this**. “this""pointer 指向当前 non-static member function 调用的 obejct
 
 > [!tip] Availability
 >-  "this" pointer is **passed as a hidden argument to all nonstatic member function calls** and is available as a **local variable** within the body of all **nonstatic functions.**
 > - It is non available in static member functions as static member functions can be **called without any object.**
-> - ==注意在LC3的stack frame中可以作为non static member function的隐藏变量！！==
+> - ==注意在 LC3 的 stack frame 中可以作为 non static member function 的隐藏变量！！==
 
 ### Application
 

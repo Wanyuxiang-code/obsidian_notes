@@ -270,17 +270,25 @@
       "enabled": false
     }
   },
-  "lintOnSave": false,
+  "lintOnSave": true,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
-  "lintOnFileChange": false,
+  "lintOnFileChange": true,
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
     "Class",
     "Thoughts",
     "Latex",
-    "Zotero"
+    "Zotero",
+    "Academic Planning",
+    "Attachment",
+    "Life Beauty",
+    "Resources",
+    "TOEFL",
+    "交换",
+    "整理汇总",
+    "C_ECE220_Duke"
   ],
   "filesToIgnore": [],
   "linterLocale": "en",

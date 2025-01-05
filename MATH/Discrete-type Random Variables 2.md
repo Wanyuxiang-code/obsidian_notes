@@ -1,7 +1,7 @@
 ---
 title: Discrete-type Random Variables 2
 date: 2024-10-10
-date modified: 2024-11-20
+date modified: 2024-12-23
 categories: ECE313
 tags: [ECE313]
 ---

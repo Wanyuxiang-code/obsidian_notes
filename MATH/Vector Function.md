@@ -1,11 +1,11 @@
 ---
 title: Vector Function
 date: 2024-09-19
-date modified: 2024-11-09
+date modified: 2024-12-04
 categories: Math241
-tags:
-  - Math241
+tags: [Math241]
 ---
+
 #Math241 
 
 ## Vector-valued function
@@ -38,19 +38,21 @@ Example:
 ### Basic Term
 
 #### Notation  
-- $B_{r}(a)$ 表示以a为球心，r为半径的球，不包括边界
-- $S_{r}(a)$ 表示以a为球心，r为半径的球壳
+
+- $B_{r}(a)$ 表示以 a 为球心，r 为半径的球，不包括边界
+- $S_{r}(a)$ 表示以 a 为球心，r 为半径的球壳  
 ![43f23adb861fcb226012ab53f810c19.png](https://s2.loli.net/2024/09/24/muI2RibO19wntXd.png)  
 ![0b1a8dd80bf70db6e0689c388c14198.png](https://s2.loli.net/2024/09/26/JlFc8y3e7OjC6PB.png)
 
 #### Topology
 
 ![b5f07ec4816f6ca2d23698b866ef989.png](https://s2.loli.net/2024/09/26/7cLCIJaWOFrjG2Q.png)
-- **interior point**：内点，即考虑以 a 为中心的小球仍包含在一个子域D中， 记D为a的邻域
-- **boundary point**: 边界点，即以 a 的为中心的任意球一定包括子域D内与域外的点
+- **interior point**：内点，即考虑以 a 为中心的小球仍包含在一个子域 D 中， 记 D 为 a 的邻域
+- **boundary point**: 边界点，即以 a 的为中心的任意球一定包括子域 D 内与域外的点
 - **limit point**: 三维域内存在序列极限趋于 a(注意 D 内的点一定是极限点，同时包含其边界)
 - **accumulation point**: 即 a 点周围稠密（任意取一个小球都能包含 D 中其他一个点）
 
+==注意紧集的定义 ->closed and bounded==
 
 ![4fbf9dc58855fc6af3ec3c889c19d31.png](https://s2.loli.net/2024/09/26/1DLulQXsSRIfwox.png)
 
@@ -67,8 +69,8 @@ Example:
 ![4bedb2f93f05109f248db26eb32c378.png](https://s2.loli.net/2024/09/26/GgKHxoMtv12JlA5.png)
 
 - **曲线的极限与连续性 Limits and Continuity for Curves**  
-![593aa2310b72095080bfb312ab93ebc.png](https://s2.loli.net/2024/09/26/kOosStJhWjLRZnf.png)
-**极限存在：即为可以通过控制自变量与特定点的距离，进而控制映射出的n维向量在对应极限的任意小的n维球内**
+![593aa2310b72095080bfb312ab93ebc.png](https://s2.loli.net/2024/09/26/kOosStJhWjLRZnf.png)  
+**极限存在：即为可以通过控制自变量与特定点的距离，进而控制映射出的 n 维向量在对应极限的任意小的 n 维球内**
 
 极限：外层向量函数的极限等于各内层维数上函数分别趋近
 
@@ -86,9 +88,6 @@ $$
 ![7dc5c84372126b28f72f510e2c10a57.png](https://s2.loli.net/2024/09/26/vX3c4pb7RszOkhw.png)
 
 *证明直接考虑用矩阵表示线性变换，然后即可将原空间中的基转化为标准基，然后直接将对应的极限加和即可*
-
-
-
 
 ## Differentiation and Integration
 

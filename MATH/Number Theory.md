@@ -1,11 +1,11 @@
 ---
 title: Number Theory
 date: 2024-10-16
-date modified: 2024-11-09
+date modified: 2024-12-02
 categories: Math213
-tags:
-  - Math213
+tags: [Math213]
 ---
+
 #Math213 
 
 ## Basic
@@ -16,6 +16,8 @@ tags:
 - **带余除法**  
 divisor: 除数， dividend: 被除数， quotient 商，remainder 余数  
 ![194d6cb7ed2c2c54d62b00b0165b439.png](https://s2.loli.net/2024/10/16/A4hgZlYRsMJvyIQ.png)  
+
+
 ![d556cce7d0e770032e02af452b2653c.png](https://s2.loli.net/2024/10/16/hL3lQM5sHf1BZTq.png)
 
 注意带余除法的计算复杂度通过位运算简化可实现 $O(q\log a)$ 量级

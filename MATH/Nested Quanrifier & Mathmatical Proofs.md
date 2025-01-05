@@ -1,11 +1,11 @@
 ---
 title: Nested Quanrifier & Mathmatical Proofs
 date: 2024-09-14
-date modified: 2024-11-09
+date modified: 2024-12-27
 categories: Math213
-tags:
-  - Math213
+tags: [Math213]
 ---
+
 #Math213 
 
 ## Predicate

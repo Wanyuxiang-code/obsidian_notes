@@ -1,11 +1,11 @@
 ---
 title: Sets and Functions
 date: 2024-09-27
-date modified: 2024-11-09
+date modified: 2024-12-27
 categories: Math213
-tags:
-  - Math213
+tags: [Math213]
 ---
+
 #Math213 
 
 ## Sets
@@ -29,7 +29,6 @@ tags:
 - Cartesian Product: **各集合元素的有序组合**  
 ![a01fc501d518028c7099bc510866d82.png](https://s2.loli.net/2024/09/27/mKxZz7AFbGuRNlk.png)
 - Relation: **A subset of of the Cartesian product $A \times B$ is called a relation from the set A to the set B
-- **
 
 ### Operation
 

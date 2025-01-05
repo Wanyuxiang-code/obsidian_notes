@@ -1,7 +1,7 @@
 ---
 title: Continuous-type random variables
 date: 2024-10-22
-date modified: 2024-11-19
+date modified: 2024-12-23
 categories: ECE313
 tags: [ECE313]
 ---
@@ -93,7 +93,7 @@ $$
 - **Property**  
 ![9fa7615a2879c18f693b56a86b28a95.png](https://s2.loli.net/2024/10/22/xtQJN1RqkeaYVTA.png)  
 **与几何分布的联系**  
-Exponential Distribution 为集合分布在连续时取极限的情况  
+Exponential Distribution 为几何分布在连续时取极限的情况  
 其中 $\lambda$ 可以理解为失败概率
 
 ![274e1fee50ab8dce200347940f4c3ed.png](https://s2.loli.net/2024/10/29/r8oEfiTNeZwRcJs.png)
@@ -161,7 +161,7 @@ $$
 **注意常用的函数**:  
 同时还关注到正态分布的 pdf 为偶函数
 - $\Phi(u)$ 表示对于标准正态分布从负无穷积到 u 的概率
-- $Q(u)$ 表示对于标准正态分布从 u 寄到正无穷的概率
+- $Q(u)$ 表示对于标准正态分布从 u 积到正无穷的概率
 
 $$
 Q(u) = 1 - \Phi(u) = \Phi(-u)
@@ -182,7 +182,7 @@ $$
 
 **证明正态分布积分为 1（利用极坐标）**  
 ![9c5ddf9dc6bd2bf79c20012f33ceffb.png](https://s2.loli.net/2024/11/08/dJR6SBe5iHKxM4V.png)  
-**进一步利用分布积分证明方差为 1**  
+**进一步利用分部积分证明方差为 1**  
 ![b60780db0bad21b8c6d74fba83dd292.png](https://s2.loli.net/2024/11/08/RDMiXBmWOZApTyN.png)
 
 **当计算非标准正态分布的概率时，常常通过 Linear Scaling 返回到标准正态函数利用 $\Phi$ 或者 $Q$ 计算**
@@ -256,7 +256,7 @@ $$
 直接计算：
 
 $$
-p_{Y}(c)=P\{Y=v\} = P\{g(X)=v\} = \int_{\{u:g(u)=v\}}f_{X}(u)du
+p_{Y}(v)=P\{Y=v\} = P\{g(X)=v\} = \int_{\{u:g(u)=v\}}f_{X}(u)du
 $$
 
 **求解对应的方差与均值**  
@@ -336,7 +336,7 @@ $$
 $$
 \begin{align}
 & \Lambda > \tau, \text{declare H1 is true} \\
-& \Lambda < \tau, \text{delcare H2 is true}
+& \Lambda < \tau, \text{delcare H0 is true}
 \end{align}
 $$
 
