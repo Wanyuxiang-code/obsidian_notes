@@ -1,11 +1,11 @@
 ---
 title: Applications to Physics
 date: 2024-10-12
-date modified: 2024-11-09
+date modified: 2025-01-12
 categories: Math241
-tags:
-  - Math241
+tags: [Math241]
 ---
+
 #Math241 
 
 ## Coordinate Systems
@@ -60,8 +60,6 @@ $$
 - 联系：牛顿运动定律： $F(t)=ma(t)$  
 ![e223cdd16b41098b2ed10c486fb04e4.png](https://s2.loli.net/2024/10/09/PMFlAcwyRh96ndu.png)
 - Projectile Motion 抛体运动 (**考虑物理方法即可**)
-
-
 
 ### Tangential and Normal Components of Acceleration
 
@@ -119,4 +117,5 @@ e = \frac{c}{GM} , l = \frac{h^{2}}{GM}
 $$
 
 ![abaa00787c053c052b4a0e39406fcd9.png](https://s2.loli.net/2024/10/15/u9lmZwn7XHNL6Gv.png)  
-![17fe287f446c1bc1cf4cff0778ba3a4.png](https://s2.loli.net/2024/10/15/5QjwMs2uzf6eWIp.png)
+
+

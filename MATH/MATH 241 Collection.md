@@ -1,7 +1,7 @@
 ---
 title: MATH 241 Collection
 date: 2024-11-09
-date modified: 2025-01-03
+date modified: 2025-01-12
 categories: MATH汇总
 tags: []
 ---
@@ -263,3 +263,4 @@ simply-connected, connected
 > - 可以直接用换元积分进行体积的测度转换。特别低，对于线性变换，其体积的变化直接体现在线性变换矩阵的行列式上
 
 注意球坐标、柱坐标、极坐标换元以及 Rotational Invariant 函数
+

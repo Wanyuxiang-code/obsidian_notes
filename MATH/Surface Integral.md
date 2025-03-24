@@ -1,10 +1,11 @@
 ---
 title: Surface Integral
 date: 2024-12-17
-date modified: 2025-01-03
+date modified: 2025-01-21
 categories: Math241
 tags: [Math241]
 ---
+
 
   
 #Math241 

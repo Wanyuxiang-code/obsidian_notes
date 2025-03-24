@@ -4,20 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "6283927623759ab0",
+        "id": "55d468bd466083f9",
         "type": "tabs",
         "children": [
           {
-            "id": "ac7f98ae9bad329c",
+            "id": "a50b532fd2e20a86",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ECE/Circuits for Signal Processing.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Circuits for Signal Processing"
+            }
+          },
+          {
+            "id": "b4d341327e8e9bc5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MATH/First-Order Differential Equations1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "First-Order Differential Equations1"
+            }
+          },
+          {
+            "id": "64b06318ce8d852b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ECE/Circuits for Signal Processing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Circuits for Signal Processing"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -36,7 +69,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -48,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "simply connected",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,13 +103,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "68ef6a7eab41298e",
@@ -91,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH/Lebesgue Integral.md",
+                "file": "MATH/Vector Analysis.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Lebesgue Integral 的反向链接列表"
+              "title": "Vector Analysis 的反向链接列表"
             }
           },
           {
@@ -110,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH/Vector Function.md",
+                "file": "MATH/Vector Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Vector Function 的出链列表"
+              "title": "Vector Analysis 的出链列表"
             }
           },
           {
@@ -125,7 +157,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
@@ -137,10 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH/MATH 241 Collection.md"
+                "file": "MATH/First-Order Differential Equations1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MATH 241 Collection 的大纲"
+              "title": "First-Order Differential Equations1 的大纲"
             }
           },
           {
@@ -168,7 +205,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 418.5
+    "width": 417.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,33 +221,36 @@
   },
   "active": "3edb14d0c3a9ee23",
   "lastOpenFiles": [
-    "MATH/Partial Derivatives 2.md",
-    "MATH/MATH 241 Collection.md",
-    "MATH/Functions of Several Variables.md",
-    "MATH/Vector Function.md",
-    "MATH/Coordinate System.md",
-    "MATH/Partial Derivatives 1.md",
-    "MATH/Quadratic Forms and Quatrics.md",
-    "MATH/Surface Integral.md",
-    "MATH/Multi-variables Integral.md",
-    "MATH/Lebesgue Integral.md",
-    "MATH/Vector Analysis.md",
-    "MATH/Relations & Graphs.md",
-    "MATH/MATH 213 Collection.md",
-    "MATH/Number Theory.md",
-    "MATH/Counting.md",
-    "MATH/Mathematical Induction and Recursion.md",
-    "MATH/Complexity of Algorithms.md",
-    "MATH/Sets and Functions.md",
-    "MATH/Nested Quanrifier & Mathmatical Proofs.md",
-    "MATH/Logic.md",
-    "MATH/ECE 313 Collection.md",
-    "C_ECE220_Duke/Access Control & Constructors,Destructors.md",
-    "C_ECE220_Duke/Arrays and Struct.md",
-    "C_ECE220_Duke/Interacting with user and systems.md",
-    "C_ECE220_Duke/Testing and Debugging.md",
-    "C_ECE220_Duke/Recursion.md",
+    "MATH/First-Order Differential Equations2.md",
+    "MATH/Introduction to ODE's.md",
+    "ECE/Phasors and Sinusoidal Steady State.md",
+    "ECE/Circuits for Signal Processing.md",
+    "PHYS/Application of quantum mechanics.md",
+    "PHYS/PHYS214汇总.md",
+    "PHYS/Basic objects of quantum mechanisms.md",
+    "CS/Data Structure.md",
+    "CS/Compile & Debug.md",
+    "CS/C++ Basic.md",
+    "PHYS/Waves.md",
+    "mp3.md",
+    "2025Spring 2例会.md",
+    "Academic Planning/选课.md",
+    "Academic Planning/Course Schedule.md",
     "Attachment/Curriculum Computer Engineering class of 2027.pdf",
+    "CMN280.md",
+    "CS225.md",
+    "ECE/ECE220_TA.md",
+    "ECE220 Midterm1.md",
+    "MATH/First-Order Differential Equations1.md",
+    "ECE/Things to be covered.md",
+    "ECE/Circuit Basics.md",
+    "CS",
+    "MATH/MATH 241 Collection.md",
+    "PHYS",
+    "Academic Planning/2025 Spring.md",
+    "Life Beauty/投资.md",
+    "Life Beauty/摄影入门.md",
+    "ECE",
     "整理汇总",
     "交换",
     "Attachment/关于公布浙江大学本科生竞赛认定项目名单（2021版）的通知.pdf",
@@ -218,9 +258,6 @@
     "MATH",
     "TOEFL",
     "GNN",
-    "Day planer",
-    "Resources",
-    "Academic Planning",
     "Attachment/b565e1d098b5650ef136bed0cb460fc.png",
     "Attachment/02b8096b1c39fdc4b8c6d7a8f206a39.png",
     "未命名.canvas",
