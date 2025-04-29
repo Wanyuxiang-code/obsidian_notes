@@ -1,7 +1,7 @@
 ---
 title: Phasors and Sinusoidal Steady State
 date: 2025-03-21
-date modified: 2025-03-24
+date modified: 2025-03-31
 categories: ECE210
 tags: [ECE210]
 ---
@@ -19,6 +19,10 @@ tags: [ECE210]
 - Phase shift： $\theta= \angle F$
 - Radian frequency 角频率: $\omega$
 
+$$
+F = Ae^{j\theta}
+$$
+
 sin 信号的相位与 cos 信号的相位转换
 
 $$
@@ -33,7 +37,7 @@ $$
 
 直接将 sin 对应的相位减去 $\frac{\pi}{2}$ 即可得到对应的 cos 相位
 
-所有输入的角频率相同的正余弦信号都可以简化未如下通式:
+所有输入的角频率相同的正余弦信号都可以简化为如下通式:
 
 $$
 \mathrm{Re}\{Fe^{j\omega t}\}
@@ -111,3 +115,86 @@ steady-state: 即为微分方程的特解，可以通过 phase 求解
 zero-state: 考虑初始电压或电流为 0 代入初值，然后通过给 steady state 加上一个待定系数的衰减指数函数求解  
 zero-input：直接根据电路结构计算时间常数即可  
 transient-state: 计算出总相应后直接减去 steady-state
+
+## Average and Available Power
+
+对于处于 sinusoidal steady-state 状态下的电路，其中每个元件所吸收的能量为:
+
+$$
+p(t) = v(t)i(t)
+$$
+
+但此为瞬时能量，净吸收的能量我们用瞬时能量在时间周期内的均值来计算。
+
+$$
+P = \frac{1}{T} \int_{t=0}^{T}v(t)i(t)dt 
+$$
+
+### Average Power - Phasor
+
+![3bc125187cb6254eb08c2f878805062.png](https://s2.loli.net/2025/03/31/6xyJpn5h4EjsNIT.png)
+
+$$
+P = \frac{1}{2}\mathrm{Re}\{VI^{*}\}
+$$
+
+**对于纯电阻电路**
+
+$$
+P = \frac{1}{2}\mathrm{Re}\{RII^{*}\} = \frac{R|I|^{2}}{2} = \frac{|V|^{2}}{2R}
+$$
+
+ 或者
+
+$$
+P = RI_{rms}^{2} = \frac{V^{2}_{rms}}{R}
+$$
+
+**对于电阻与电感 ->平均功率为 0**  
+![62ccd8a6dfa8f4ff7902ebaff99dd22.png](https://s2.loli.net/2025/03/31/9bamAg4TYj56P7D.png)
+
+### Available Power and Maximum Power Transfer
+
+我们关注一个线性、sinusoidal steady state 网络能给外界负载传递多少能量  
+![465331cf448cf31a8cee1077fc7cd6d.png](https://s2.loli.net/2025/03/31/Dz2gtRNF8Gjc7rX.png)
+
+经过化简，我们可以得出，当外界负载满足：
+
+$$
+\begin{align}
+& X_{L} = -X_{T} \\
+& R_{L} = R_{T}
+\end{align}
+$$
+
+电路传递给负载的功率有最大值 (即 $Z_{L} =Z_{T}^{*}$)  
+此时
+
+$$
+P_{a} = \frac{|V_{T}|^{2}}{8R_{T}}
+$$
+
+## Resonance
+
+**1. Non-dissipative elements->不需要外界电源也能通过共振维持稳态**  
+![33cb1c7308ed84306d9eabc33672d55.png](https://s2.loli.net/2025/03/31/orxgvD4dPYeQcEB.png)
+
+$$
+\left( j\omega L + \frac{1}{j\omega C} \right)I = 0
+$$
+
+由此得出
+
+$$
+\begin{align}
+& \omega = \frac{1}{\sqrt{ LC }} =\omega_{0} \\
+& i(t) = \mathrm{Re}\{Ie^{j\omega_{0}t}\} = |I|\cos(\omega_{0}t+\theta) \\
+& v(t) = \mathrm{Re}\left\{ \frac{I}{j\omega_{0}C}e^{j\omega_{0}t} \right\} = \frac{|I|}{\omega_{0}C}\sin(\omega_{0}+\theta)
+\end{align}
+$$
+
+**2. Dissipative Elements->需要外界电源**
+
+对于 RLC 电路，当处于共振状态下 ( $\omega_{0} =\frac{1}{\sqrt{ LC }}$ ), 电阻与电感的等效电阻为 0，此时可以等效为短路，对于外界电压响应的电流最大或者对于外界电流相应的电压最大
+
+![4e2ede5fdf2109013e37bf60aa5a0db.png](https://s2.loli.net/2025/03/31/et8flOU92SFgqEm.png)

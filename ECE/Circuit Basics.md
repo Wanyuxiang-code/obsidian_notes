@@ -1,7 +1,7 @@
 ---
 title: Circuit Basics
 date: 2025-02-21
-date modified: 2025-03-10
+date modified: 2025-03-25
 categories: ECE210
 tags: [ECE210]
 ---
@@ -12,7 +12,7 @@ tags: [ECE210]
 
 ### Sources
 
-**1. Independent Sources*
+**1. Independent Sources**
 
 **独立电压源**  
 独立电压源能够维持两极的固定电势差，与通过的电流大小无关
@@ -130,3 +130,14 @@ $$
 $$
 R_{L} = R_{th}
 $$
+
+此时 Available Power 即为
+
+$$
+P_{avi} = \frac{V_{th}^{2}}{4R_{th}}
+$$
+
+> [!tip] 环路电流标注
+> 1. 不重叠的回路部分即为标注的电流
+> 2. 重叠的部分即为对应标注的电流的叠加
+

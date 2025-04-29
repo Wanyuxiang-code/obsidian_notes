@@ -25,7 +25,7 @@ tags: [Math241]
 
 ![b1bdbb4c2b0557cee7a6269983b1129.png](https://s2.loli.net/2024/11/05/KSDvOsbjnaZCV5c.png)
 
-- [ ] **Path-Connected**:  
+- [x] **Path-Connected**: ✅ 2025-04-27
 对于域内任意两点，均存在一条连续的曲线满足 $g:[0,1]\to D,g(0)=a,g(1)=b$
 
 Example:  
