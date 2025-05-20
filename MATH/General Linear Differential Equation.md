@@ -39,7 +39,7 @@ tags:
 $$
 \mathbf{y'}= A(t)\mathbf{y} + b(t) \quad (\text{LS})
 $$
-其中：z
+其中：
 -   $t$ 属于某个区间 $I \subseteq \mathbb{R}$ ($I$ 不是空集或单点集)。
 -   $A: I \to \mathbb{C}^{n \times n}$, $t \mapsto A(t) = (a_{ij}(t))$ 是 $n \times n$ 的矩阵函数。
 -   $b: I \to \mathbb{C}^n$, $t \mapsto b(t) = (b_i(t))$ 是 $n$ 维向量函数。

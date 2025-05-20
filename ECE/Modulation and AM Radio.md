@@ -14,10 +14,9 @@ tags:
 
 调制是一种将**信息信号 (信息承载信号，通常是低频信号，如音频)** 加载到**载波信号 (carrier signal，通常是高频正弦波)** 上的过程。
 
--   **输入信号 (Input Signal / Baseband Signal):** 这就是我们要传输的信息，例如语音、音乐等。它通常处在较低的频率范围 (基带)，例如音频信号的带宽大约在 15 kHz 左右 (Slide 6)。我们用 $f(t)$ 表示这个信号，其傅里叶变换为 $F(\omega)$。
+-   **输入信号 (Input Signal / Baseband Signal):** 这就是我们要传输的信息，例如语音、音乐等。它通常处在较低的频率范围 (基带)，例如音频信号的带宽大约在 15 kHz 左右。我们用 $f(t)$ 表示这个信号，其傅里叶变换为 $F(\omega)$。
 -   **载波信号 (Carrier Signal):** 一个高频的正弦波，例如 $cos(\omega_c t)$，其中 $\omega_c$ 是载波角频率 (carrier angular frequency)，$f_c = \omega_c / (2\pi)$ 是载波频率 (carrier frequency)。这个频率远高于输入信号的最高频率 (Slide 4: $\omega_c \gg \Omega$，其中 $\Omega$ 是 $f(t)$ 的带宽)。
 -   **已调信号 (Modulated Signal):** 经过调制过程产生的信号，它承载了输入信号的信息，并且频谱被搬移到了载波频率附近。
-
 
 
 ## 傅里叶变换的频移特性 (Frequency Shift Property)
@@ -63,13 +62,13 @@ AM 是最基本、最早使用的调制方式之一。其核心思想是：**让
 主要有两种形式：
 
 1.  **双边带抑制载波调幅 (Double Sideband Suppressed Carrier, DSB-SC):**
-    -   信号形式: $x_{DSB}(t) = f(t) \cos(\omega_c t)$ (Slide 4, 5, 7)
+    -   信号形式: $x_{DSB}(t) = f(t) \cos(\omega_c t)$ 
     -   频谱: $X_{DSB}(\omega) = \frac{1}{2} [F(\omega - \omega_c) + F(\omega + \omega_c)]$
     -   特点: 实现简单 (只需乘法器/混频器 mixer)，但解调相对复杂 (需要相干解调)。频谱中没有单独的载波分量。
 
 2.  **标准调幅 (Standard AM):**
     -   信号形式: $x_{AM}(t) = [A + f(t)] \cos(\omega_c t)$，其中 $A$ 是一个足够大的直流偏置 (DC offset)，使得 $A + f(t) > 0$ 恒成立。
-    -   频谱: $X_{AM}(\omega) = \frac{A}{2} [\delta(\omega - \omega_c) + \delta(\omega + \omega_c)] + \frac{1}{2} [F(\omega - \omega_c) + F(\omega + \omega_c)]$
+    -   频谱: $X_{AM}(\omega) = A \pi [\delta(\omega - \omega_c) + \delta(\omega + \omega_c)] + \frac{1}{2} [F(\omega - \omega_c) + F(\omega + \omega_c)]$
     -   特点: 包含了一个离散的载波分量 (频谱中的两个冲激)。优点是可以使用非常简单的**包络检波 (envelope detection)** 进行解调，使得接收机成本低廉。这是商业 AM 广播采用的方式。缺点是发射功率效率较低，因为大部分功率消耗在传输载波 $A \cos(\omega_c t)$ 上，而不是信息 $f(t)$ 上。
 
 ## 解调 (Demodulation) - 恢复原始信号
@@ -135,8 +134,6 @@ AM 是最基本、最早使用的调制方式之一。其核心思想是：**让
 -   接收天线会收到很多不同频率的电台信号 (宽带频谱 R(f))。
 -   我们需要选择其中一个电台 (例如 580 kHz)，并滤除其他电台信号。这需要一个**可调谐的窄带带通滤波器 (Tunable Narrow Band-Pass Filter)**。
 -   在 RF 频率 (几百 kHz 到几 MHz) 直接制作高性能 (高 Q 值、陡峭边沿) 且**可调谐**的窄带 BPF 是非常**困难且昂贵**的 (difficult and expensive)，尤其是在模拟电路中。滤波器的相对带宽 $B/f_c$ 很小，对元件精度、稳定性要求极高。
----
-
 
 **超外差原理 (Superheterodyne Principle):**
 

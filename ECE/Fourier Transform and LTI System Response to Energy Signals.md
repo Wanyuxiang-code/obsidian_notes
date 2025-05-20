@@ -172,8 +172,8 @@ $$
 
 2.  **3dB 带宽 (3dB Bandwidth) 或 半功率带宽 (Half-Power Bandwidth):**
     这是**最常用**的带宽定义，尤其是在滤波器和放大器设计中。它指的是信号的功率谱或能量谱密度下降到其峰值**一半 (-3dB)** 的频率范围。
-    -   **对于低通信号 (Low-Pass Signal):** 带宽通常指从 0 Hz (DC) 到功率谱密度下降为峰值一半的正频率 $\omega_{3dB}$ (或 $f_{3dB}$)。即 $BW = \omega_{3dB}$ (或 $f_{3dB}$) [Slide p5, Slide p23]。此时 $|F(\omega_{3dB})|^2 = \frac{1}{2} |F(peak)|^2$，通常 $|F(peak)|^2 = |F(0)|^2$。等效地，幅度谱 $|F(\omega)|$ 下降到峰值的 $1/\sqrt{2}$ (约 0.707)。
-    -   **对于带通信号 (Band-Pass Signal):** 带宽指功率谱密度下降到峰值一半的**上边频 (upper cutoff frequency) $\omega_H$** 与**下边频 (lower cutoff frequency) $\omega_L$** 之差。即 $BW = \omega_H - \omega_L$ [Slide p6, Slide p28]。此时 $|F(\omega_H)|^2 = |F(\omega_L)|^2 = \frac{1}{2} |F(peak)|^2$，其中峰值通常出现在中心频率 $\omega_c$ 附近。
+    -   **对于低通信号 (Low-Pass Signal):** 带宽通常指从 0 Hz (DC) 到功率谱密度下降为峰值一半的正频率 $\omega_{3dB}$ (或 $f_{3dB}$)。即 $BW = \omega_{3dB}$ (或 $f_{3dB}$) 。此时 $|F(\omega_{3dB})|^2 = \frac{1}{2} |F(peak)|^2$，通常 $|F(peak)|^2 = |F(0)|^2$。等效地，幅度谱 $|F(\omega)|$ 下降到峰值的 $1/\sqrt{2}$ (约 0.707)。
+    -   **对于带通信号 (Band-Pass Signal):** 带宽指功率谱密度下降到峰值一半的**上边频 (upper cutoff frequency) $\omega_H$** 与**下边频 (lower cutoff frequency) $\omega_L$** 之差。即 $BW = \omega_H - \omega_L$ 。此时 $|F(\omega_H)|^2 = |F(\omega_L)|^2 = \frac{1}{2} |F(peak)|^2$，其中峰值通常出现在中心频率 $\omega_c$ 附近。
 
 
 3.  **r% 能量带宽 (r% Energy Bandwidth):**

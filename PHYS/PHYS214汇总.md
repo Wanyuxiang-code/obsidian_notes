@@ -2,8 +2,8 @@
 title: PHYS214汇总
 date: 2025-03-05
 date modified: 2025-03-20
-categories: PHYS214
-tags: []
+categories: 
+tags:
 ---
 
 ```dataview

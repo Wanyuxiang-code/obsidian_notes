@@ -2,8 +2,9 @@
 title: Uniform Convergence
 date: 2025-03-26
 date modified: 2025-04-05
-categories: unlabeled
-tags: [Math285]
+categories: Math285
+tags:
+  - Math285
 ---
 
 #Math285 

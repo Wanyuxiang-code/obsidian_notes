@@ -2,8 +2,9 @@
 title: Application of quantum mechanics
 date: 2025-03-20
 date modified: 2025-03-21
-categories: unlabeled
-tags: [PHYS214]
+categories: PHYS214
+tags:
+  - PHYS214
 ---
 
 #PHYS214 
